@@ -1,0 +1,10 @@
+section.banner {
+    background: url('../../assets/images/global/search_bg.jpg')no-repeat center center/cover;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+section.searchResults .row {
+    gap: 24px 0;
+}

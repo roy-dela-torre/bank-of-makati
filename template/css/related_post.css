@@ -1,0 +1,88 @@
+section.product_and_services {
+    background-color: #F2F2F2;
+}
+
+section.product_and_services .content {
+    padding: 5px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.product_and_services .content a.orange_btn {
+    position: absolute;
+    bottom: 15px;
+}
+
+section.product_and_services .main_content {
+    padding: 15px 15px 74px 15px;
+    height: 100%;
+    position: relative;
+}
+
+section.product_and_services img.icons {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+section.product_and_services img:not(.icons) {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+section.product_and_services .image {
+    position: relative;
+}
+
+section.product_and_services .row {
+    gap: 24px 0;
+}
+
+section.product_and_services .group_button button:disabled svg path {
+    fill: #4A4A4A;
+}
+
+section.product_and_services .group_button button:disabled {
+    background-color: white;
+}
+
+section.product_and_services .group_button button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B4298;
+}
+
+section.product_and_services .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 50px;
+    margin-bottom: 35px;
+}
+
+section.product_and_services .left_content {
+    max-width: 824px;
+}
+
+section.product_and_services h2 {
+    margin-bottom: 20px;
+}
+
+section.product_and_services {
+    background-color: #F2F2F2;
+}

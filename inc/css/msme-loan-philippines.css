@@ -1,0 +1,103 @@
+section.loan_feature .row {
+    gap: 24px 0;
+}
+
+section.loan_feature .header {
+    max-width: 650px;
+    margin-bottom: calc(60px - 24px);
+}
+
+section.loan_feature .content {
+    height: 100%;
+    border-radius: 4px;
+    background: #FFF;
+    padding: 30px;
+}
+
+section.loan_feature .content_bg {
+    background: url('../../assets/images/bank_motorcycle_loan_philippines/contact_us_bg.jpg')no-repeat center center/cover;
+    margin-top: 100px;
+    padding: 150px 100px;
+}
+
+section.loan_feature {
+    background-color: #F2F2F2;
+}
+
+section.loan_feature .main_content {
+    max-width: 650px;
+}
+
+section.loan_feature a {
+    margin-top: 30px;
+}
+
+section.required_documents li {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+section.required_documents li:last-child,
+section.required_documents ol {
+    margin-bottom: 0;
+}
+
+section.required_documents li:not(:first-child) {
+    margin-top: 30px;
+}
+
+section.required_documents {
+    background-color: #F2F2F2;
+}
+
+section.application_proccess .content {
+    border-radius: 4px;
+    background: #EEF3FF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    padding: 30px;
+}
+
+section.application_proccess span.count {
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+    color: var(--Blue, #1B4298);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+section.application_proccess .header {
+    max-width: 650px;
+    margin-bottom: calc(60px - 24px);
+}
+
+section.application_proccess .row {
+    gap: 24px 0;
+}
+
+section.understanding_the_msme {
+    background: url('../../assets/images/msme_loan_philippines/Understanding\ MSME\ Loan\ in\ the\ Philippines.jpg')no-repeat center center/cover;
+}
+
+section.understanding_the_msme .content {
+    max-width: 776px;
+    padding: 50px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 77px 0;
+}

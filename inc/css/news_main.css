@@ -1,0 +1,7 @@
+section.other_news .row{
+    gap: 24px 0;
+}
+
+section.other_news .header{
+    margin-bottom: calc(60px - 24px);
+}

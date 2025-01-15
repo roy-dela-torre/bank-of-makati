@@ -1,0 +1,37 @@
+.content.post {
+    padding: 5px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content.post .main_content {
+    padding: 15px 15px 74px 15px;
+    height: 100%;
+    position: relative;
+}
+
+.content.post img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+
+}
+
+.content.post a {
+    position: absolute;
+    bottom: 15px;
+}
+
+.content.post {}
+
+.content.post {}
+
+.content.post {}
+
+.content.post {}
+
+.content.post {}

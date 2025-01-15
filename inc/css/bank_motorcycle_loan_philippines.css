@@ -1,0 +1,215 @@
+section.banner .content {
+    max-width: 1100px !important;
+}
+section.loan_feature .row {
+    gap: 24px 0;
+}
+
+section.loan_feature .header {
+    max-width: 650px;
+    margin-bottom: calc(60px - 24px);
+}
+
+section.loan_feature .content {
+    height: 100%;
+    border-radius: 4px;
+    background: #FFF;
+    padding: 30px;
+}
+
+section.loan_feature .content_bg {
+    background: url('../../assets/images/bank_motorcycle_loan_philippines/contact_us_bg.jpg')no-repeat center center/cover;
+    margin-top: 100px;
+    padding: 150px 100px;
+}
+
+section.loan_feature {
+    background-color: #F2F2F2;
+}
+
+section.loan_feature .main_content {
+    max-width: 650px;
+}
+
+section.loan_feature a {
+    margin-top: 30px;
+}
+
+section.required_documents li {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+section.required_documents li:last-child,
+section.required_documents ol {
+    margin-bottom: 0;
+}
+
+section.required_documents li:not(:first-child) {
+    margin-top: 30px;
+}
+
+section.required_documents {
+    background-color: #F2F2F2;
+}
+
+section.application_proccess .content {
+    border-radius: 4px;
+    background: #EEF3FF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    padding: 30px;
+}
+
+section.application_proccess span.count {
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+    color: var(--Blue, #1B4298);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+section.application_proccess .header {
+    max-width: 650px;
+    margin-bottom: calc(60px - 24px);
+}
+
+section.application_proccess .row {
+    gap: 24px 0;
+}
+
+section.savings_account {
+    background: url('../../assets/images/savings_account_for_studens/Savings Account for Students in the Philippines.jpg')no-repeat center center/cover;
+}
+
+section.bank_motorcycle_loan {
+    background: url('../../assets/images/bank_motorcycle_loan_philippines/Bank\ Motorcycle\ Loan\ in\ the\ Philippines.jpg')no-repeat center center/cover;
+}
+
+section.bank_motorcycle_loan .content {
+    max-width: 776px;
+    padding: 50px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 77px 0;
+}
+
+section.importance_of_bank_motorcycle .convenience {
+    margin: 60px 0 30px 0;
+}
+
+section.importance_of_bank_motorcycle svg {
+    margin-bottom: 20px;
+}
+
+section.importance_of_bank_motorcycle .affordability {
+    margin-bottom: 30px;
+}
+
+section.benefit_of_choosing {
+    background-color: #F2F2F2;
+}
+
+section.benefit_of_choosing .content {
+    padding: 30px;
+    border-radius: 4px;
+    background: #FFF;
+    height: 100%;
+}
+
+section.benefit_of_choosing .icons {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+section.benefit_of_choosing svg {
+    width: 25px;
+    height: 25px;
+}
+
+section.benefit_of_choosing .header {
+    max-width: 1080px;
+    margin: 0 auto calc(60px - 24px) auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.benefit_of_choosing .header p {
+    max-width: 728px;
+}
+
+section.benefit_of_choosing .row {
+    gap: 24px 0;
+}
+
+section.faqs_about_out_savings .accordion-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+section.faqs_about_out_savings .accordion-item {
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.faqs_about_out_savings .row {
+    gap: 24px 0;
+}
+
+section.faqs_about_out_savings h2 {
+    max-width: 889px;
+    margin-bottom: calc(60px - 24px);
+}
+
+section.faqs_about_out_savings ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+}
+
+section.faqs_about_out_savings ul>li {
+    width: calc(50% - 10px);
+}
+
+@media (max-width: 1200px) {
+    section.loan_feature .content_bg {
+        padding: 100px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    section.loan_feature .content_bg {
+        padding: 70px 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    section.loan_feature .content_bg {
+        padding: 50px 20px;
+    }
+
+}

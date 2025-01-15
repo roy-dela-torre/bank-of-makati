@@ -1,0 +1,602 @@
+section.banner button svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.45);
+    width: 35px;
+    height: 35px;
+    padding: 10px 0;
+}
+
+section.banner .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+section.banner .carousel-indicators button.active {
+    background-color: white
+}
+
+section.banner .carousel-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0 !important;
+    flex-direction: column;
+    padding: 0 30px;
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+section.banner .carousel-caption p {
+    margin-bottom: 20px;
+}
+
+section.banner .carousel-control-next,
+section.banner .carousel-control-prev {
+    opacity: 1;
+}
+
+section.banner .carousel-indicators {
+    margin-bottom: 60px;
+}
+
+section.banner img {
+    height: 700px;
+    object-fit: cover;
+}
+
+section.banner .carousel-caption p:first-child {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+section.product_and_services .categories ul#product_and_services {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    border-bottom: 0;
+}
+
+section.product_and_services .categories ul#product_and_services li>button {
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 1px solid var(--Orange, #F26531);
+    background-color: transparent;
+    list-style: none;
+}
+
+section.product_and_services .categories ul#product_and_services li>button.active {
+    transition: .5s ease all;
+    background-color: #F26531;
+    color: white;
+}
+
+section.product_and_services .categories ul#product_and_services li>button#all:hover,
+section.product_and_services .categories ul#product_and_services li>button:hover {
+    transition: .5s ease all;
+    color: white;
+    background-color: #FFA726;
+    border-color: #FFA726;
+}
+
+section.product_and_services {
+    background-color: #F2F2F2;
+}
+
+section.product_and_services div#myTabContent .content {
+    padding: 5px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.product_and_services div#myTabContent .content a.orange_btn {
+    position: absolute;
+    bottom: 15px;
+}
+
+section.product_and_services div#myTabContent .main_content {
+    padding: 15px 15px 74px 15px;
+    height: 100%;
+    position: relative;
+}
+
+section.product_and_services div#myTabContent img.icons {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+section.product_and_services div#myTabContent img:not(.icons) {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+section.product_and_services div#myTabContent .image {
+    position: relative;
+}
+
+section.product_and_services div#myTabContent .row {
+    gap: 24px 0;
+}
+
+section.product_and_services .group_button button:disabled svg path {
+    fill: #4A4A4A;
+}
+
+section.product_and_services .group_button button:disabled {
+    background-color: white;
+}
+
+section.product_and_services .group_button button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B4298;
+}
+
+section.product_and_services .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 50px;
+    margin-bottom: 35px;
+}
+
+section.product_and_services .left_content {
+    max-width: 824px;
+    width: 70%;
+}
+
+section.product_and_services .content_bg {
+    padding: 150px 100px;
+    background: url('../../assets/images/homepage/Calculate\ Your\ Loan\ Easily\ with\ Us.jpg')no-repeat center center/cover;
+    margin-top: 100px;
+}
+
+section.product_and_services .main_content {
+    max-width: 650px;
+}
+
+section.product_and_services .main_content a {
+    margin-top: 20px;
+}
+
+section.product_and_services h2 {
+    margin-bottom: 20px;
+}
+
+section.product_and_services {
+    background-color: #F2F2F2;
+}
+
+section.get_to_know_bank_of_makati {
+    background: url('../../assets/images/homepage/Get to Know Bank of Makati.jpg')no-repeat center center/cover;
+}
+
+section.get_to_know_bank_of_makati .content {
+    background-color: white;
+    padding: 50px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+section.get_to_know_bank_of_makati .content .counter span.numbers {
+    color: var(--Blue, #1B4298);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    margin-bottom: 20px;
+}
+
+section.get_to_know_bank_of_makati .content .counter {
+    margin-top: 60px;
+}
+
+section.get_to_know_bank_of_makati .group_counter {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    margin: 20px 0 30px 0;
+}
+
+section.get_to_know_bank_of_makati .group_counter>div {
+    padding-left: 20px;
+    border-left: 1px solid #F26531;
+}
+
+
+
+section.why_partnet_with_bmi .content {
+    max-width: 650px;
+}
+
+section.why_partnet_with_bmi .content img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+section.why_partnet_with_bmi .business_oppurtunities,
+section.why_partnet_with_bmi .sustainable_growth {
+    margin-bottom: 30px;
+}
+
+section.why_partnet_with_bmi .business_oppurtunities {
+    margin-top: 60px;
+}
+
+section.why_partnet_with_bmi .content>div img {
+    margin-bottom: 20px;
+}
+
+
+section.contact_us .main_content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section.contact_us .content_bg {
+    padding: 60px 100px;
+    background: url('../../assets/images/homepage/Subscribe to Our Newsletter.jpg')no-repeat center center/cover;
+    margin-top: 100px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+section.contact_us .content_bg p {
+    margin-bottom: 30px;
+}
+
+section.contact_us form p {
+    display: flex;
+    gap: 0 15px;
+}
+
+section.contact_us input:not(input[type="submit"]) {
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    width: 100%;
+}
+
+section.contact_us input:not(input[type="submit"])::placeholder {
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.contact_us .wpcf7-not-valid-tip {
+    display: none;
+}
+
+section.contact_us form span.wpcf7-form-control-wrap {
+    width: calc(50% - 65px);
+    max-width: calc(100% - 7.5px);
+}
+
+section.contact_us form span.wpcf7-spinner {
+    display: none;
+}
+
+section.contact_us input:not(input[type="submit"]).wpcf7-not-valid {
+    border: 1px solid red;
+}
+
+section.contact_us .content img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+section.contact_us .head_office {
+    margin: 60px 0 30px 0;
+}
+
+section.contact_us .group_button {
+    margin-top: 30px;
+}
+
+section.contact_us .content>div img {
+    margin-bottom: 20px;
+}
+
+div#exampleModal .modal-dialog {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    max-width: 776px;
+}
+
+div#exampleModal .modal-header {
+    padding: 0;
+    border: none;
+    margin-bottom: 30px;
+}
+
+div#exampleModal .modal-content {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+}
+
+div#exampleModal input,
+div#exampleModal textarea {
+    padding: 10px 15px;
+    border-radius: 1px;
+    border: 1px solid #C1C1C1;
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    width: 100%;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+div#exampleModal .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: unset;
+    right: 5px;
+}
+
+div#exampleModal .select2-container .select2-selection--single {
+    padding: 10px 15px;
+    border-radius: 1px;
+    border: 1px solid #C1C1C1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    padding: 10px 15px;
+    border-radius: 1px;
+    border: 1px solid #C1C1C1;
+    height: 100%;
+}
+
+div#exampleModal .select2-container {
+    width: 100% !important;
+    display: block !important;
+}
+
+div#exampleModal input::placeholder,
+div#exampleModal textarea::placeholder {
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+div#exampleModal .modal-body {
+    padding: 0;
+}
+
+div#exampleModal form p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    margin-bottom: 0;
+}
+
+div#exampleModal input[type="submit"] {
+    color: white;
+}
+
+div#exampleModal form.wpcf7-form.init .wpcf7-spinner {
+    display: none;
+}
+
+div#exampleModal form.wpcf7-form.invalid .wpcf7-spinner {
+    display: block;
+    margin: 0 auto;
+}
+
+div#exampleModal .wpcf7 form .wpcf7-response-output {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.select2-container--open .select2-dropdown--below {
+    z-index: 99999;
+}
+
+@media (max-width: 1200px) {
+    section.contact_us .content_bg {
+        margin-top: 70px;
+    }
+
+    section.product_and_services .header {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+    }
+
+    section.product_and_services .left_content {
+        width: 100%;
+    }
+
+    section.contact_us .group_button a {
+        max-width: 275px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    section.banner img {
+        height: 600px;
+    }
+
+    section.product_and_services .content_bg {
+        padding: 100px 70px;
+    }
+
+    section.why_partnet_with_bmi .content {
+        max-width: 100%;
+    }
+
+    section.why_partnet_with_bmi .row {
+        gap: 50px 0;
+    }
+
+    section.product_and_services .categories ul#product_and_services {
+        margin-bottom: 50px;
+    }
+
+    section.get_to_know_bank_of_makati .content .counter {
+        margin-top: 50px;
+    }
+
+    section.contact_us .telephone_number {
+        margin-bottom: 30px;
+    }
+
+    section.why_partnet_with_bmi .image img{
+        max-height: 600px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 767px) {
+    section.banner img {
+        height: 600px;
+    }
+
+    section.banner .carousel-caption {
+        padding: 0 20px;
+        justify-content: start;
+        margin-top: 50px;
+    }
+
+
+    section.product_and_services div#myTabContent .content a.orange_btn {
+        position: relative;
+        bottom: 0;
+        margin-top: 30px;
+    }
+
+    section.product_and_services .content_bg {
+        padding: 70px 30px;
+    }
+
+    section.get_to_know_bank_of_makati .content,
+    section.contact_us .content_bg {
+        padding: 50px 30px;
+    }
+
+    section.contact_us .content_bg {
+        margin-top: 50px;
+    }
+
+    section.banner .carousel-indicators {
+        margin-bottom: 30px;
+    }
+
+    section.banner .carousel-control-prev {
+        left: 30%;
+        align-items: end;
+        margin-bottom: 60px;
+    }
+
+    section.banner .carousel-control-next {
+        right: 30%;
+        align-items: end;
+        margin-bottom: 60px;
+    }
+
+    section.product_and_services .categories ul#product_and_services {
+        margin-bottom: 40px;
+    }
+
+    section.get_to_know_bank_of_makati .content .counter {
+        margin-top: 40px;
+    }
+
+    section.why_partnet_with_bmi .image img{
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    section.product_and_services div#myTabContent .main_content {
+        padding-bottom: 15px;
+    }
+
+    section.get_to_know_bank_of_makati .group_counter{
+        flex-direction: column;
+        align-items: start;
+        gap: 30px 0;
+    }
+
+    section.get_to_know_bank_of_makati .content .counter span.numbers{
+        margin-bottom: 0;
+    }
+}

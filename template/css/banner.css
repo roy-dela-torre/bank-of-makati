@@ -1,0 +1,29 @@
+section.banner {
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+section.banner .content {
+    max-width: 466px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.banner a {
+    margin-top: 20px;
+}
+
+section.banner p{
+    color: white;
+    text-align: center
+}
+
+@media (max-width: 767px) {
+    section.banner{
+        height: auto;
+    }
+}
