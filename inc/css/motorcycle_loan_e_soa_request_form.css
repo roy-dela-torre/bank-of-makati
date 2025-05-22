@@ -1,0 +1,219 @@
+section.banner .content{
+    max-width: 922px !important;
+}
+
+section.banner{
+    max-height: 500px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+section.motorcycle_loan_e_soa_request_form .header p {
+    max-width: 932px;
+    margin: 0 auto;
+}
+
+section.motorcycle_loan_e_soa_request_form .row {
+    gap: 24px 0;
+}
+
+section.motorcycle_loan_e_soa_request_form .step_by_step {
+    max-width: 464px;
+    margin: 0 auto calc(60px - 24px) auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    background-color: white;
+    gap: 0 20px;
+}
+
+section.motorcycle_loan_e_soa_request_form .step_by_step>div>span::before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: -11px;
+}
+
+section.motorcycle_loan_e_soa_request_form .step_by_step>div>span::after {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: -11px;
+}
+
+section.motorcycle_loan_e_soa_request_form .step_by_step>div>span {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    color: var(--Blue, #1B4298);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    z-index: 3;
+}
+
+section .step_by_step>div{
+    width: 100%;
+}
+
+section.motorcycle_loan_e_soa_request_form .form {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+section.motorcycle_loan_e_soa_request_form .form a span {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+section.motorcycle_loan_e_soa_request_form span.wpcf7-list-item.first.last {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+section.motorcycle_loan_e_soa_request_form .group_button button {
+    width: 86px;
+    display: flex;
+    justify-content: center;
+}
+
+section.motorcycle_loan_e_soa_request_form .group_button p {
+    display: flex;
+    gap: 0 20px;
+    margin-top: 30px;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_wrapper,
+section.motorcycle_loan_e_soa_request_form .form_step5 .bmi_branch,
+section.motorcycle_loan_e_soa_request_form .form_step5 .motorcycle_dealer{
+    display: flex !important;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+section.motorcycle_loan_e_soa_request_form .form_wrapper p{
+    margin-bottom: 0 !important;
+}
+section.motorcycle_loan_e_soa_request_form .owl-carousel .owl-stage>div>div {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step2 span{
+    display: unset;
+}
+
+section.motorcycle_loan_e_soa_request_form .owl-carousel .owl-stage>div>div .form_header,
+section.motorcycle_loan_e_soa_request_form .form_step5 p,
+section.motorcycle_loan_e_soa_request_form .form_step3>span {
+    margin-bottom: 30px;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step3>span{
+    display: block;
+}
+
+section.motorcycle_loan_e_soa_request_form .owl-carousel .owl-stage>div>div .form_header+p {
+    margin-bottom: 10px;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step2 span:nth-child(-n + 2):not(.select2-selection__rendered):not(.select2-selection__arrow),
+section.motorcycle_loan_e_soa_request_form .form_step3 span:nth-child(n + 6){
+    width: calc(50% - 10px);
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step1 .choice_wrapper span.wpcf7-list-item {
+    width: 100%;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step1 .choice_wrapper span.wpcf7-list-item input {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 1px solid #ADADAD;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step1 .choice_wrapper span.wpcf7-list-item input:checked{
+    background-color: #456BBE;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step1 .choice_wrapper span.wpcf7-list-item label,
+section.motorcycle_loan_e_soa_request_form .form_step5 .form_wrapper span.wpcf7-list-item label {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step1 .choice_wrapper {
+    margin: 30px 0;
+}
+
+section.motorcycle_loan_e_soa_request_form form.wpcf7-form.init p {
+    margin-bottom: revert;
+}
+
+section.motorcycle_loan_e_soa_request_form .group_button>*{
+    width: calc(50% - 10px);
+    max-width: 96px;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step3 span.wpcf7-form-control-wrap:nth-child(3){
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_step3 span.wpcf7-form-control-wrap:nth-child(3) svg{
+    position: absolute;
+    right: 15px;
+}
+
+section.motorcycle_loan_e_soa_request_form{
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    section.motorcycle_loan_e_soa_request_form .step_by_step {
+        margin-bottom: calc(50px - 24px);
+    }
+
+    section.motorcycle_loan_e_soa_request_form .step_by_step>div p {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    section.motorcycle_loan_e_soa_request_form .step_by_step {
+        margin-bottom: calc(40px - 24px);
+    }
+
+    section.motorcycle_loan_e_soa_request_form .owl-carousel .owl-stage>div>div {
+        padding: 30px 25px;
+    }
+
+    section.motorcycle_loan_e_soa_request_form .form_step2 span:nth-child(-n + 4),
+    section.motorcycle_loan_e_soa_request_form .form_step3 span:nth-child(n + 6){
+        width: 100%;
+    }
+}

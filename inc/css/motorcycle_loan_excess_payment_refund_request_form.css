@@ -1,0 +1,217 @@
+section.banner .content {
+    max-width: 922px !important;
+}
+
+section.banner {
+    max-height: 500px;
+}
+
+section.request_for_refund .header p {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+section.request_for_refund .row {
+    gap: 24px 0;
+}
+
+
+section.request_for_refund .form {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+section.request_for_refund .form a span {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+section.request_for_refund span.wpcf7-list-item.first.last {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+section.request_for_refund .group_button button {
+    width: 86px;
+    display: flex;
+    justify-content: center;
+}
+
+section.request_for_refund .group_button p {
+    display: flex;
+    gap: 0 20px;
+    margin-top: 30px;
+}
+
+section.request_for_refund .form_wrapper,
+section.request_for_refund .form_step5 .bmi_branch,
+section.request_for_refund .form_step5 .motorcycle_dealer {
+    display: flex !important;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+section.request_for_refund .form_wrapper p {
+    margin-bottom: 0 !important;
+}
+
+section.request_for_refund .form_wrapper p a {
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+section.request_for_refund .owl-carousel .owl-stage>div>div {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.request_for_refund .owl-carousel .owl-stage>div>div a {
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+section.request_for_refund .form_step1 h4 {
+    margin: 30px 0;
+}
+
+section.request_for_refund .form_step2 p>button[type="button"] {
+    display: unset;
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+
+section.request_for_refund .owl-carousel .owl-stage>div>div .form_header,
+section.request_for_refund .form_step5 p,
+section.request_for_refund .form_step3>span {
+    margin-bottom: 30px;
+}
+
+section.request_for_refund .form_step3>span {
+    display: block;
+}
+
+section.request_for_refund .owl-carousel .owl-stage>div>div .form_header+p {
+    margin-bottom: 10px;
+}
+
+section.request_for_refund .form_step2 span:nth-child(-n + 4),
+section.request_for_refund .form_step3 span:nth-child(n + 6),
+section.request_for_refund .form_step5 span.wpcf7-form-control-wrap:nth-child(-n + 4) {
+    width: calc(50% - 10px);
+}
+
+section.request_for_refund .form_step1 .choice_wrapper span.wpcf7-list-item {
+    width: 100%;
+}
+
+section.request_for_refund .form_step1 .choice_wrapper span.wpcf7-list-item input {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 1px solid #ADADAD;
+}
+
+section.request_for_refund .form_step1 .choice_wrapper span.wpcf7-list-item input:checked {
+    background-color: #456BBE;
+}
+
+section.request_for_refund .form_step1 .choice_wrapper span.wpcf7-list-item label,
+section.request_for_refund .form_step5 .form_wrapper span.wpcf7-list-item label {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+section.request_for_refund .form_step1 .choice_wrapper {
+    margin: 30px 0;
+}
+
+section.request_for_refund form.wpcf7-form.init p {
+    margin-bottom: revert;
+}
+
+section.request_for_refund .group_button>* {
+    width: calc(50% - 10px);
+    max-width: 96px;
+}
+
+section.request_for_refund .form_step3 span.wpcf7-form-control-wrap:nth-child(3) {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+section.request_for_refund .form_step3 span.wpcf7-form-control-wrap:nth-child(3) svg {
+    position: absolute;
+    right: 15px;
+}
+
+section.request_for_refund .form_step5 span.wpcf7-form-control-wrap{
+    width: 100% !important;
+    display: block;
+}
+
+section.request_for_refund .form_step5 .form_wrapper>div{
+    width: 100%;
+}
+
+[popover]:-internal-popover-in-top-layer::backdrop {
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+div#attached_image{
+    border: none;
+}
+
+@media (max-width: 767px) {
+    section.request_for_refund .owl-carousel .owl-stage>div>div {
+        padding: 30px 25px;
+    }
+
+    section.request_for_refund .form_step2 span:nth-child(-n + 4),
+    section.request_for_refund .form_step3 span:nth-child(n + 6) {
+        width: 100%;
+    }
+}

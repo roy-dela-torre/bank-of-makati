@@ -1,0 +1,232 @@
+section .owl-carousel .owl-item:not(.active) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+section .owl-carousel .owl-item.active {
+    display: block;
+}
+
+section .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+section .owl-carousel.owl-drag .owl-item{
+    height: fit-content;
+}
+
+section .owl-carousel .owl-stage{
+    display: flex;
+}
+
+section .step_by_step {
+    max-width: 1256px;
+    margin: 0 auto calc(60px - 24px) auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    background-color: white;
+    gap: 0 20px;
+}
+
+section .step_by_step>div>span::before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: -11px;
+}
+
+section .step_by_step>div>span::after {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: -11px;
+}
+
+section .step_by_step>div>span {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    color: var(--Blue, #1B4298);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    z-index: 3;
+}
+
+section .step_by_step>div.active>span {
+    border-radius: 3px;
+    border: 1px solid #456BBE;
+    background: var(--Blue, #1B4298);
+    color: white;
+}
+
+section .step_by_step>div {
+    display: flex;
+    flex-direction: column;
+    max-width: 210px;
+    margin: 0 auto;
+    gap: 24px 0;
+    width: calc(16.66% - 17px);
+    align-items: center;
+    position: relative;
+}
+
+section .step_by_step>div:not(:last-child).active:before {
+    content: "";
+    position: absolute;
+    top: 22.5px;
+    width: calc(100% - 25px);
+    left: 65%;
+    height: 1px;
+    background-color: #456BBE;
+}
+
+section .step_by_step>div:not(:last-child):before {
+    content: "";
+    position: absolute;
+    top: 22.5px;
+    width: calc(100% - 25px);
+    left: 65%;
+    height: 1px;
+    background-color: #F2F2F2;
+}
+
+section .step_by_step>div.active p {
+    color: var(--Blue, #1B4298);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+section .step_by_step>div p {
+    color: var(--Black, #4A4A4A);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+div#exampleModal .modal-header {
+    border: none;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+div#exampleModal div#modalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+    padding: 0;
+}
+
+div#exampleModal div#modalContent p.p_header {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+div#exampleModal label {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+div#exampleModal .step .row {
+    display: flex;
+    gap: 20px 0;
+}
+
+div#exampleModal .form-control:focus {
+    /* all: unset */
+}
+
+div#exampleModal .form-control {
+    padding: 10px 15px;
+    border-radius: 1px;
+    border: 1px solid #C1C1C1;
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 178.571% */
+}
+
+div#exampleModal .form-control::placeholder {
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 178.571% */
+}
+
+div#exampleModal .modal-content {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+div#exampleModal .modal.fade .modal-dialog {
+    max-width: 1576px;
+    width: 100%;
+}
+
+div#exampleModal .modal-footer {
+    padding: 50px 0 0 0;
+}
+
+
+@media (max-width: 991px) {
+    section .step_by_step {
+        margin-bottom: calc(50px - 24px);
+    }
+
+    section .step_by_step>div p {
+        display: none;
+    }
+
+    div#exampleModal div#modalContent {
+        gap: 40px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    section .step_by_step {
+        margin-bottom: calc(40px - 24px);
+    }
+
+    div#exampleModal div#modalContent {
+        gap: 30px 0;
+    }
+}

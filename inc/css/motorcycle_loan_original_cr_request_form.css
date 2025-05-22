@@ -1,0 +1,181 @@
+section.banner .content {
+    max-width: 922px !important;
+}
+
+section.banner {
+    max-height: 500px;
+}
+
+section.request_of_release {
+    overflow: hidden;
+}
+
+section.request_of_release .header p {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+section.request_of_release .row {
+    gap: 24px 0;
+}
+
+section.request_of_release .form {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+section.request_of_release .form a span {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+section.request_of_release span.wpcf7-list-item.first.last {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+section.request_of_release .group_button button {
+    width: 86px;
+    display: flex;
+    justify-content: center;
+}
+
+section.request_of_release .group_button p {
+    display: flex;
+    gap: 0 20px;
+    margin-top: 30px;
+}
+
+section.request_of_release .form_wrapper,
+section.request_of_release .form_step5 .bmi_branch,
+section.request_of_release .form_step5 .motorcycle_dealer {
+    display: flex !important;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+section.request_of_release .form_wrapper p{
+    font-size: 14px;
+}
+
+section.request_of_release .owl-carousel .owl-stage>div>div {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.request_of_release .owl-carousel .owl-stage>div>div a {
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration: underline;
+}
+
+section.request_of_release form.wpcf7-form.init .form_step1 p:last-of-type {
+    margin-top: 30px;
+}
+
+section.request_of_release form.wpcf7-form.init .form_step1 span.wpcf7-list-item-label {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.request_of_release .owl-carousel .owl-stage>div>div .form_header,
+section.request_of_release .form_step5 p {
+    margin-bottom: 30px;
+}
+
+section.request_of_release .owl-carousel .owl-stage>div>div .form_header+p {
+    margin-bottom: 10px;
+}
+
+section.request_of_release .form_step2 span:nth-child(n + 3),
+section.request_of_release .form_step3 span:nth-child(-n + 2),
+section.request_of_release .form_step4 span:nth-child(n + 2),
+section.request_of_release .form_step5 .bmi_branch>span,
+section.request_of_release .form_step5 .motorcycle_dealer>span,
+section.request_of_release .form_step5 .bmi_branch>div,
+section.request_of_release .form_step5 .motorcycle_dealer>div {
+    flex: 1 1 calc(50% - 10px);
+    /* grow, shrink, basis */
+    min-width: 400px;
+    max-width: 100%;
+}
+
+section.request_of_release .form_step5 .bmi_branch,
+section.request_of_release .form_step5 .motorcycle_dealer {
+    margin-top: 20px;
+}
+
+section.request_of_release .form_step1 .choice_wrapper span.wpcf7-list-item {
+    width: 100%;
+}
+
+section.request_of_release .form_step1 .choice_wrapper span.wpcf7-list-item input {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 1px solid #ADADAD;
+}
+
+section.request_of_release .form_step1 .choice_wrapper span.wpcf7-list-item input:checked {
+    background-color: #456BBE;
+}
+
+section.request_of_release .form_step1 .choice_wrapper span.wpcf7-list-item label {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+section.request_of_release .form_step1 .choice_wrapper {
+    margin: 30px 0;
+}
+
+section.request_of_release form.wpcf7-form.init p {
+    margin-bottom: revert;
+}
+
+section.request_of_release .group_button>* {
+    width: calc(50% - 10px);
+    max-width: 96px;
+}
+
+section.request_of_release .group_button input[type="submit"] {
+    max-width: fit-content;
+}
+
+section.request_of_release .form_step4 span.wpcf7-form-control-wrap:first-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+section.request_of_release .form_step4 span.wpcf7-form-control-wrap:first-child svg {
+    position: absolute;
+    right: 15px;
+}
+
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+
+    section.request_of_release .owl-carousel .owl-stage>div>div {
+        padding: 30px 25px;
+    }
+}

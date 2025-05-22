@@ -1,0 +1,436 @@
+section.banner .content {
+    max-width: 679px !important;
+}
+
+section.share_your_feedback input,
+section.share_your_feedback textarea {
+    padding: 10px 15px;
+    border-radius: 1px;
+    border: 1px solid #C1C1C1;
+    width: 100%;
+}
+
+section.share_your_feedback .wpcf7-form-control-wrap {
+    width: 100%;
+}
+
+section.share_your_feedback form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section.share_your_feedback .form {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+}
+
+section.share_your_feedback .wpcf7-form-control-wrap[data-name="select-278"],
+section.share_your_feedback .wpcf7-form-control-wrap[data-name="select-221"],
+section.share_your_feedback .wpcf7-form-control-wrap[data-name="email-958"],
+section.share_your_feedback .wpcf7-form-control-wrap[data-name="tel-479"] {
+    flex: 1 1 calc(50% - 10px);
+    /* grow, shrink, basis */
+    min-width: 300px;
+    max-width: 100%;
+}
+
+
+section.share_your_feedback .group_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+section.share_your_feedback .group_content>div>* {
+    margin-bottom: 0;
+}
+
+section.share_your_feedback .group_content>div {
+    display: flex;
+    gap: 20px 0;
+    flex-direction: column;
+}
+
+section.share_your_feedback .group_content>div a {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    word-break: break-all;
+}
+
+section.share_your_feedback .group_content>div h3 {
+    color: var(--Blue, #1B4298);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+section.share_your_feedback .content {
+    max-width: 550px;
+}
+
+section.head_office {
+    background-color: #F2F2F2;
+}
+
+section.head_office .row {
+    gap: 24px 0;
+}
+
+section.head_office .header {
+    max-width: 620px;
+}
+
+section.head_office .content {
+    border-radius: 2px;
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+section.head_office .data_table {
+    padding: 15px 20px;
+    border-top: 1px solid var(--Gray, #F2F2F2);
+    border-right: 1px solid var(--Gray, #F2F2F2);
+    border-bottom: 1px solid var(--Gray, #F2F2F2);
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.head_office .data_table:nth-child(-n + 2) {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #FFF;
+    background: var(--Blue, #1B4298);
+    text-align: center;
+}
+
+section.head_office .data_table:nth-child(odd):nth-child(n+3),
+section.head_office .data_table:nth-child(4) {
+    font-weight: 600;
+    color: var(--Black, #4A4A4A);
+}
+
+
+section.your_opinion_counts .row {
+    gap: 24px 0;
+}
+
+section.your_opinion_counts .header {
+    max-width: 620px;
+}
+
+section.your_opinion_counts .form {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+section.your_opinion_counts form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+section.your_opinion_counts form>p {
+    margin-bottom: 0;
+}
+
+section.your_opinion_counts .gender_choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 300px;
+}
+
+section.your_opinion_counts .wpcf7-list-item label {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+section.your_opinion_counts .age_choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 900px;
+    justify-content: space-between;
+}
+
+section.your_opinion_counts .age_choice>div {
+    width: calc(33.33% - 14px);
+}
+
+section.your_opinion_counts span.wpcf7-list-item-label::before,
+section.your_opinion_counts span.wpcf7-list-item-label::after {
+    display: none;
+}
+
+section.your_opinion_counts .wpcf7-list-item {
+    margin: 0;
+}
+
+section.your_opinion_counts .employment_status_choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 357px;
+}
+
+section.your_opinion_counts .employment_industry_choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section.your_opinion_counts .employment_industry_choice .choice_wrapper:not(:last-child) {
+    width: calc(33.33% - 14px);
+    display: flex;
+    align-items: center;
+}
+
+section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child,
+section.your_opinion_counts .products_availed_choice>div:last-child {
+    display: flex;
+    align-items: center;
+    width: calc(67% - 10px);
+    gap: 0 15px;
+}
+
+section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child span.wpcf7-form-control-wrap:first-child,
+section.your_opinion_counts .products_availed_choice>div:last-child span.wpcf7-form-control-wrap:first-child {
+    width: 220px;
+}
+
+section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child span.wpcf7-form-control-wrap:last-child,
+section.your_opinion_counts .products_availed_choice>div:last-child span.wpcf7-form-control-wrap:last-child {
+    width: calc(100% - 235px);
+}
+
+section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child p,
+section.your_opinion_counts .products_availed_choice>div:last-child p {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    width: 100%;
+}
+
+section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child input[type="text"],
+section.your_opinion_counts .products_availed_choice>div:last-child input[type="text"] {
+    padding: 10px 15px;
+    border-radius: 1px;
+    border: 1px solid #C1C1C1;
+    color: #4A4A4A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    width: 100%;
+}
+
+section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child input::placeholder,
+section.your_opinion_counts .products_availed_choice>div:last-child input::placeholder {
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child p span.wpcf7-form-control-wrap,
+section.your_opinion_counts .products_availed_choice>div:last-child p span.wpcf7-form-control-wrap {
+    width: fit-content;
+}
+
+section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child p span.wpcf7-form-control-wrap[data-name="employment_industry_others"],
+section.your_opinion_counts .products_availed_choice>div:last-child p span.wpcf7-form-control-wrap[data-name="products_availed_others"] {
+    width: 100%;
+}
+
+section.your_opinion_counts .know_bom_choice,
+section.your_opinion_counts .satisfaction_choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+section.your_opinion_counts .satisfaction_choice {
+    max-width: 783px;
+}
+
+section.your_opinion_counts .know_bom_choice>div,
+section.your_opinion_counts .satisfaction_choice>div {
+    width: fit-content
+}
+
+section.your_opinion_counts .products_availed_choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section.your_opinion_counts .products_availed_choice>div {
+    width: calc(33.33% - 24px);
+}
+
+section.your_opinion_counts .recommendation_choice,
+section.your_opinion_counts .content_helpful_choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+section.your_opinion_counts .other_comments textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 1px;
+    border: 1px solid #C1C1C1;
+    color: #4A4A4A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.your_opinion_counts span.wpcf7-list-item-label {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+@media (max-width: 1200px) {
+    section.your_opinion_counts .know_bom_choice>div {
+        width: calc(33.33% - 14px);
+    }
+
+    section.your_opinion_counts .products_availed_choice>div {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 991px) {
+    section.share_your_feedback .row {
+        gap: 30px 0;
+    }
+
+    section.your_opinion_counts .employment_industry_choice .choice_wrapper:not(:last-child),
+    section.your_opinion_counts .know_bom_choice>div {
+        width: calc(50% - 10px);
+    }
+
+    section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child,
+    section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child,
+    section.your_opinion_counts .products_availed_choice>div:last-child {
+        width: 100%;
+    }
+
+    section.your_opinion_counts .form {
+        padding: 40px 25px;
+    }
+
+    section.your_opinion_counts .satisfaction_choice>div {
+        width: calc(33.33% - 14px);
+    }
+}
+
+@media (max-width: 767px) {
+    section.share_your_feedback .form {
+        padding: 40px 25px;
+    }
+
+    section.head_office td {
+        white-space: pre;
+    }
+
+    section.head_office .table {
+        overflow: scroll;
+    }
+
+    section.your_opinion_counts .age_choice>div,
+    section.your_opinion_counts .satisfaction_choice>div {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 575px) {
+
+    section.your_opinion_counts .age_choice>div,
+    section.your_opinion_counts .satisfaction_choice>div,
+    section.your_opinion_counts .know_bom_choice>div {
+        width: 100%;
+    }
+
+    section.share_your_feedback .wpcf7-form-control-wrap[data-name="select-278"],
+    section.share_your_feedback .wpcf7-form-control-wrap[data-name="select-221"],
+    section.share_your_feedback .wpcf7-form-control-wrap[data-name="email-958"],
+    section.share_your_feedback .wpcf7-form-control-wrap[data-name="tel-479"] {
+        min-width: 230px;
+    }
+
+    section.head_office .content {
+        flex-direction: column;
+    }
+
+    section.head_office .content>div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    section.your_opinion_counts .recommendation_choice,
+    section.your_opinion_counts .content_helpful_choice {
+        justify-content: unset;
+    }
+
+    section.your_opinion_counts span.wpcf7-list-item-label {
+        word-break: break-all;
+
+    }
+
+    section.your_opinion_counts .employment_industry_choice .choice_wrapper:last-child p,
+    section.your_opinion_counts .products_availed_choice>div:last-child p {
+        flex-direction: column;
+        align-items: unset;
+        gap: 20px 0;
+    }
+}

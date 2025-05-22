@@ -1,0 +1,13 @@
+section.privacy_policy h2{
+    margin-top: 30px;
+}
+
+section.privacy_policy .content{
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+section.privacy_policy h1{
+    font-size: 40px;
+    color: #4A4A4A;
+}

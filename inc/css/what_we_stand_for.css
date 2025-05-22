@@ -1,0 +1,92 @@
+section.banner .content {
+    max-width: 747px !important;
+}
+
+
+section.what_we_stand_for .content {
+    margin: 0 0 0 auto;
+    max-width: 650px;
+}
+
+section.why_we_stand_out,
+section.what_we_stand_for {
+    background-color: #F2F2F2;
+}
+
+section.why_we_stand_out .row {
+    gap: 24px 0;
+}
+
+section.why_we_stand_out .header {
+    max-width: 1074px;
+}
+
+
+section.why_we_stand_out .content {
+    height: 100%;
+    border-radius: 4px;
+    background: #FFF;
+    padding: 30px;
+}
+
+section.why_we_stand_out .icons {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+section.why_choose_bmi .content {
+    max-width: 650px;
+}
+
+section.why_choose_bmi .group_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    margin-top: 60px;
+}
+
+section.why_choose_bmi svg{
+    margin-bottom: 20px;
+}
+
+section.why_choose_bmi h3{
+    font-size: 16px;
+    line-height: normal;
+}
+
+section.contact_us .content_bg{
+    margin-top: 0 !important;
+}
+
+@media (max-width: 1200px) {
+    section.why_choose_bmi .content{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    section.what_we_stand_for .content{
+        max-width: 100%;
+    }
+
+    section.what_we_stand_for .row {
+        gap: 30px 0;
+    }
+
+    section.why_choose_bmi .group_content {
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    section.why_choose_bmi .group_content {
+        margin-top: 40px;
+    }
+}

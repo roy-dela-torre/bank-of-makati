@@ -1,0 +1,44 @@
+section.contact_us .content_bg {
+    background: url('../../assets/images/savings_account_for_studens/Contact\ Us.jpg')no-repeat center center/cover;
+    margin-top: 100px;
+    padding: 150px 100px;
+    border-radius: 8px;
+}
+
+section.contact_us .content_bg .main_content {
+    max-width: 650px;
+}
+
+section.contact_us .content_bg p {
+    margin-bottom: 30px;
+}
+
+section.contact_us .main_content p{
+    color: white;
+}
+
+section.contact_us span{
+    color: white !important;
+}
+
+@media (max-width: 1200px) {
+    section.contact_us .content_bg {
+        padding: 100px;
+        margin-top: calc(70px - 24px);
+    }
+}
+
+@media (max-width: 991px) {
+    section.contact_us .content_bg {
+        padding: 70px 50px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    section.contact_us .content_bg {
+        padding: 50px 20px;
+        margin-top: calc(50px - 24px);
+    }
+
+}

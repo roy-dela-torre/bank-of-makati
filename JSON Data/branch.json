@@ -1,0 +1,468 @@
+{
+    "bmi_branch": {
+        "bmi_area": [
+            "NCR/METRO MANILA",
+            "LUZON",
+            "VISAYAS",
+            "MINDANAO"
+        ],
+        "branches": {
+            "NCR/METRO MANILA": [
+                {
+                    "city": "CALOOCAN CITY",
+                    "branch": "BMI CALOOCAN BRANCH",
+                    "address": "137 Edsa Corner B Serrano Brgy 87 Caloocan City Honda Bldg 3Rd Floor"
+                },
+                {
+                    "city": "MAKATI CITY",
+                    "branch": "BMI BUENDIA HEAD OFFICE",
+                    "address": "44 Sen. Gil Puyat Ave. Brgy. San Isidro, Makati City 1234"
+                },
+                {
+                    "city": "MALABON CITY",
+                    "branch": "BRANCH LITE UNIT MALABON",
+                    "address": "3Rd Flr Psalm 23 Bldg., 93 M.H Del Pilar Cor. Yakal St., Brgy. Santolan Malabon City"
+                },
+                {
+                    "city": "MARIKINA CITY",
+                    "branch": "BMI MARIKINA BRANCH",
+                    "address": "No. 6 Bayan-Bayanan Ave., Concepcion Uno, Marikina City"
+                },
+                {
+                    "city": "PARAÑAQUE CITY",
+                    "branch": "BMI BACLARAN (MICRO FINANCE) BRANCH",
+                    "address": "392 Quirino, Avenue Baclaran Parañaque City"
+                },
+                {
+                    "city": "QUEZON CITY",
+                    "branch": "BMI COMMONWEALTH (MICRO FINANCE) BRANCH",
+                    "address": "Unit 3 & 4 Mt. Sinai Heights Bldg., 71-B, Commonwealth Ave., East Fairview, Quezon City"
+                },
+                {
+                    "city": "QUEZON CITY",
+                    "branch": "BMI ROOSEVELT (MICRO FINANCE) BRANCH",
+                    "address": "336 Puno Bldg, Roosevelt Ave Brgy Veteranz Quezon City"
+                },
+                {
+                    "city": "TAGUIG CITY",
+                    "branch": "BRANCH LITE UNIT TAGUIG",
+                    "address": "4Th Floor, Lot 3, Levi Mariano St., Int.Gen. Luna Ususan, Taguig City"
+                }
+            ],
+            "LUZON": [
+                {
+                    "province": "ALBAY",
+                    "city": "LEGAZPI CITY",
+                    "branch": "BMI LEGAZPI BRANCH",
+                    "address": "2Nd Floor JRE Commercial Building Penaranda St. Legaspi City"
+                },
+                {
+                    "province": "BATANGAS",
+                    "city": "BATANGAS CITY",
+                    "branch": "BRANCH LITE UNIT BATANGAS",
+                    "address": "Ground Floor Lena Bldg. St. Peter Street Corner National Highway, Batangas City, Batangas"
+                },
+                {
+                    "province": "BATANGAS",
+                    "city": "LEMERY",
+                    "branch": "BRANCH LITE UNIT LEMERY",
+                    "address": "Unit 5, 2nd Floor, A. Datingaling Building, Ilustre Ave., Lemery, Batangas"
+                },
+                {
+                    "province": "BATANGAS",
+                    "city": "LIPA CITY",
+                    "branch": "BMI LIPA BRANCH",
+                    "address": "C.M. Recto Avenue Brgy. 9 Lipa City Batangas."
+                },
+                {
+                    "province": "BATANGAS",
+                    "city": "TANAUAN",
+                    "branch": "BRANCH LITE UNIT TANAUAN",
+                    "address": "3Rd Floor , Hmc Building, Corner Molave St., President Jose P Laurel Highway Poblacion 3 Tanauan City, Batangas"
+                },
+                {
+                    "province": "BULACAN",
+                    "city": "BALIUAG",
+                    "branch": "BMI BALIAUG BRANCH",
+                    "address": "Benigno Aquino Ave. St. Poblacion, Baliuag, Bulacan"
+                },
+                {
+                    "province": "BULACAN",
+                    "city": "MALOLOS CITY",
+                    "branch": "BMI MALOLOS BRANCH",
+                    "address": "Lot 698 Paseo Del Congreso Liang, Malolos City 3000"
+                },
+                {
+                    "province": "BULACAN",
+                    "city": "SAN JOSE DEL MONTE CITY",
+                    "branch": "BRANCH LITE UNIT SJDM",
+                    "address": "Unit 1 2Nd Floor Bordallo Bldg B11 L2-H Purok 1 Brgy Bagong Buhay Ii, District 2, San Jose Del Monte, Bulacan."
+                },
+                {
+                    "province": "CAGAYAN",
+                    "city": "TUGUEGARAO CITY",
+                    "branch": "BMI TUGUEGARAO BRANCH",
+                    "address": "Door#4 Luna St. Corner Del Rosario St. Centro 02 Tuguegarao City Cagayan"
+                },
+                {
+                    "province": "CAMARINES NORTE",
+                    "city": "DAET",
+                    "branch": "BRANCH LITE UNIT DAET",
+                    "address": "3Rd Floor Lazo Bldg., Bagasbas Road Corner Diego Linan St., Brgy., 6 Daet Camarines Norte"
+                },
+                {
+                    "province": "CAMARINES SUR",
+                    "city": "IRIGA CITY",
+                    "branch": "BRANCH LITE UNIT IRIGA",
+                    "address": "Unit 201 Ngo Sy Giok Po Bldg., San Miguel, J.P. Rizal St., Highway 1, San Miguel, Iriga City, Camarines Sur"
+                },
+                {
+                    "province": "CAMARINES SUR",
+                    "city": "NAGA CITY",
+                    "branch": "BMI NAGA BRANCH",
+                    "address": "#89 Elias Angeles St Naga City Camarines Sur"
+                },
+                {
+                    "province": "CATANDUANES",
+                    "city": "VIRAC",
+                    "branch": "BRANCH LITE UNIT VIRAC",
+                    "address": "Unit 31, 3Rd Floor, Cafe Building Constantino Virac, Cantanduanes"
+                },
+                {
+                    "province": "CAVITE",
+                    "city": "DASMARIÑAS CITY",
+                    "branch": "BMI DASMARIÑAS BRANCH",
+                    "address": "Blk 55 Lot 7 Golden Miles Molino-Paliparan Rd Brgy. Salawag Dasmarinas City Cavite 4114 ( In Front Of Save More Salawag)"
+                },
+                {
+                    "province": "CAVITE",
+                    "city": "IMUS CITY",
+                    "branch": "BRANCH LITE UNIT IMUS",
+                    "address": "2F 7Days Bldg. Aguinaldo Highway Palico 3 Imus Cavite"
+                },
+                {
+                    "province": "CAVITE",
+                    "city": "TRECE MARTIRES CITY",
+                    "branch": "BRANCH LITE UNIT TRECE MARTIRES CITY",
+                    "address": "Door 1 And 2, 2Nd Floor, Ronn And Roy Building, 0346 Brgy. San Agustin, Trece Martires City, Cavite"
+                },
+                {
+                    "province": "ILOCOS SUR",
+                    "city": "BANTAY",
+                    "branch": "BMI BANTAY BRANCH",
+                    "address": "R.G.C. Cardenas Building, Zone 5, National Higway, Bantay, Ilocos Sur"
+                },
+                {
+                    "province": "ISABELA",
+                    "city": "ROXAS",
+                    "branch": "BRANCH LITE UNIT ROXAS",
+                    "address": "National Highway, Bantug Roxas, Isabela"
+                },
+                {
+                    "province": "ISABELA",
+                    "city": "SANTIAGO CITY",
+                    "branch": "BMI SANTIAGO BRANCH",
+                    "address": "Villarica Building, Purok 4 City Road, corner Quezon St. Centro West, Santiago City, Isabela"
+                },
+                {
+                    "province": "LAGUNA",
+                    "city": "BIÑAN CITY",
+                    "branch": "BMI BIÑAN BRANCH",
+                    "address": "A. Bonifacio St., Brgy Canlalay Biñan Laguna"
+                },
+                {
+                    "province": "LAGUNA",
+                    "city": "CALAMBA",
+                    "branch": "BRANCH LITE UNIT CALAMBA",
+                    "address": "3Rd Floor, Julita Building 1, Crossing Calamba Laguna"
+                },
+                {
+                    "province": "LAGUNA",
+                    "city": "SAN PABLO CITY",
+                    "branch": "BMI SAN PABLO BRANCH",
+                    "address": "52 Colago Avenue San Pablo City, Laguna 4000"
+                },
+                {
+                    "province": "MARINDUQUE",
+                    "city": "BOAC",
+                    "branch": "BRANCH LITE UNIT BOAC",
+                    "address": "Kasilag St., Brgy Isok, Boac Marinduque"
+                },
+                {
+                    "province": "MASBATE",
+                    "city": "MASBATE CITY",
+                    "branch": "BRANCH LITE UNIT MASBATE",
+                    "address": "Door 2, 3Rd Floor K&R Building, National Road Brgy Tugbo Masbate City"
+                },
+                {
+                    "province": "NUEVA ECIJA",
+                    "city": "CABANATUAN CITY",
+                    "branch": "BMI CABANATUAN BRANCH",
+                    "address": "# 333 B3 Burgos Street,Brgy. Sangitan, Cabanatuan City, Nueva Ecija 3100"
+                },
+                {
+                    "province": "NUEVA ECIJA",
+                    "city": "GAPAN CITY",
+                    "branch": "BRANCH LITE UNIT GAPAN",
+                    "address": "Jcr Building, Maharlika Highway, San Vicente, Gapan City, Nueva Ecija"
+                },
+                {
+                    "province": "NUEVA ECIJA",
+                    "city": "SAN JOSE CITY",
+                    "branch": "BRANCH LITE UNIT SAN JOSE",
+                    "address": "2Nd Floor, #348 Salvador Building, Maharlika Highway, Brgy. Rafael Rueda Sr., San Jose City, Nueva Ecija"
+                },
+                {
+                    "province": "ORIENTAL MINDORO",
+                    "city": "BONGABONG",
+                    "branch": "BRANCH LITE UNIT BONGABONG",
+                    "address": "3-4 Aptown Building, Aplaya Ii Road Corner Town Public Market Poblacion Bongabong Oriental Mindoro"
+                },
+                {
+                    "province": "ORIENTAL MINDORO",
+                    "city": "CALAPAN CITY",
+                    "branch": "BMI CALAPAN BRANCH",
+                    "address": "Unit 1 Roxas Drive Lumangbayan Calapan City, Oriental Mindoro"
+                },
+                {
+                    "province": "PALAWAN",
+                    "city": "NARRA",
+                    "branch": "BRANCH LITE UNIT NARRA",
+                    "address": "Unit 301 Ptk-Ii Commercial Building Malvar St Poblacion Narra Palawan"
+                },
+                {
+                    "province": "PALAWAN",
+                    "city": "PUERTO PRINCESA CITY",
+                    "branch": "BMI PUERTO PRINCESA BRANCH",
+                    "address": "Prime One Properties Bldg., Km. 1, National Highway, Brgy. San Miguel, Puerto Princesa City, Palawan"
+                },
+                {
+                    "province": "PAMPANGA",
+                    "city": "ANGELES CITY",
+                    "branch": "BRANCH LITE UNIT ANGELES",
+                    "address": "Unit 301, Blk-2, Lot-19, Mc Arthur Hiway, Ninoy Aquino, Angeles City, Pampanga"
+                },
+                {
+                    "province": "PAMPANGA",
+                    "city": "SAN FERNANDO CITY",
+                    "branch": "BMI PAMPANGA",
+                    "address": "Diamond Bdlg. Mc Arthur Highway,Dolores, San Fernando, Pampanga"
+                },
+                {
+                    "province": "PANGASINAN",
+                    "city": "DAGUPAN CITY",
+                    "branch": "BMI DAGUPAN BRANCH",
+                    "address": "One Grande Building, Arellano Street , Dagupan City"
+                },
+                {
+                    "province": "PANGASINAN",
+                    "city": "URDANETA CITY",
+                    "branch": "BMI URDANETA BRANCH",
+                    "address": "Honaco Bldg. Mc Arthur Highway, Nancayasan, Urdaneta City, Pangasinan"
+                },
+                {
+                    "province": "QUEZON",
+                    "city": "GUMACA",
+                    "branch": "BRANCH LITE UNIT GUMACA",
+                    "address": "3Rd Floor, Leopando Bldg., J.P. Rizal St., ( Kalye Putol) Brgy. San Diego, Gumaca, Quezon"
+                },
+                {
+                    "province": "QUEZON",
+                    "city": "LUCENA CITY",
+                    "branch": "BMI LUCENA BRANCH",
+                    "address": "Emperor Building, Merchan Street Cor. Evangelista Street, Brgy. 6, Lucena City, Quezon"
+                },
+                {
+                    "province": "RIZAL",
+                    "city": "ANTIPOLO CITY",
+                    "branch": "BMI ANTIPOLO BRANCH",
+                    "address": "No.4 Senator Lorenzo Memorial Circle, Bgy. San Roque, Antipolo City 1870, Rizal"
+                },
+                {
+                    "province": "RIZAL",
+                    "city": "BINANGONAN",
+                    "branch": "BRANCH LITE UNIT BINANGONAN",
+                    "address": "117 Unit D, National Road, Bilibiran, Binangonan Rizal"
+                },
+                {
+                    "province": "RIZAL",
+                    "city": "RODRIGUEZ",
+                    "branch": "BRANCH LITE UNIT RODRIGUEZ",
+                    "address": "526 M.H Del Pilar Brgy. Geronimo Rodriguez Rizal"
+                },
+                {
+                    "province": "RIZAL",
+                    "city": "TAYTAY",
+                    "branch": "BRANCH LITE UNIT TAYTAY",
+                    "address": "Unit 7 & 8, A3J Building, Lot 1-B-2-A, Geronimo, Compound, Brgy. Dolores, Taytay, Rizal,"
+                },
+                {
+                    "province": "SORSOGON",
+                    "city": "SORSOGON CITY",
+                    "branch": "BRANCH LITE UNIT SORSOGON",
+                    "address": "Ground Floor, Cipriana Bldg., Magsaysay Street Brgy Sulucan Sorsogon City"
+                },
+                {
+                    "province": "TARLAC",
+                    "city": "TARLAC CITY",
+                    "branch": "BMI TARLAC BRANCH",
+                    "address": "Tarlac Filipino-Chinese Volunters,Fire Brigade Bldg. Mc Arthur Highway,Corner M.H Del Pilar St. Tarlac City"
+                },
+                {
+                    "province": "ZAMBALES",
+                    "city": "OLONGAPO CITY",
+                    "branch": "BRANCH LITE UNIT OLONGAPO",
+                    "address": "2Nd Floor, 1255 Rizal Avenue, Extension West Tapinac, Olongapo City"
+                }
+            ],
+            "VISAYAS": [
+                {
+                    "province": "AKLAN",
+                    "city": "KALIBO",
+                    "branch": "BRANCH LITE UNIT KALIBO",
+                    "address": "2Nd Floor,3J Building, Roxas Avenue Extension Andagao, Kalibo Aklan"
+                },
+                {
+                    "province": "BOHOL",
+                    "city": "TAGBILARAN CITY",
+                    "branch": "BRANCH LITE UNIT TAGBILARAN",
+                    "address": "2Nd Floor Digal Bldg., 12 Lessage St., Poblacion Ii, Tagbilaran City"
+                },
+                {
+                    "province": "CEBU",
+                    "city": "CEBU CITY",
+                    "branch": "BMI CEBU BRANCH",
+                    "address": "S&L Tanchan Bldg, 51 Colon Street, Parian, Cebu City, 6000 (Near University Of The Visayas)"
+                },
+                {
+                    "province": "CEBU",
+                    "city": "MANDAUE CITY",
+                    "branch": "BRANCH LITE UNIT MANDAUE",
+                    "address": "5Th Floor, Northside Business Hub, G Lopez Jaena Corner A.P Cortes Street, Tipolo Mandaue City"
+                },
+                {
+                    "province": "ILOILO",
+                    "city": "ILOILO CITY",
+                    "branch": "BMI ILOILO BRANCH",
+                    "address": "John A. Tan Bldg. 41-1-1 Iznart Street Iloilo City"
+                },
+                {
+                    "province": "LEYTE",
+                    "city": "TACLOBAN CITY",
+                    "branch": "BMI TACLOBAN",
+                    "address": "Oscar Dy Bldg Door 1 Real St Sagkahan District Tacloban City 6500"
+                },
+                {
+                    "province": "NEGROS OCCIDENTAL",
+                    "city": "BACOLOD CITY",
+                    "branch": "BRANCH LITE UNIT BACOLOD",
+                    "address": "Cempco Bldg. Cor Ciocon Rd Mabini St Brgy 26 Bacolod City"
+                },
+                {
+                    "province": "NEGROS OCCIDENTAL",
+                    "city": "KABANKALAN CITY",
+                    "branch": "BRANCH LITE UNIT KABANKALAN",
+                    "address": "Door 1, 2Nd Floor Ajm Building Jy Perez Street, Kabankalan City, Negros Occidental"
+                },
+                {
+                    "province": "NEGROS ORIENTAL",
+                    "city": "DUMAGUETE CITY",
+                    "branch": "BRANCH LITE UNIT DUMAGUETE",
+                    "address": "Unit 203, 2Nd Floor , Bricktown Center Building, Negros South Rd., Real St., Corner Aldecoa Drive, Brgy. Daro, Dumaguete City, Negros Oriental"
+                },
+                {
+                    "province": "SAMAR",
+                    "city": "CALBAYOG CITY",
+                    "branch": "BRANCH LITE UNIT CALBAYOG",
+                    "address": "Room 202, 2Nd Floor, Ortiz Building, J.D Avelino St., Barangay Central, Calbayog City"
+                }
+            ],
+            "MINDANAO": [
+                {
+                    "province": "AGUSAN DEL NORTE",
+                    "city": "BUTUAN CITY",
+                    "branch": "BMI BUTUAN BRANCH",
+                    "address": "Lucibenino Bdlg. J.C Aquino Ave. Brgy. Lapu-Lapu Butuan City Agusan Del Norte"
+                },
+                {
+                    "province": "AGUSAN DEL SUR",
+                    "city": "SAN FRANCISCO",
+                    "branch": "BRANCH LITE UNIT SAN FRANCISCO",
+                    "address": "2Nd Floor, Albienda Bldg, Brgy 4, San Francisco, Agusan Del Sur"
+                },
+                {
+                    "province": "BUKIDNON",
+                    "city": "VALENCIA CITY",
+                    "branch": "BMI VALENCIA BRANCH",
+                    "address": "AMQ Building Sayre Highway, Poblacion Valencia City Bukidnon"
+                },
+                {
+                    "province": "DAVAO DEL NORTE",
+                    "city": "TAGUM CITY",
+                    "branch": "BRANCH LITE UNIT TAGUM",
+                    "address": "2Nd Floor Reno Building Osmeña Street, Poblacion, Tagum City"
+                },
+                {
+                    "province": "DAVAO DEL SUR",
+                    "city": "DAVAO CITY",
+                    "branch": "BMI DAVAO BRANCH",
+                    "address": "CV Realty Building Quimpo Blvd. Brgy. Bucana Ecoland, Matina Davao City"
+                },
+                {
+                    "province": "DAVAO DEL SUR",
+                    "city": "DAVAO CITY",
+                    "branch": "BRANCH LITE UNIT CALINAN",
+                    "address": "Davao-Bukidnon National Highway, Calinan District, Davao City, Davao Del Sur"
+                },
+                {
+                    "province": "DAVAO DEL SUR",
+                    "city": "DIGOS CITY",
+                    "branch": "BRANCH LITE UNIT DIGOS",
+                    "address": "2Nd Floor, Door 12, Dasurbaco Building, Magsaysay Corner Jacinto St., Digos City"
+                },
+                {
+                    "province": "LANAO DEL NORTE",
+                    "city": "ILIGAN CITY",
+                    "branch": "BRANCH LITE UNIT ILIGAN",
+                    "address": "B6 JKJ Building Macapagal Ave. Tubod Iligan City"
+                },
+                {
+                    "province": "MISAMIS ORIENTAL",
+                    "city": "CAGAYAN DE ORO CITY",
+                    "branch": "BMI CAGAYAN DE ORO BRANCH",
+                    "address": "Jimar Bldg. Don A. Velez St. Corner Gomez St. Cagayan De Oro City 9000"
+                },
+                {
+                    "province": "NORTH COTABATO",
+                    "city": "KIDAPAWAN CITY",
+                    "branch": "BRANCH LITE UNIT KIDAPAWAN",
+                    "address": "Door 9A, Purok Guava, Singao Road, Poblacion Kidapawan City"
+                },
+                {
+                    "province": "SOUTH COTABATO",
+                    "city": "GENERAL SANTOS CITY",
+                    "branch": "BMI GENERAL SANTOS BRANCH",
+                    "address": "RDH#02 RDRDC Bldg Santiago Blvd General Santos City."
+                },
+                {
+                    "province": "ZAMBOANGA DEL SUR",
+                    "city": "PAGADIAN CITY",
+                    "branch": "BMI PAGADIAN BRANCH",
+                    "address": "ZMS Bldg. Rizal Avenue Pagadian City Zamboanga Del Sur 7016"
+                },
+                {
+                    "province": "ZAMBOANGA DEL SUR",
+                    "city": "ZAMBOANGA CITY",
+                    "branch": "BMI ZAMBOANGA BRANCH",
+                    "address": "Gf RHW Bldg., Mayor Jaldon St., Brgy. Cañelar Zamboanga City, Zamboanga Del Sur"
+                },
+                {
+                    "province": "ZAMBOANGA SIBUGAY",
+                    "city": "IPIL",
+                    "branch": "BRANCH LITE UNIT IPIL",
+                    "address": "Stall #7, 3Rd Floor, 4M Building, Purok Kaimito, Tirso Babiera, Ipil, Zamboanga Sibugay"
+                }
+            ]
+        }
+    }
+}
