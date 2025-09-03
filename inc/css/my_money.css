@@ -1,0 +1,77 @@
+section.banner .content{
+    max-width: 1033px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section.banner{
+    max-height: 700px;
+}
+section:not(.banner) .content {
+    padding: 5px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section:not(.banner) .content a.orange_btn {
+    position: absolute;
+    bottom: 15px;
+}
+
+section:not(.banner) .main_content {
+    padding: 15px 15px 74px 15px;
+    height: 100%;
+    position: relative;
+}
+
+section:not(.banner) img.icons {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+section:not(.banner) img:not(.icons) {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+section:not(.banner) .image {
+    position: relative;
+}
+
+section:not(.banner) .row {
+    gap: 24px 0;
+}
+
+section:not(.banner) .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 50px;
+    margin-bottom: calc(30px - 24px);
+}
+
+section:not(.banner) h2 {
+    margin-bottom: 20px;
+}
+
+section.personal_account, section.consumer_loans {
+    background-color: #F2F2F2;
+}
+
+@media (max-width: 767px) {
+    section:not(.banner) .main_content h3 {
+        height: auto !important;
+    }
+}

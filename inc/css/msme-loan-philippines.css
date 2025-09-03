@@ -4,7 +4,6 @@ section.loan_feature .row {
 
 section.loan_feature .header {
     max-width: 650px;
-    margin-bottom: calc(60px - 24px);
 }
 
 section.loan_feature .content {
@@ -16,7 +15,7 @@ section.loan_feature .content {
 
 section.loan_feature .content_bg {
     background: url('../../assets/images/bank_motorcycle_loan_philippines/contact_us_bg.jpg')no-repeat center center/cover;
-    margin-top: 100px;
+    margin-top: calc(100px - 24px);
     padding: 150px 100px;
 }
 
@@ -40,11 +39,17 @@ section.required_documents li {
     font-weight: 600;
     line-height: 35px;
     margin-bottom: 20px;
+    list-style: none;
 }
 
 section.required_documents li:last-child,
 section.required_documents ol {
     margin-bottom: 0;
+}
+
+section.required_documents ol{
+    padding-left: 0;
+    margin-top: 60px;
 }
 
 section.required_documents li:not(:first-child) {
@@ -83,7 +88,12 @@ section.application_proccess span.count {
 
 section.application_proccess .header {
     max-width: 650px;
-    margin-bottom: calc(60px - 24px);
+
+
+}
+
+section.product_and_services{
+    background-color: white !important;
 }
 
 section.application_proccess .row {
@@ -100,4 +110,142 @@ section.understanding_the_msme .content {
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.95);
     margin: 77px 0;
+}
+
+section.understanding_the_msme .content h1{
+    color: #4A4A4A;
+}
+
+section.benefits_of_mse_loan .header{
+    max-width: 1076px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.benefits_of_mse_loan,
+section.why_should_you_choose_bank_of_makati {
+    background-color: #F1F2F2;
+}
+
+section.benefits_of_mse_loan .content{
+    padding: 30px;
+    border-radius: 4px;
+    background: #FFF;
+    height: 100%;
+}
+
+section.benefits_of_mse_loan .icons{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+section.benefits_of_mse_loan svg{
+    width: 25px;
+    height: 25px;
+}
+
+section.benefits_of_mse_loan .row{
+    gap: 24px 0;
+}
+
+
+
+
+
+section.why_should_you_choose_bank_of_makati .content{
+    max-width: 650px;
+}
+
+
+section.faqs .accordion-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 30px;
+}
+
+section.faqs .accordion-body {
+    padding: 0px 30px 30px 30px;
+}
+
+section.faqs .accordion-item {
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.faqs .row {
+    gap: 24px 0;
+}
+
+section.faqs .header {
+    max-width: 889px;
+}
+
+section.faqs ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 40px;
+}
+
+section.faqs ul>li {
+    width: calc(50% - 20px);
+}
+
+@media (max-width: 1200px) {
+    section.why_should_you_choose_bank_of_makati .content{
+        max-width: 100%;
+    }
+
+    section.loan_feature .content_bg{
+        padding: 70px 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    section.loan_feature .content_bg{
+        margin-top: calc(70px - 24px);
+    }
+
+    section.required_documents ol{
+        margin-top: 50px;
+    }
+
+    section.understanding_the_msme .content{
+        max-width: 100%;
+        background-color: rgb(255 255 255 / 80%);
+    }
+}
+
+@media (max-width: 767px) {
+    section.loan_feature .content_bg{
+        padding: 50px 20px;
+        margin-top: calc(50px - 24px);
+    }
+
+    section.required_documents ol{
+        margin-top: 40px;
+    }
+
+    section.understanding_the_msme .content{
+        margin: 35px 0;
+        padding: 50px 25px;
+    }
+
+    section.faqs ul{
+        flex-direction: column;
+    }
+    section.faqs ul li{
+        width: 100%;
+    }
+
+    section.application_proccess .content h3{
+        height: auto !important;
+    }
 }

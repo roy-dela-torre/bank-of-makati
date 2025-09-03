@@ -1,0 +1,338 @@
+section.banner .content {
+    max-width: 924px !important;
+}
+
+section.bmi_milestone .item .content {
+    max-width: 650px;
+    margin: 0 0 0 auto;
+    min-height: 230px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+section.bmi_milestone div#mile_stone {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 60px 0;
+}
+
+section.bmi_milestone .owl-dots {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 0;
+}
+
+section.bmi_milestone .owl-dots::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - .5px);
+    left: 0;
+    border-top: 1px solid #1B4298;
+    height: 1px;
+    width: 100%;
+}
+
+section.bmi_milestone button.owl-dot span {
+    margin: 0 10px !important;
+    background-color: transparent !important;
+    border: 1px solid #1B4298;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+section.bmi_milestone button.owl-dot {
+    background-color: white;
+    z-index: 1;
+}
+
+section.bmi_milestone button.owl-dot.active span {
+    background-color: #1B4298 !important;
+}
+
+section.bmi_milestone .item .content button:not(:disabled) {
+    border: 1px solid #2B61D9;
+    background: var(--Blue, #1B4298);
+}
+
+section.bmi_milestone .item .content button:not(:disabled) svg path {
+    fill: white;
+}
+
+section.bmi_milestone .item .content button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+section.bmi_milestone .item .content button:disabled {
+    border: 1px solid #E3E3E3;
+    background: #FFF;
+}
+
+section.bmi_milestone .item .content button:disabled svg path {
+    fill: #4A4A4A;
+}
+
+section.bmi_milestone .header {
+    max-width: 1134px;
+}
+
+section.bmi_milestone{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+section.vission_and_mission .content {
+    height: 100%;
+    padding: 30px;
+    border-radius: 4px;
+    background: #EEF3FF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+
+    @media(width < 767px) {
+        padding: 30px 20px;
+    }
+}
+
+section.vission_and_mission .row {
+    gap: 24px 0;
+}
+
+section.vission_and_mission .content span.count {
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--Blue, #1B4298);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+section.what_we_are .content {
+    max-width: 650px;
+}
+
+section#who-we-are .list_content img{
+    width: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
+section.what_we_are .image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+section.what_we_are h3 {
+    font-size: 16px;
+    line-height: normal;
+}
+
+section.what_we_are .group_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    margin-top: 60px;
+}
+
+section.what_we_are .group_content>div>* {
+    margin-bottom: 0;
+}
+
+section.what_we_are .group_content>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+section.board_of_director .row,
+section.investor_relation .row {
+    gap: 60px 0;
+}
+
+section.board_of_directors .content.right,
+section.investor_relation .content.right {
+    max-width: 650px;
+    margin: 0 0 0 auto;
+}
+
+section.board_of_directors .content,
+section.investor_relation .content {
+    max-width: 650px;
+}
+
+section.board_of_directors .content a,
+section.investor_relation .conten a {
+    margin-top: 30px;
+}
+
+section.board_of_director {
+    background-color: #F2F2F2;
+}
+
+section.investor_relation li a,
+section.investor_relation li button {
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+
+section.investor_relation ul {
+    margin: 20px 0;
+}
+
+section.investor_relation .bottom_content {
+    margin-top: 60px;
+}
+
+section.investor_relation .bottom_content p {
+    margin-bottom: 0;
+}
+
+section.contact_us .content_bg {
+    margin-top: 100px;
+
+    @media (width < 991px) {
+        margin-top: 70px;
+    }
+
+    @media(width < 767px) {
+        margin-top: 50px;
+    }
+}
+
+div#view_board_of_director .main_content img,
+div#organizational_chart .main_content img {
+    height: 90%;
+    object-fit: contain;
+
+    @media (width < 767px) {
+        width: calc(100% - 40px);
+    }
+}
+
+div#view_board_of_director .main_content,
+div#organizational_chart .main_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+button.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (width < 767px) {
+        right: 40px;
+    }
+}
+
+
+
+
+@media (max-width: 1200px) {
+    section.what_we_are .content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    section.bmi_milestone .item .row {
+        gap: 30px 0;
+    }
+
+    section.bmi_milestone .item .content,
+    section.investor_relation .content {
+        max-width: 100% !important;
+    }
+
+    section.what_we_are .group_content,
+    section.investor_relation .bottom_content {
+        margin-top: 50px;
+    }
+
+    section.bmi_milestone div#mile_stone,
+    section.board_of_director .row,
+    section.investor_relation .row {
+        gap: 50px 0;
+    }
+
+    section.vission_and_mission .row {
+        gap: 24px 0;
+    }
+
+    section.vission_and_mission .header {
+        margin-bottom: calc(50px - 24px);
+    }
+}
+
+@media (max-width: 767px) {
+
+    section.what_we_are .group_content,
+    section.investor_relation .bottom_content {
+        margin-top: 40px;
+    }
+
+    section.bmi_milestone div#mile_stone,
+    section.board_of_director .row,
+    section.investor_relation .row {
+        gap: 40px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    section.bmi_milestone button.owl-dot span {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    section.bmi_milestone .owl-dots {
+        display: none;
+    }
+
+    section.bmi_milestone .header {
+        margin-bottom: 40px;
+    }
+}

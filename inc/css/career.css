@@ -1,0 +1,363 @@
+section.banner {
+    max-height: 500px;
+}
+
+section.banner .content {
+    max-width: 922px !important;
+}
+
+section.career div#careerAccordion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    @media (width < 991px){
+        flex-direction: column;
+    }
+}
+
+section.career div#careerAccordion>div {
+    width: calc(50% - 12px);
+    border: none;
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0 12px 18.3px 0 rgba(0, 0, 0, 0.05);
+    @media(width < 991px){
+        width: 100%;
+    }
+}
+
+section.career button.accordion-button {
+    padding: 30px;
+}
+
+section.career div#careerAccordion>div:not(.open) {
+    height: auto;
+}
+
+section.career .accordion-item h3{
+    width: calc(100% - 30px);
+}
+
+section.career div#careerAccordion>div.open,
+section.career button.accordion-button.collapsed {
+    border-style: solid !important;
+    border-color: #F2F2F2 !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+    overflow: hidden;
+    background-color: transparent !important;
+}
+
+section.career .row {
+    gap: 24px 0;
+}
+
+section.career div#careerAccordion>div .group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+section.career .header {
+    max-width: 700px;
+}
+
+section.career .group>div {
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+section.career .group span {
+    color: #4A4A4A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.career .accordion-item.open:first-of-type {
+    border: none;
+}
+
+section.career .accordion-button::after {
+    position: absolute;
+    top: 42px;
+    right: 30px;
+}
+
+section.career .accordion-body {
+    padding: 0 30px 30px 30px;
+}
+
+section.career .accordion-body ul {
+    margin-bottom: 30px;
+}
+
+
+section.testimonial img {
+    width: 100px;
+    object-fit: contain;
+    height: 100px;
+}
+
+section.testimonial {
+    background-color: #F2F2F2;
+}
+
+section.testimonial .owl-carousel .owl-stage-outer{
+    padding: 10px 0;
+}
+
+section.testimonial .item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+section.testimonial .item img {
+    margin-bottom: 30px;
+    width: fit-content;
+    object-position: left;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+section.testimonial .header .left_content {
+    max-width: 650px;
+}
+
+section.testimonial .header {
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+section#testimonial_section .owl-nav button {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    border: 1px solid #E3E3E3;
+    background: #FFF;
+    padding: 0;
+}
+
+section#testimonial_section .owl-nav button svg path {
+    fill: #4A4A4A;
+}
+
+section#testimonial_section .owl-nav button:hover svg path {
+    transition: .5s ease all;
+    fill: white;
+    -webkit-transition: .5s ease all;
+    -moz-transition: .5s ease all;
+    -ms-transition: .5s ease all;
+    -o-transition: .5s ease all;
+}
+
+section#testimonial_section .owl-nav button:hover:hover {
+    transition: .5s ease all;
+    border: 1px solid #2B61D9;
+    background: var(--Blue, #1B4298);
+    -webkit-transition: .5s ease all;
+    -moz-transition: .5s ease all;
+    -ms-transition: .5s ease all;
+    -o-transition: .5s ease all;
+}
+
+section#testimonial_section .owl-nav {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+section.contact_us {
+    background-color: #F2F2F2 !important;
+}
+
+div#apply_now .content {
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    max-width: 900px;
+}
+
+div#apply_now .content form {
+    display: flex;
+    flex-direction: column;
+}
+
+div#apply_now .content .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+div#apply_now .content .header button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+div#apply_now .wpcf7-list-item label {
+    display: flex;
+    align-items: start;
+    gap: 0 15px;
+}
+
+div#apply_now .wpcf7-list-item label input{
+
+}
+
+div#apply_now .wpcf7-list-item label span.wpcf7-list-item-label {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    width: calc(100% - 35px);
+}
+
+div#apply_now .wpcf7-list-item label span.wpcf7-list-item-label a {
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+div#apply_now .row {
+    gap: 20px 0;
+    --bs-gutter-x: 20px;
+}
+
+div#apply_now h3 {
+    margin-bottom: 30px;
+}
+
+div#apply_now .row>div>span:not(.wpcf7-form-control-wrap) {
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+div#apply_now .form_fields+span.wpcf7-form-control-wrap label {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+div#apply_now input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #4A4A4A;
+  border-radius: 50%; /* makes it round */
+  background-color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+  top: 5px;
+}
+
+div#apply_now input[type="checkbox"]:checked {
+  background-color: var(--Blue); /* or any color */
+}
+
+div#apply_now .form_fields+span.wpcf7-form-control-wrap a {
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration: underline;
+}
+
+div#apply_now .wpcf7-list-item {
+    margin: 0 0 20px 0;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 1px;
+    border: 1px solid #C1C1C1;
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 178.571% */
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"])::placeholder,
+textarea::placeholder {
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+@media (max-width: 991px) {
+    section.testimonial {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    section.career button.accordion-button.collapsed {
+        padding: 20px;
+    }
+
+    section.career .accordion-button::after {
+        top: 30px;
+    }
+}

@@ -1,6 +1,6 @@
-section.product_and_services {
+/* section.product_and_services {
     background-color: #F2F2F2;
-}
+} */
 
 section.product_and_services .content {
     padding: 5px;
@@ -31,7 +31,7 @@ section.product_and_services img.icons {
     border: 1px solid var(--Gray, #F2F2F2);
     background: #FFF;
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 15px;
 }
 
@@ -72,7 +72,6 @@ section.product_and_services .header {
     align-items: center;
     justify-content: space-between;
     gap: 0 50px;
-    margin-bottom: 35px;
 }
 
 section.product_and_services .left_content {
@@ -83,6 +82,8 @@ section.product_and_services h2 {
     margin-bottom: 20px;
 }
 
-section.product_and_services {
-    background-color: #F2F2F2;
+@media (max-width: 767px) {
+    section.product_and_services .main_content h3{
+        height: auto !important;
+    }
 }

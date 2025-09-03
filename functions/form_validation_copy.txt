@@ -1,0 +1,157 @@
+<?php
+// Keep your existing filters...
+add_filter('wpcf7_validate_text',      'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_text*',     'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_email',     'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_email*',    'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_textarea',  'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_textarea*', 'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_tel',       'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_tel*',      'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_url',       'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_url*',      'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_number',    'global_cf7_utf8_validation', 20, 2);
+add_filter('wpcf7_validate_number*',   'global_cf7_utf8_validation', 20, 2);
+
+/**
+ * Main validation
+ */
+function global_cf7_utf8_validation( $result, $tag ) {
+    $tag  = new WPCF7_FormTag( $tag );
+    $name = $tag->name;
+
+    // Some fields can post as arrays (e.g., repeaters). Normalize to string.
+    if ( ! isset( $_POST[ $name ] ) ) return $result;
+    $raw = $_POST[ $name ];
+    $value = is_array( $raw ) ? trim( implode( ' ', array_map( 'trim', $raw ) ) ) : trim( (string) $raw );
+
+    $type = $tag->basetype;
+
+    // Classes helper
+    $field_classes = $tag->get_option( 'class' );
+    $classes = is_array( $field_classes ) ? $field_classes : array();
+    $has_class = static function( $class ) use ( $classes ) {
+        return in_array( $class, $classes, true );
+    };
+
+    // === 1. Block non-ASCII (except for email, url, and known date fields) ===
+    $date_field_names = array( 'booking-date', 'event-date', 'equest_refund_email' ); // adjust as needed
+
+    $excluded_text_classes = array( 'corpo_bus_reg', 'borrower_bus_reg' );
+    $exclude_text = false;
+    foreach ( $excluded_text_classes as $excluded_class ) {
+        if ( $has_class( $excluded_class ) ) { $exclude_text = true; break; }
+    }
+
+    if ( ! in_array( $type, array( 'email', 'url' ), true ) && ! in_array( $name, $date_field_names, true ) && ! $exclude_text ) {
+        if ( preg_match( '/[^\x00-\x7F]/u', $value ) ) {
+            $result->invalidate( $tag, 'Please remove emojis or special characters.' );
+            return $result;
+        }
+    }
+
+    // === 2. Email ===
+    $excluded_email_classes = array( 'request_refund_email' );
+    $exclude_email = false;
+    if ( $type === 'email' ) {
+        foreach ( $excluded_email_classes as $excluded_class ) {
+            if ( $has_class( $excluded_class ) ) { $exclude_email = true; break; }
+        }
+        if ( ! $exclude_email ) {
+            $email_pattern = '/^(?!(?:(?:\x22?\x2E?\x22?)+)*$)(?!.*\.\.)[a-zA-Z0-9!#$%&\'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&\'*+\/=?^_`{|}~-]+)*@(?:(?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$/';
+            if ( ! preg_match( $email_pattern, $value ) ) {
+                $result->invalidate( $tag, 'Please enter a valid email address.' );
+                return $result;
+            }
+        }
+    }
+
+    // === 3. Tel (PH formats) ===
+    $excluded_tel_classes = array( 'borrower_contact_number', 'ref_contact', 'other_contact_loan', 'secondary_mobile_number', 'other_mobile_number' );
+    if ( 'tel' === $type ) {
+        $exclude_tel = false;
+        foreach ( $excluded_tel_classes as $excluded_class ) {
+            if ( $has_class( $excluded_class ) ) { $exclude_tel = true; break; }
+        }
+        if ( ! $exclude_tel ) {
+            $phone_pattern = '/^(?:\+?63|0)?(?:\d{2,4})[-\s.]?\d{3}[-\s.]?\d{4}$/';
+            if ( ! preg_match( $phone_pattern, $value ) ) {
+                $result->invalidate( $tag, 'Please enter a valid Philippine mobile or landline number.' );
+                return $result;
+            }
+        }
+    }
+
+    // === 4. Date (text fields used as date pickers) ===
+    if ( in_array( $name, $date_field_names, true ) ) {
+        $date_valid = (
+            preg_match( '/^\d{4}-\d{2}-\d{2}$/', $value ) || // YYYY-MM-DD
+            preg_match( '/^\d{2}\/\d{2}\/\d{4}$/', $value )   // MM/DD/YYYY
+        );
+        if ( ! $date_valid ) {
+            $result->invalidate( $tag, 'Please enter a valid date.' );
+            return $result;
+        }
+    }
+
+    // === 5. Number ===
+    $excluded_number_classes = array( 'reg_number', 'borrower_reg_number', 'borrower_contact', 'outs_balance', 'creditlimit', 'loan_amount', 'many_years' );
+    if ( 'number' === $type ) {
+        $exclude_number = false;
+        foreach ( $excluded_number_classes as $excluded_class ) {
+            if ( $has_class( $excluded_class ) ) { $exclude_number = true; break; }
+        }
+        if ( ! $exclude_number ) {
+            if ( ! preg_match( '/^\d+(\.\d+)?$/', $value ) ) {
+                $result->invalidate( $tag, 'Please enter a valid number without letters or symbols.' );
+                return $result;
+            }
+        }
+    }
+
+    // === 6. Text specials rule (your requirement) ===
+    if ( 'text' === $type ) {
+        // Skip for date pickers
+        if ( ! $has_class( 'date_picker' ) ) {
+            // CURRENTLY: block special chars, allow numbers
+            if ( preg_match( '/[^a-zA-Z0-9\s]/', $value ) ) {
+                $result->invalidate( $tag, 'Please do not include special characters.' );
+                return $result;
+            }
+
+            // If you ALSO want to block numbers, use this instead:
+            // if ( preg_match( '/[^a-zA-Z\s]/', $value ) ) {
+            //     $result->invalidate( $tag, 'Please use letters only.' );
+            //     return $result;
+            // }
+        }
+    }
+
+    return $result;
+}
+
+/**
+ * Replace CF7's generic banner with concatenated field error messages (AJAX only).
+ * This keeps everything PHP-only and shows your custom messages in the top banner.
+ */
+add_filter( 'wpcf7_ajax_json_echo', function ( $response, $result ) {
+    if ( isset( $response['status'] ) && 'validation_failed' === $response['status'] && ! empty( $response['invalidFields'] ) && is_array( $response['invalidFields'] ) ) {
+        $msgs = array();
+        foreach ( $response['invalidFields'] as $item ) {
+            if ( ! empty( $item['message'] ) ) {
+                $msgs[] = wp_strip_all_tags( (string) $item['message'] );
+            }
+        }
+        $msgs = array_unique( array_filter( $msgs ) );
+        if ( $msgs ) {
+            // Join with line breaks so CF7 shows them nicely in the response box
+            $response['message'] = implode( "\n", $msgs );
+        }
+    }
+    return $response;
+}, 20, 2 );
+
+/** Optional: Turn off browser autocomplete globally (kept from your code) */
+add_filter( 'wpcf7_form_autocomplete', function ( $autocomplete ) {
+    return 'off';
+}, 10, 1 );

@@ -1,9 +1,9 @@
 <?php get_header();
 /* Template Name: Bank Motorcyle Loan Philippines */
 $img_path = get_stylesheet_directory_uri() . '/assets/images/bank_motorcycle_loan_philippines';
-get_template_part('template/banner_php'); ?>
+//get_template_part('template/banner_php'); ?>
 
-<section class="loan_feature">
+<!-- <section class="loan_feature">
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -46,7 +46,7 @@ get_template_part('template/banner_php'); ?>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="content">
-                        <h3>Flexible Terms:</h3>
+                        <h3>Interest Rates</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
                         <ul>
                             <li>Lorem ipsum dolor sit amet consectetur</li>
@@ -80,7 +80,7 @@ get_template_part('template/banner_php'); ?>
                             <span class="text-white">Contact Us</span>
                             <h2 class="text-white">Lorem ipsum dolor</h2>
                             <p class="text-white">Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
-                            <a href="http://" target="_blank" rel="noopener noreferrer" class="orange_btn">Contact Us Now</a>
+                            <a href="<?php echo get_home_url(); ?>/contact-us/" target="_blank" rel="noopener noreferrer" class="orange_btn">Contact Us Now</a>
                         </div>
                     </div>
                 </div>
@@ -93,25 +93,25 @@ get_template_part('template/banner_php'); ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-xl-6 d-none d-xl-block">
                     <div class="image">
                         <img src="<?php echo $img_path; ?>/Required Documents.jpg" alt="Required Documents" class="img-fluid w-100">
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <div class="content ps-xl-5">
+                <div class="col-xl-6 ps-xl-5">
+                    <div class="content ps-xxl-5">
                         <span class="orange_text">Required Documents</span>
                         <h2>Lorem ipsum dolor </h2>
-                        <img src="<?php echo $img_path; ?>/Required Documents.jpg" alt="Required Documents" class="img-fluid w-100 d-block d-lg-none mb-3">
+                        <img src="<?php echo $img_path; ?>/Required Documents.jpg" alt="Required Documents" class="img-fluid w-100 d-block d-xl-none mb-20">
                         <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
                         <ol>
-                            <li>Employed individuals</li>
+                            <li>1. Employed individuals</li>
                             <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
-                            <li>Self-employed individuals</li>
+                            <li>2. Self-employed individuals</li>
                             <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
-                            <li>Overseas Filipino Workers (OFWs)</li>
+                            <li>3. Overseas Filipino Workers (OFWs)</li>
                             <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
-                            <li>Corporations or partnerships</li>
+                            <li>4. Corporations or partnerships</li>
                             <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
                         </ol>
                     </div>
@@ -121,7 +121,7 @@ get_template_part('template/banner_php'); ?>
     </div>
 </section>
 
-<section class="application_proccess">
+<section class="application_proccess pb-0">
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -156,17 +156,17 @@ get_template_part('template/banner_php'); ?>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<?php echo get_template_part('template/related_post')?>
+<?php //echo get_template_part('template/related_post') ?>
 
 <section class="bank_motorcycle_loan">
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row justify-content-end">
-                <div class="col-xl-6 col-lg-7 col-md-8">
+                <div class="col-xl-6 col-lg-7">
                     <div class="content">
-                        <h2>Bank Motorcycle Loan in the Philippines</h2>
+                        <h1>Bank Motorcycle Loan in the Philippines</h1>
                         <p>A bank motorcycle loan in the Philippines provides an accessible financing option for
                             individuals looking to purchase a motorcycle for personal or business use. The Bank of
                             Makati offers a non-collateralized loan for salaried employees and entrepreneurs.
@@ -184,11 +184,11 @@ get_template_part('template/banner_php'); ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 pe-lg-5">
-                    <div class="content pe-xl-5">
+                <div class="col-xl-6 pe-xl-5">
+                    <div class="content pe-xxl-5">
                         <h2>Importance of Bank Motorcycle Loans
                             in the Philippines</h2>
-                        <img src="<?php echo $img_path; ?>/Importance of Bank Motorcycle Loans in the Philippines.jpg" alt="Importance of Bank Motorcycle Loans in the Philippines" class="img-fluid w-100 d-block d-lg-none mb-3">
+                        <img src="<?php echo $img_path; ?>/Importance of Bank Motorcycle Loans in the Philippines.jpg" alt="Importance of Bank Motorcycle Loans in the Philippines" class="img-fluid w-100 d-block d-xl-none mb-20">
                         <p>At Bank of Makati, we offer a bank motorcycle loan in the Philippines that makes it
                             easier for you to purchase and drive the motorcycle of your dreams.</p>
                         <div class="convenience">
@@ -273,7 +273,7 @@ get_template_part('template/banner_php'); ?>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-lg-6 d-none d-xl-block">
                     <div class="iamge">
                         <img src="<?php echo $img_path; ?>/Importance of Bank Motorcycle Loans in the Philippines.jpg" alt="Importance of Bank Motorcycle Loans in the Philippines" class="img-fluid w-100">
                     </div>
@@ -287,10 +287,12 @@ get_template_part('template/banner_php'); ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="header">
-                    <h2 class="text-center">Benefits of Choosing Our Bank Motorcycle Loan in the Philippines</h2>
-                    <p class="text-center">Choosing a motorcycle loan from the Bank of Makati offers several benefits when you’re
-                        looking to purchase the motorcycle of your choice.</p>
+                <div class="col-md-12">
+                    <div class="header">
+                        <h2 class="text-center">Benefits of Choosing Our Bank Motorcycle Loan in the Philippines</h2>
+                        <p class="text-center">Choosing a motorcycle loan from the Bank of Makati offers several benefits when you’re
+                            looking to purchase the motorcycle of your choice.</p>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="content">
@@ -370,11 +372,11 @@ get_template_part('template/banner_php'); ?>
         <div class="container-fluid">
             <div class="row">
                 <div class="headeer">
-                    <h2>FAQs about Our Savings Account for Students Service</h2>
+                    <h2>FAQs about Our Bank Motorcycle Loan Service</h2>
                 </div>
                 <div class="col-lg-6">
                     <div class="accordion" id="accordion_left1">
-                        <div class="accordion-item">
+                        <div class="accordion-item open">
                             <div class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                     <h3 class="mb-0">How to get a motorcycle loan?</h3>
@@ -382,7 +384,7 @@ get_template_part('template/banner_php'); ?>
                             </div>
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" style="">
                                 <div class="accordion-body">
-                                    <p>TEnsure you have the required documents and choose the motorcycle model you want. You can either visit one of our dealer partner branches or fill out the online application form.</p>
+                                    <p>Ensure you have the required documents and choose the motorcycle model you want. You can either visit one of our dealer partner branches or fill out the online application form.</p>
                                 </div>
                             </div>
                         </div>
@@ -391,7 +393,7 @@ get_template_part('template/banner_php'); ?>
 
                 <div class="col-lg-6">
                     <div class="accordion" id="accordion_left2">
-                        <div class="accordion-item">
+                        <div class="accordion-item open">
                             <div class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
                                     <h3 class="mb-0">How to pay for a motorcycle loan?</h3>
@@ -402,10 +404,10 @@ get_template_part('template/banner_php'); ?>
                                     <p>You can make your monthly payments though the following channels:</p>
                                     <ul>
                                         <li>Bank of Makati branches nationwide</li>
-                                        <li>Motortrade or Honda Prestige branches</li>
-                                        <li>Bayad Center</li>
                                         <li>PESONET Fund transfers</li>
+                                        <li>Motortrade or Honda Prestige branches</li>
                                         <li>G-Cash</li>
+                                        <li>Bayad Center</li>
                                     </ul>
                                 </div>
                             </div>

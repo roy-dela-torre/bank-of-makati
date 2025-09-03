@@ -1,0 +1,144 @@
+section.loan_calculator h3 {
+    color: white;
+    margin-bottom: 0;
+}
+
+section.loan_calculator div.hr {
+    height: 1px;
+    background: #C1C1C1;
+    width: 100%;
+}
+
+section.loan_calculator .calculator .calculator_heading {
+    padding: 15px;
+    background-color: #1B4298;
+    text-align: center;
+}
+
+section.loan_calculator .calculator .calculator_body form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+section.loan_calculator .calculator .calculator_body form label {
+    color: #4A4A4A;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+}
+
+section.loan_calculator .table_info .table_head {
+    text-align: center;
+    background-color: #1B4298;
+    padding: 15px;
+}
+
+section.loan_calculator .table_info .table_body {
+    padding: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+section.loan_calculator .calculator_buttons {
+    gap: 20px;
+}
+
+section.loan_calculator .calculator_buttons button {
+    width: 100%;
+    padding: 12px 24px;
+    transition: .3s ease-in-out;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    border: 1px solid #F26531;
+}
+
+section.loan_calculator .calculator_buttons #btnCompute {
+    background: #F26531;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+section.loan_calculator .calculator_buttons #btnCompute:hover {
+    background: #FFA726;
+    border: 1px solid #FFA726;
+}
+
+section.loan_calculator .calculator_buttons #btnReset {
+    background: #FFF;
+    color: #F26531;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+section.loan_calculator .calculator_buttons #btnReset:hover {
+    background: #FFA726;
+    color: white;
+    border: 1px solid #FFA726;
+}
+
+section.loan_calculator #loan_amount::-webkit-outer-spin-button,
+section.loan_calculator #loan_amount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section.loan_calculator .calculator_gap {
+    row-gap: 30px;
+}
+
+section.loan_calculator table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 12px 18.3px 0 rgba(0, 0, 0, 0.05); 
+}
+section.loan_calculator th {
+    border: 1px solid #FFF;
+    background-color: #1B4298;
+    color: white;
+    padding: 15px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+}
+
+section.loan_calculator td {
+    border: 1px solid #F2F2F2;
+    color: #4A4A4A;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+    padding: 20px 15px;
+}
+
+section.loan_calculator select#loan_type, section.loan_calculator select#months_to_pay {
+    color: #4A4A4A;
+}
+
+@media (max-width: 767px) {
+    section.loan_calculator .table_body {
+        overflow-y: auto;
+    }
+
+    section.loan_calculator .table {
+        width: 986px;
+    }
+}

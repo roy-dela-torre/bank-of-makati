@@ -1,7 +1,31 @@
-section.other_blogs .row{
-    gap: 24px 0;
+section.news .small_content:not(:last-child):after {
+    background-color: #F2F2F2 !important;
 }
 
-section.other_blogs .header{
-    margin-bottom: calc(60px - 24px);
+section.other_blogs .row {
+    gap: 30px 0;
+}
+
+section.other_blogs .header {
+    margin-bottom: calc(60px - 30px);
+}
+
+section.other_blogs {
+    background-color: #F2F2F2;
+}
+
+section.other_blogs .paging {
+    margin-top: calc(60px - 30px);
+}
+
+@media (max-width: 991px) {
+    section.other_blogs .header {
+        margin-bottom: calc(50px - 30px);
+    }
+}
+
+@media (max-width: 991px) {
+    section.other_blogs .header {
+        margin-bottom: calc(40px - 30px);
+    }
 }

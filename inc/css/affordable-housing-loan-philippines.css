@@ -4,13 +4,12 @@ section.loan_feature .row {
 
 section.loan_feature .header {
     max-width: 650px;
-    margin-bottom: calc(60px - 24px);
 }
 
 
 section.loan_feature .content_bg {
     background: url('../../assets/images/bank_motorcycle_loan_philippines/contact_us_bg.jpg')no-repeat center center/cover;
-    margin-top: 100px;
+    margin-top: calc(100px - 24px);
     padding: 150px 100px;
 }
 
@@ -33,12 +32,18 @@ section.required_documents li {
     font-style: normal;
     font-weight: 600;
     line-height: 35px;
+    list-style: none;
     margin-bottom: 20px;
 }
 
 section.required_documents li:last-child,
 section.required_documents ol {
     margin-bottom: 0;
+}
+
+section.required_documents ol{
+    margin-top: 60px;
+    padding-left: 0;
 }
 
 section.required_documents li:not(:first-child) {
@@ -74,11 +79,15 @@ section.application_proccess span.count {
 
 section.application_proccess .header {
     max-width: 650px;
-    margin-bottom: calc(60px - 24px);
 }
 
 section.application_proccess .row {
     gap: 24px 0;
+}
+
+section.product_and_services{
+    background-color: white !important;
+    padding-top: 0 !important;
 }
 
 section.affordable_housing_loan .content {
@@ -88,8 +97,16 @@ section.affordable_housing_loan .content {
     background: rgba(255, 255, 255, 0.95);
 }
 
+section.affordable_housing_loan .content h1{
+    color: #4A4A4A;
+}
+
 section.affordable_housing_loan {
     background: url('../../assets/images/affordable_housing_loan/Affordable\ Housing\ Loan\ is\ Your\ First\ Step\ to\ Homeownership.jpg') no-repeat center center/cover;
+}
+
+section.how_affordable_housing .content{
+    max-width: 650px;
 }
 
 section.choose_bank_of_makati {
@@ -98,7 +115,6 @@ section.choose_bank_of_makati {
 
 section.choose_bank_of_makati .header {
     max-width: 1202px;
-    margin: 0 auto calc(60px - 24px) auto;
 }
 
 section.choose_bank_of_makati .content {
@@ -117,19 +133,15 @@ section.choose_bank_of_makati .icons {
     width: fit-content;
 }
 
+section.choose_bank_of_makati .row{
+    gap: 24px 0;
+}
+
 section.faqs_about_out_savings .accordion-button {
     background-color: transparent;
     border: none;
     box-shadow: none;
     padding: 30px;
-}
-
-section.faqs_about_out_savings .accordion-item {
-    height: 100%;
-    border-radius: 4px;
-    border: 1px solid var(--Gray, #F2F2F2);
-    background: #FFF;
-    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
 }
 
 section.faqs_about_out_savings .row {
@@ -147,17 +159,64 @@ section.faqs_about_out_savings .accordion-body{
     padding: 0 30px 30px 30px;
 }
 
-section.faqs_about_out_savings h2 {
+section.faqs_about_out_savings .header {
     max-width: 889px;
-    margin-bottom: calc(60px - 24px);
 }
 
 section.faqs_about_out_savings .accordion-item:not(.open) {
     height: auto;
 }
 
+@media (max-width: 1200px) {
+    section.loan_feature .content_bg{
+        padding: 70px 50px;
+    }
+
+    section.how_affordable_housing .content{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    section.loan_feature .content_bg{
+        margin-top: calc(70px - 24px);
+    }
+
+    section.required_documents ol{
+        margin-top: 50px;
+    }
+
+    section.affordable_housing_loan .content{
+        max-width: 100%;
+        background-color: rgb(255 255 255 / 80%);
+    }
+    
+}
+
 @media (max-width: 767px) {
     section.affordable_housing_loan .content {
         padding: 30px;
     }
+
+    section.loan_feature .content_bg{
+        margin-top: calc(50px - 24px);
+    }
+
+    section.loan_feature .content_bg{
+        padding: 50px 20px;
+    }
+
+    section.required_documents ol{
+        margin-top: 40px;
+    }
+
+    section.affordable_housing_loan .content{
+        margin: 35px 0;
+        padding: 50px 25px;
+    }
+
+    section.application_proccess .content h3{
+        height: auto !important;
+    }
+    
 }

@@ -1,0 +1,278 @@
+section.banner {
+    .content {
+        max-width: 679px !important;
+    }
+}
+
+section.communication_channel {
+    .content {
+        max-width: 650px;
+
+        @media(width < 991px) {
+            max-width: 100%;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 39px;
+
+        @media(width < 1200px) {
+            gap: 30px;
+        }
+
+        .contact_list {
+            flex: 1 1 calc(50% - 19.5px);
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px 0;
+
+            div {
+                gap: 0 20px;
+                align-items: center;
+            }
+
+            span {
+                margin-bottom: 0;
+                color: var(--Blue);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            a,
+            p {
+                color: var(--Black);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+            }
+
+            a {
+                word-break: break-all;
+            }
+
+            a:hover {
+                transition: .5 ease all;
+                -webkit-transition: .5 ease all;
+                -moz-transition: .5 ease all;
+                -ms-transition: .5 ease all;
+                -o-transition: .5 ease all;
+                color: var(--Orange);
+            }
+        }
+
+        svg {
+            width: 40px;
+        }
+    }
+
+    .row {
+        @media (width < 991px) {
+            gap: 50px 0;
+        }
+
+        @media (width < 768px) {
+            gap: 30px 0;
+        }
+    }
+}
+
+section.customer_request_form {
+    background-color: var(--Gray);
+
+    .header {
+        max-width: 776px;
+    }
+
+    .row {
+        gap: 20px 0;
+        --bs-gutter-x: 20px;
+    }
+
+    fieldset.fieldset-cf7mls.cf7mls_current_fs[data-cf7mls-order="4"],
+    fieldset.fieldset-cf7mls.cf7mls_current_fs[data-cf7mls-order="3"] {
+        .row {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .field {
+        span:not(.wpcf7-not-valid-tip) {
+            color: var(--Black, #4A4A4A);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+
+    .step-number {
+        background-color: white;
+    }
+
+    .active .step-number {
+        background: #1a3d7c;
+        color: #fff;
+    }
+
+}
+
+section.branch_locator {
+    .searh_branch {
+        padding: 30px;
+        background-color: var(--White);
+        border-radius: 2px;
+        box-shadow: 0 12px 18.3px 0 rgba(0, 0, 0, 0.05);
+
+        @media(width < 767px) {
+            padding: 30px 20px;
+        }
+    }
+
+    hr {
+        border: 1px solid #C1C1C1;
+        opacity: 1;
+        margin: 30px 0 !important;
+    }
+
+    ul.branch-detail-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0;
+        margin: 0;
+        padding: 0;
+
+        svg {
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            gap: 0 15px;
+        }
+    }
+
+    .maps {
+        img {
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+    }
+
+    div#branch-map-container iframe {
+        width: 100%;
+        height: 700px;
+    }
+}
+
+
+section.financial_consumer {
+    background-color: var(--Gray);
+
+    .content {
+        margin: 0 0 0 auto;
+        max-width: 650px;
+
+        @media(width < 991px) {
+            max-width: 100%;
+        }
+    }
+}
+
+section.your_opinion_count {
+    .header {
+        max-width: 620px;
+    }
+
+    .row {
+        gap: 24px 0;
+    }
+
+    ul#progressbar {
+        max-width: 1000px;
+        margin: 0 auto calc(60px - 24px) auto;
+
+        @media (width < 991px) {
+            margin: 0 auto calc(50px - 24px) auto;
+        }
+
+        @media (width < 767ppx) {
+            margin: 0 auto calc(40px - 24px) auto;
+        }
+    }
+
+    span.wpcf7-form-control.wpcf7-radio:not([data-name="rate"]) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .form_choices span.wpcf7-form-control.wpcf7-radio {
+        column-width: 250px;
+        max-width: 600px;
+        column-gap: 20px !important;
+        display: block !important;
+
+        span {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 0 15px;
+        }
+
+        textarea {
+            max-height: 200px;
+        }
+    }
+
+    span.wpcf7-list-item-label {
+        color: var(--Black, #4A4A4A);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    input[type="submit"] {
+        float: right;
+    }
+
+    span.wpcf7-form-control-wrap[data-name="purpose_of_visit"] {
+        display: flex;
+        align-items: center;
+    }
+
+    span.select2-selection__arrow {
+        display: block !important;
+        top: 20px;
+    }
+
+}
+
+.select2-results__option {
+    margin-bottom: 0 !important;
+}
+
+.select2-container--open .select2-dropdown--below{
+    @media(width < 575px){
+        max-width: 290px;
+    }
+}

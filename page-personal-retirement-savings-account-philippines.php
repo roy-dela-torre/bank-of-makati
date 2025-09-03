@@ -7,15 +7,15 @@ get_template_part('template/banner_php'); ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-xl-6 d-none d-xl-block">
                     <div class="image">
                         <img src="<?php echo $img_path; ?>/Personal Retirement Savings Account in the Philippines.jpg" alt="Personal Retirement Savings Account in the Philippines" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <div class="ps-xl-5 content">
-                        <h2>Personal Retirement Savings Account in the Philippines</h2>
-                        <img src="<?php echo $img_path; ?>/Personal Retirement Savings Account in the Philippines.jpg" alt="Personal Retirement Savings Account in the Philippines" class="w-100 img-fluid d-block d-lg-none mb-3">
+                <div class="col-xl-6 ps-xl-5">
+                    <div class="ps-xxl-5 content">
+                        <h2>Personal Retirement Savings Account <br class="d-none d-lg-block"> in the Philippines</h2>
+                        <img src="<?php echo $img_path; ?>/Personal Retirement Savings Account in the Philippines.jpg" alt="Personal Retirement Savings Account in the Philippines" class="w-100 img-fluid d-block d-xl-none mb-20">
                         <p>A personal retirement savings account helps you secure a stable future. It enables you
                             to contribute funds that can be strategically invested, offering opportunities for growth
                             through returns over time. This makes it an essential tool for ensuring financial stability
@@ -174,11 +174,11 @@ get_template_part('template/banner_php'); ?>
                         </p>
                         <p>With an annual interest rate of 0.625%, your money grows faster compared to many
                             traditional savings accounts. Access your funds anytime, 24/7, through BancNet
-                            ATMs—whether it’s withdrawing cash, checking your balance, or completing other</p>
+                            ATMs—whether it’s withdrawing cash, checking your balance, or completing other transactions.</p>
                         <p>For added peace of mind, your deposits are insured by the Philippine Deposit Insurance
                             Corporation (PDIC) for up to ₱500,000, ensuring the security of your savings.
                         </p>
-                        <p>Learn more about BMI’s Power Build-up Savings Account <a href="http://" target="_blank" rel="noopener noreferrer">here!</a></p>
+                        <p>Learn more about BMI’s Power Build-up Savings Account <a href="<?php echo get_home_url(); ?>/mymoney/power-savings/" target="_blank" rel="noopener noreferrer">here</a>!</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -223,7 +223,7 @@ get_template_part('template/banner_php'); ?>
                             insured by the Philippine Deposit Insurance Corporation (PDIC) for up to ₱500,000 per
                             depositor, giving you peace of mind while you grow your savings.
                         </p>
-                        <p>Learn more about our Time Deposit Account <a href="http://" target="_blank" rel="noopener noreferrer">here</a>!</p>
+                        <p>Learn more about our Time Deposit Account <a href="<?php echo get_home_url(); ?>/mymoney/peso-time-deposit/" target="_blank" rel="noopener noreferrer">here</a>!</p>
                     </div>
                 </div>
             </div>
@@ -231,19 +231,19 @@ get_template_part('template/banner_php'); ?>
     </div>
 </section>
 
-<section class="misconception_about_personal">
+<section class="misconception_about_personal pb-0">
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-xl-6 d-none d-xl-block">
                     <div class="image">
                         <img src="<?php echo $img_path; ?>/Misconceptions about Personal Retirement Savings Accounts in the Philippines.jpg" alt="Misconceptions about Personal Retirement Savings Accounts in the Philippines" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <div class="content ps-xl-5">
+                <div class="col-xl-6 ps-xl-5">
+                    <div class="content ps-xxl-5">
                         <h2>Misconceptions about Personal Retirement Savings Accounts in the Philippines</h2>
-                        <img src="<?php echo $img_path; ?>/Misconceptions about Personal Retirement Savings Accounts in the Philippines.jpg" alt="Misconceptions about Personal Retirement Savings Accounts in the Philippines" class="img-fluid d-block d-lg-none mb-3 w-100">
+                        <img src="<?php echo $img_path; ?>/Misconceptions about Personal Retirement Savings Accounts in the Philippines.jpg" alt="Misconceptions about Personal Retirement Savings Accounts in the Philippines" class="img-fluid d-block d-xl-none mb-20 w-100">
                         <p>Starting your own savings account may seem daunting, especially with the
                             misconceptions surrounding it. That’s why understanding these myths is essential.</p>
                         <div class="its_only_for_high_earns">
@@ -275,7 +275,7 @@ get_template_part('template/banner_php'); ?>
                                     <path d="M26.4382 27.0278L30.0743 24.7549C35.6969 21.2413 39.6061 15.1734 41.8062 8.77028C41.9453 8.37335 42.2313 8.04485 42.6053 7.85239C42.9793 7.65993 43.4128 7.61815 43.8167 7.73564L46.6417 8.54266C46.7547 8.57534 46.8735 8.58309 46.9898 8.56537C47.1061 8.54765 47.2172 8.50488 47.3154 8.44002L45.074 0.599985C45.0381 0.474742 44.9732 0.359727 44.8846 0.264294C44.7959 0.168862 44.6859 0.0957074 44.5637 0.0507805C44.4414 0.00585371 44.3102 -0.00957661 44.1809 0.00574465C44.0515 0.0210659 43.9276 0.066706 43.8192 0.138953L36.018 5.34026C35.8973 5.42062 35.7998 5.53131 35.7353 5.66123C35.6708 5.79114 35.6415 5.93573 35.6505 6.0805C35.6595 6.22527 35.7063 6.36515 35.7864 6.48611C35.8664 6.60707 35.9769 6.70487 36.1066 6.76971L39.7974 8.61467C38.7967 13.7332 34.0514 18.7383 29.2093 20.3888L25.5906 21.6221C25.3875 21.6931 25.2116 21.8258 25.0875 22.0017C24.9635 22.1775 24.8974 22.3877 24.8986 22.6029V26.1455C24.8951 26.3269 24.9404 26.5059 25.0298 26.6638C25.1193 26.8217 25.2495 26.9526 25.407 27.0428C25.5644 27.1331 25.7432 27.1793 25.9246 27.1766C26.106 27.174 26.2834 27.1226 26.4382 27.0278Z" fill="#FFC239" />
                                 </svg>
                             </div>
-                            <h3>It’s Only for High-earners</h3>
+                            <h3>It's Only for High-earners</h3>
                             <p>Many people believe that only those with high incomes can save for retirement. Anyone
                                 can start saving, regardless of their income level. Even small contributions made early
                                 on can grow significantly over time due to the power of compounding interest.</p>
@@ -320,10 +320,10 @@ get_template_part('template/banner_php'); ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 pe-lg-5">
-                    <div class="content pe-xl-5">
+                <div class="col-xl-6 pe-xl-5">
+                    <div class="content pe-xxl-5">
                         <h2>Invest in Your Future with Bank of Makati’s Personal Retirement Savings Account</h2>
-                        <img src="<?php echo $img_path; ?>/Invest in Your Future with Bank of Makati’s Personal Retirement Savings Account.jpg" alt="Invest in Your Future with Bank of Makati’s Personal Retirement Savings Account" class="img-fluid d-block d-lg-none mb-3 w-100">
+                        <img src="<?php echo $img_path; ?>/Invest in Your Future with Bank of Makati’s Personal Retirement Savings Account.jpg" alt="Invest in Your Future with Bank of Makati’s Personal Retirement Savings Account" class="img-fluid d-block d-xl-none mb-20 w-100">
                         <p>With a personal retirement savings account in the Philippines, you’re taking control of
                             your future, providing peace of mind that comes from knowing you’re saving for a
                             comfortable and independent retirement.
@@ -332,7 +332,7 @@ get_template_part('template/banner_php'); ?>
                             can feel confident that you&#39;re securing the future you deserve.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-xl-6 d-none d-xl-block">
                     <div class="image">
                         <img src="<?php echo $img_path; ?>/Invest in Your Future with Bank of Makati’s Personal Retirement Savings Account.jpg" alt="Invest in Your Future with Bank of Makati’s Personal Retirement Savings Account" class="img-fluid">
                     </div>
@@ -343,7 +343,7 @@ get_template_part('template/banner_php'); ?>
                             <h2 class="text-white">Start Saving for Your Future with the Bank of Makati</h2>
                             <p class="text-white">Take control of your financial future today with Bank of Makati’s personal retirement
                                 savings account in the Philippines. Let us help you plan for a secure and comfortable
-                                retirement—because your future deserves a solid foundation. Contact us today to learn more!</p>
+                                retirement—because your future deserves a solid foundation. <a href="<?php echo get_home_url(); ?>/contact-us/" target="_blank" rel="noopener noreferrer">Contact us today</a> to learn more!</p>
                         </div>
                     </div>
                 </div>

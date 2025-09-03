@@ -15,11 +15,16 @@ section.banner .content {
 
 section.banner a {
     margin-top: 20px;
+    text-align: center;
 }
 
 section.banner p{
     color: white;
-    text-align: center
+    text-align: center;
+}
+
+section.banner .content p:last-of-type{
+    margin-bottom: 0;
 }
 
 @media (max-width: 767px) {

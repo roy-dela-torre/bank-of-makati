@@ -1,0 +1,120 @@
+<div class="form owl-carousel owl-theme">
+
+    <!-- Step 1: Data Privacy Statement and Consent Form -->
+    <div class="form_step1">
+        <h3 class="mb-30">Data Privacy Statement and Consent Form</h3>
+        <p>The Bank of Makati (A Savings Bank), Inc. (BMI) recognizes its responsibilities under Republic Act No. 10173,
+            also known as the Data Privacy Act of 2012. Personal data obtained from this digital platform is entered
+            and stored within BMI's authorized information system, and will only be accessed by BMI-authorized
+            personnel.
+            BMI has instituted appropriate security measures to ensure the protection of the personal data submitted
+            herein.
+            All collected personal data will be kept in accordance with BMI's retention policy.
+            Users of this digital platform may exercise their privacy rights, including the right to be informed,
+            the right to object, the right to rectification, the right to erasure, the right to file a complaint,
+            and the right to damages. For more details, visit
+            <a href="https://www.bankofmakati.com.ph" target="_blank">www.bankofmakati.com.ph</a>.
+        </p>
+
+        <p>By clicking the "I Agree" button, I consent to the processing of my information for my refund request.
+            I confirm that the information provided is true, correct, and complete. I understand that I may be contacted
+            for further verification if needed.</p>
+
+        <h4>Data Privacy and Consent</h4>
+        <div class="choice_wrapper">
+            [acceptance consent-accept optional] I Agree [/acceptance]
+        </div>
+        <button type="button" class="orange_btn next_step">Next</button>
+    </div>
+
+    <!-- Step 2: Borrower’s Information and Contact Details -->
+    <div class="form_step2">
+        <div class="form_header">
+            <h3 class="mb-30">Borrower’s Information and Contact Details</h3>
+        </div>
+        <div class="form_wrapper">
+            [text* full_name placeholder "Full Name (Required)"]
+            [tel* mobile_number placeholder "Primary Mobile Number (Required)"]
+            [tel second_mobile_number placeholder "Secondary Contact Number"]
+            [email* email_address placeholder "Email Address"]
+
+            <p>
+                Please submit a valid ID as listed in the
+                <button type="button" class="orange_text text-decoration-underline" popovertarget="attached_image"
+                    popovertargetaction="toggle" style="cursor: pointer;">
+                    attached image
+                </button>.
+                Requests with invalid documents may experience processing delays.
+            </p>
+            [file* valid_id filetypes:image/* limit:1mb]
+        </div>
+        <div class="group_button">
+            <button type="button" class="transparent_btn prev_step">Back</button>
+            <button type="button" class="orange_btn next_step">Next</button>
+        </div>
+    </div>
+
+    <!-- Step 3: Account Information -->
+    <div class="form_step3">
+        <h3 class="mb-30">Account Information</h3>
+        <p>Please ensure the correct account number is provided. Incorrect details may delay the processing of your request.</p>
+        <div class="form_wrapper">
+            [number* account_number minlength:10 maxlength:10 placeholder "10 Digit Account Number (Required)"]
+            <p>Please enter the maturity date stated in your Loan Payment Schedule, Statement of Account, or Promissory Note.</p>
+            [text* maturity_date id:maturity_date placeholder "Maturity Date (Required)"]
+            <p>Please enter the loan term as stated in your Loan Payment Schedule, Statement of Account, or Promissory Note.</p>
+            [select loan_term first_as_label "Loan Term (Required)" "12 Months" "18 Months" "24 Months" "30 Months" "36 Months" "42 Months" "48 Months"]
+            [select* excess_payment placeholder first_as_label "Exact Excess Payment Amount (Required)" "Equal to or less than P5,000" "More than P5,000"]
+            [select refund_amount first_as_label "Requested Refund Amount (Required)" "Full Refund" "Partial Refund"]
+        </div>
+        <div class="group_button">
+            <button type="button" class="transparent_btn prev_step">Back</button>
+            <button type="button" class="orange_btn next_step">Next</button>
+        </div>
+    </div>
+
+    <!-- Step 4: Mode of Receipt -->
+    <div class="form_step4">
+        <h3 class="mb-30">Mode of Receipt</h3>
+        <div class="form_wrapper">
+            [select* mode_of_receipt placeholder "Please select your preferred mode of receipt (Required)" "DEPOSIT TO ACCOUNT (Selected Banks)" "ISSUANCE OF CHECK"]
+        </div>
+
+        <div class="group_button">
+            <button type="button" class="transparent_btn prev_step">Back</button>
+            <button type="button" class="orange_btn next_step">Next</button>
+        </div>
+
+        [group deposite_to_accound]
+            <h3 class="mb-30">Deposit To Account</h3>
+            [select* bank first_as_label "Bank (Required)"  "Bank of Makati (A Savings Bank), Inc. " "Banco de Oro (BDO)" "Bank of the Philippine Island (BPI)" "China Banking Corporation (Chinabank)" "East West Bank" "Metrobank" "Security Bank" "Philippine National Bank (PNB)" "Rizal Commercial Banking Corporation (RCBC)" "Unionbank"]
+            [text* bank_branch placeholder "Bank Branch (Example - Dian Makati Branch) (Required)"]
+            [number* bank_account_number minlength:10 maxlength:10 placeholder "Bank Account Number (Required)"]
+            [text* type_of_account placeholder "Type of Account (Required)"]
+            <p>Please make sure that the bank account name and account number provided are correct</p>
+            [acceptance consent-accept optional] I confirm that the details are correct [/acceptance]
+        [/group]
+
+        [group request_for_issuance_check]
+            <h3 class="mb-30">Request for Issuance Of Check</h3>
+            [select* bmi_branch first_as_label "Please select from any BMI Branches as pick-up location (Required)" "NCR" "LUZON (except NCR)" "VISAYAS" "MINDANAO"]
+            [select* ncr first_]
+        [/group]
+    </div>
+    <!-- Step 5:Data Privacy Statement and Consent Form -->
+    <div class="form_step5">
+        <h3 class="mb-30">Data Privacy Statement and Consent Form</h3>
+        <div class="form_wrapper">
+            [select* bank "Bank (Required)" "Bank of Makati Branch" "Motortrade Dealer"]
+            [text* bank_branch placeholder "Bank Branch (Example: Dian Makati Branch) (Required)"]
+            [text* bank_account_number placeholder "Bank Account Number (Required)"]
+            [select* account_type "Account Type (Required)" "Savings" "Current"]
+            <p>Ensure the bank account name and number provided are correct.</p>
+            [acceptance acceptance-201] I confirm that the details are correct [/acceptance]
+        </div>
+        <div class="group_button">
+            <button type="button" class="transparent_btn prev_step">Back</button>
+            [submit class:orange_btn class:text-white "Submit"]
+        </div>
+    </div>
+</div>

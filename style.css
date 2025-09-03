@@ -1,0 +1,8 @@
+table.fixed {
+    table-layout: auto;
+}
+
+.table-structure thead tr th{
+    width: 100%;
+    white-space: pre;
+}

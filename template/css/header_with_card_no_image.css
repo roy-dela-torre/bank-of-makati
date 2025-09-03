@@ -1,0 +1,63 @@
+section.header_with_card_no_image .header {
+    max-width: 930px;
+}
+
+section.header_with_card_no_image .row {
+    gap: 24px 0;
+}
+
+section.header_with_card_no_image .content {
+    height: 100%;
+    padding: 30px;
+    border-radius: 4px;
+    background: #FFF;
+}
+
+section.header_with_card_no_image {
+    background-color: #F2F2F2;
+}
+
+section.header_with_card_no_image .content_bg {
+    background: url('../../assets/images/savings_account_for_studens/Contact\ Us.jpg')no-repeat center center/cover;
+    margin-top: 100px;
+    padding: calc(150px - 24px) 100px;
+    border-radius: 8px;
+}
+
+section.header_with_card_no_image .content_bg .main_content{
+    max-width: 650px;
+}
+
+section.header_with_card_no_image .content_bg p{
+    margin-bottom: 30px;
+}
+
+section.header_with_card_no_image .content_numbers {
+    border-radius: 3px;
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section.header_with_card_no_image .content_numbers span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #1B4298;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    section.header_with_card_no_image .content_bg {
+        padding: 70px 50px;
+    }
+}

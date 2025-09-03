@@ -1,3 +1,57 @@
+div#pop_up .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 24px 0;
+    padding: 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    overflow: hidden;
+    max-width: 980px;
+    border: none;
+    background-color: transparent;
+}
+
+div#pop_up .content .main_content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    justify-content: center;
+    grid-column: span 2;
+}
+
+div#pop_up .content .main_content p {
+    margin-bottom: 20px;
+}
+
+div#pop_up .content img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+div#pop_up .content .main_content button.transparent_btn {
+    color: white;
+    border: 1px solid #FFF;
+}
+
+div#pop_up .content .main_content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+div#pop_up .content .image {
+    max-height: 600px;
+}
+
+
 section.banner button svg {
     display: flex;
     align-items: center;
@@ -101,6 +155,10 @@ section.product_and_services .categories ul#product_and_services li>button:hover
     border-color: #FFA726;
 }
 
+section.product_and_services .categories ul#product_and_services li {
+    margin-bottom: 0;
+}
+
 section.product_and_services {
     background-color: #F2F2F2;
 }
@@ -139,7 +197,7 @@ section.product_and_services div#myTabContent img.icons {
 }
 
 section.product_and_services div#myTabContent img:not(.icons) {
-    max-height: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 2px;
 }
@@ -152,15 +210,18 @@ section.product_and_services div#myTabContent .row {
     gap: 24px 0;
 }
 
-section.product_and_services .group_button button:disabled svg path {
+section.product_and_services .group_button button:disabled svg path,
+section.product_and_services div#post_carousel button:disabled svg path {
     fill: #4A4A4A;
 }
 
-section.product_and_services .group_button button:disabled {
+section.product_and_services .group_button button:disabled,
+section.product_and_services div#post_carousel button:disabled {
     background-color: white;
 }
 
-section.product_and_services .group_button button {
+section.product_and_services .group_button button,
+section.product_and_services div#post_carousel button {
     border: none;
     width: 35px;
     height: 35px;
@@ -176,6 +237,16 @@ section.product_and_services .header {
     justify-content: space-between;
     gap: 0 50px;
     margin-bottom: 35px;
+
+    @media(max-width: 1200px) {
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+    }
+
+    @media(max-width: 767px) {
+        gap: 0;
+    }
 }
 
 section.product_and_services .left_content {
@@ -187,6 +258,14 @@ section.product_and_services .content_bg {
     padding: 150px 100px;
     background: url('../../assets/images/homepage/Calculate\ Your\ Loan\ Easily\ with\ Us.jpg')no-repeat center center/cover;
     margin-top: 100px;
+
+    @media(width < 991px) {
+        margin-top: 70px;
+    }
+
+    @media(width < 767px) {
+        margin-top: 50px;
+    }
 }
 
 section.product_and_services .main_content {
@@ -194,7 +273,7 @@ section.product_and_services .main_content {
 }
 
 section.product_and_services .main_content a {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 section.product_and_services h2 {
@@ -268,6 +347,29 @@ section.why_partnet_with_bmi .content>div img {
     margin-bottom: 20px;
 }
 
+section.news .main_content span {
+    color: #1B4298;
+    color: var(--Blue, #1B4298);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    /* 156.25% */
+}
+
+section.news .small_content .post_content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section.news {
+    background-color: var(--Gray);
+}
+
 
 section.contact_us .main_content {
     max-width: 960px;
@@ -286,9 +388,14 @@ section.contact_us .content_bg p {
     margin-bottom: 30px;
 }
 
-section.contact_us form p {
+section.contact_us form {
     display: flex;
-    gap: 0 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    @media(width < 575px) {
+        align-items: center;
+    }
 }
 
 section.contact_us input:not(input[type="submit"]) {
@@ -319,12 +426,23 @@ section.contact_us .wpcf7-not-valid-tip {
 }
 
 section.contact_us form span.wpcf7-form-control-wrap {
-    width: calc(50% - 65px);
+    width: calc(50% - 80px);
     max-width: calc(100% - 7.5px);
 }
 
 section.contact_us form span.wpcf7-spinner {
     display: none;
+}
+
+section.contact_us .wpcf7 form .wpcf7-response-output {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    text-align: center;
 }
 
 section.contact_us input:not(input[type="submit"]).wpcf7-not-valid {
@@ -341,12 +459,12 @@ section.contact_us .head_office {
     margin: 60px 0 30px 0;
 }
 
-section.contact_us .group_button {
-    margin-top: 30px;
-}
-
 section.contact_us .content>div img {
     margin-bottom: 20px;
+}
+
+section.contact_us p a:hover {
+    color: #FFA726;
 }
 
 div#exampleModal .modal-dialog {
@@ -370,6 +488,20 @@ div#exampleModal .modal-content {
     background: #FFF;
 }
 
+div#exampleModal .modal-content .row {
+    gap: 24px 0;
+}
+
+div#exampleModal .modal-content span.wpcf7-form-control-wrap[data-name="inquiry"] .select-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+div#exampleModal .modal-content span.wpcf7-form-control-wrap[data-name="inquiry"] span.select-icon {
+    position: absolute;
+    right: 20px;
+}
+
 div#exampleModal input,
 div#exampleModal textarea {
     padding: 10px 15px;
@@ -391,11 +523,6 @@ div#exampleModal textarea {
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-}
-
-div#exampleModal .select2-container--default .select2-selection--single .select2-selection__arrow {
-    top: unset;
-    right: 5px;
 }
 
 div#exampleModal .select2-container .select2-selection--single {
@@ -434,7 +561,7 @@ div#exampleModal .modal-body {
     padding: 0;
 }
 
-div#exampleModal form p {
+div#exampleModal form {
     display: flex;
     flex-direction: column;
     gap: 20px 0;
@@ -443,6 +570,7 @@ div#exampleModal form p {
 
 div#exampleModal input[type="submit"] {
     color: white;
+    font-size: 16px;
 }
 
 div#exampleModal form.wpcf7-form.init .wpcf7-spinner {
@@ -472,17 +600,11 @@ div#exampleModal .wpcf7 form .wpcf7-response-output {
         margin-top: 70px;
     }
 
-    section.product_and_services .header {
-        flex-direction: column;
-        gap: 30px;
-        align-items: start;
-    }
-
     section.product_and_services .left_content {
         width: 100%;
     }
 
-    section.contact_us .group_button a {
+    section.contact_us a {
         max-width: 275px;
         width: 100%;
         text-align: center;
@@ -490,6 +612,10 @@ div#exampleModal .wpcf7 form .wpcf7-response-output {
 }
 
 @media (max-width: 991px) {
+    div#pop_up .content .main_content h2 {
+        font-size: 30px;
+    }
+
     section.banner img {
         height: 600px;
     }
@@ -518,28 +644,63 @@ div#exampleModal .wpcf7 form .wpcf7-response-output {
         margin-bottom: 30px;
     }
 
-    section.why_partnet_with_bmi .image img{
+    section.why_partnet_with_bmi .image img {
         max-height: 600px;
         object-fit: cover;
+    }
+
+    section.banner .carousel-control-prev {
+        left: calc(50% - 50px);
+        align-items: end;
+        margin-bottom: 100px;
+        width: fit-content;
+    }
+
+    section.banner .carousel-control-next {
+        right: calc(50% - 50px);
+        align-items: end;
+        margin-bottom: 100px;
+        width: fit-content;
+    }
+
+    section.why_partnet_with_bmi .image img,
+    section.contact_us .image img {
+        height: 366px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    section.banner .carousel-caption p:first-child {
+        font-size: 35px;
     }
 }
 
 @media (max-width: 767px) {
+    section.contact_us .group_button {
+        justify-content: center;
+    }
+
+    div#pop_up .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    div#pop_up .content img {
+        max-height: 400px;
+    }
+
+    div#pop_up .content .main_content {
+        min-height: unset;
+        background-size: unset !important;
+    }
+
+    div#pop_up .content .main_content h2 {
+        font-size: 24px;
+    }
+
     section.banner img {
         height: 600px;
-    }
-
-    section.banner .carousel-caption {
-        padding: 0 20px;
-        justify-content: start;
-        margin-top: 50px;
-    }
-
-
-    section.product_and_services div#myTabContent .content a.orange_btn {
-        position: relative;
-        bottom: 0;
-        margin-top: 30px;
     }
 
     section.product_and_services .content_bg {
@@ -551,24 +712,8 @@ div#exampleModal .wpcf7 form .wpcf7-response-output {
         padding: 50px 30px;
     }
 
-    section.contact_us .content_bg {
-        margin-top: 50px;
-    }
-
     section.banner .carousel-indicators {
         margin-bottom: 30px;
-    }
-
-    section.banner .carousel-control-prev {
-        left: 30%;
-        align-items: end;
-        margin-bottom: 60px;
-    }
-
-    section.banner .carousel-control-next {
-        right: 30%;
-        align-items: end;
-        margin-bottom: 60px;
     }
 
     section.product_and_services .categories ul#product_and_services {
@@ -579,24 +724,83 @@ div#exampleModal .wpcf7 form .wpcf7-response-output {
         margin-top: 40px;
     }
 
-    section.why_partnet_with_bmi .image img{
-        height: 500px;
+    section.get_to_know_bank_of_makati .group_counter>div {
+        border: none;
+    }
+
+    section.get_to_know_bank_of_makati .group_counter {
+        border-left: 1px solid #F26531;
+    }
+
+    section.product_and_services div#myTabContent .tab-pane:not(div#all-pane) .content a.orange_btn {
+        position: relative;
+        bottom: 0;
+        margin-top: 30px;
+    }
+
+    section.product_and_services div#myTabContent .tab-pane:not(div#all-pane) .main_content {
+        padding-bottom: 15px;
     }
 
 }
 
 @media (max-width: 575px) {
-    section.product_and_services div#myTabContent .main_content {
-        padding-bottom: 15px;
+    section.product_and_services .group_button {
+        display: none;
     }
 
-    section.get_to_know_bank_of_makati .group_counter{
+    section.product_and_services .owl-carousel {
+        position: relative;
+    }
+
+    section.product_and_services .owl-theme .owl-nav {
+        margin-top: 0;
+        position: absolute;
+        width: 110%;
+        top: 40%;
+        justify-content: space-between;
+        display: flex;
+        left: -5%;
+    }
+
+    div#pop_up .content .main_content {
+        padding: 30px 20px;
+    }
+
+    section.get_to_know_bank_of_makati .group_counter {
         flex-direction: column;
         align-items: start;
         gap: 30px 0;
     }
 
-    section.get_to_know_bank_of_makati .content .counter span.numbers{
+    section.get_to_know_bank_of_makati .content .counter span.numbers {
         margin-bottom: 0;
     }
+
+    section.product_and_services div#myTabContent .content a.orange_btn {
+        position: relative;
+        bottom: 0;
+        margin-top: 30px;
+    }
+
+    section.product_and_services div#myTabContent .main_content {
+        padding-bottom: 15px;
+    }
+
+    section.banner .carousel-caption {
+        padding: 0 20px;
+        /* justify-content: start;
+        margin-top: 20%; */
+    }
+
+    section.banner .carousel-control-prev,
+    section.banner .carousel-control-next {
+        margin-bottom: 70px;
+        display: none;
+    }
+
+    section.contact_us .content_bg {
+        padding: 30px 20px;
+    }
+
 }

@@ -1,0 +1,33 @@
+section.banner .content {
+    max-width: 873px !important;
+}
+
+section .content {
+    max-width: 650px;
+}
+
+section .content img {
+    width: 100%;
+}
+
+section.sustainability_progress {
+    background-color: #F2F2F2;
+}
+
+section.sustainability_progress .row {
+    gap: 60px 0;
+
+    @media(width < 991px) {
+        gap: 50px 0;
+    }
+
+    @media(width < 767px) {
+        gap: 40px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    section .content {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,13 @@
+section.terms_and_condition h2{
+    margin-top: 30px;
+}
+
+section.terms_and_condition .content{
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+section.terms_and_condition h1{
+    font-size: 40px;
+    color: #4A4A4A;
+}

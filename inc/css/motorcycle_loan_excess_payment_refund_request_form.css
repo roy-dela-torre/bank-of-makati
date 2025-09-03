@@ -1,0 +1,101 @@
+section.banner .content {
+    max-width: 922px !important;
+}
+
+section.banner {
+    max-height: 500px;
+}
+
+section.request_for_refund .header p {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+section.request_for_refund .form {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+section.request_for_refund input[type="checkbox"]:checked {
+    background: #007bff;
+}
+
+section.request_for_refund input[type="checkbox"] {
+    width: 100% !important;
+    height: 20px;
+    max-width: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 50%;
+    border: 2px solid #C1C1C1;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+section.request_for_refund .wpcf7-form-control-wrap[data-name="consent-accept"] span,
+section.request_for_refund .wpcf7-form-control-wrap[data-name="hereby"] span,
+section.request_for_refund .wpcf7-form-control-wrap[data-name="deposit_to_acc_confirm"] span {
+    width: 100%;
+    display: block;
+}
+
+section .wpcf7-form-control-wrap {
+    display: block;
+}
+
+section.request_for_refund .row {
+    gap: 20px 0;
+}
+
+section.request_for_refund select {
+    color: #4A4A4A;
+}
+
+section.request_for_refund [data-class="wpcf7cf_group"] {
+    width: 100%;
+}
+
+section .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #4A4A4A;
+}
+
+section.request_for_refund .deposit_to_acc_confirm span, section.request_for_refund .hereby span {
+    color: #ADADAD !important;
+    font-size: 14px !important;
+} 
+
+section.request_for_refund .attached_image {
+    cursor: pointer;
+}
+
+deposit_to_acc_confirm hereby 
+
+.modal .attached_requirements span.list_title, .modal .attached_requirements span.list_second_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4A4A4A;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.modal .attached_requirements ol, .modal .attached_requirements ul {
+    margin-bottom: 20px;
+}
+
+.modal .attached_requirements ol li, .modal .attached_requirements ul li {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 852px) {
+    .wpcf7-list-item label {
+        align-items: start;
+    }
+
+    .wpcf7-list-item label input {
+        margin-top: 5px;
+    }
+}

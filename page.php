@@ -28,14 +28,14 @@ if ($query->have_posts()) {
 } else {
 
 ?>
-    <section class="page h-100 d-flex align-items-center" style="background:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/global/background_template.jpg')no-repeat center center/cover;max-height: 900px">
+    <section class="page h-100 d-flex align-items-center">
         <div class="wrapper">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-4">
+                    <div class="col-lg-6">
                         <div class="content d-flex align-items-center flex-column">
-                            <h1 class="text-center text-white">Template Not Exist</h1>
-                            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
+                            <h1 class="text-center text-white">This Page Is Under Maintenance</h1>
+                            <p class="text-center text-white mb-20">Our website is currently undergoing maintenance to serve you better. Please check back soon—we’ll be back shortly!</p>
                             <a href="<?php echo get_home_url(); ?>" class="white_btn">Back to Homepage</a>
                         </div>
                     </div>
@@ -43,6 +43,28 @@ if ($query->have_posts()) {
             </div>
         </div>
     </section>
+    <style>
+        section.page {
+            background: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/global/maintenance.jpg')no-repeat center center/cover;
+            max-height: 900px;
+        }
+
+        section.page .content{
+            max-width: 675px;
+        }
+
+        @media (max-width: 991px) {
+            section.page {
+                max-height: 700px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            section.page {
+                max-height: 500px;
+            }
+        }
+    </style>
 <?php
 }
 

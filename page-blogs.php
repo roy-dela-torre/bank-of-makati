@@ -11,15 +11,19 @@ echo get_template_part('template/blogs') ?>
         <div class="contaner-fluid">
             <div class="row">
                 <div class="header">
-                    <h2>Other Blogs</h2>
+                    <h2 class="mb-0">Other Blogs</h2>
                 </div>
                 <?php
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                 $args = array(
                     'paged' => $paged,
-                    'posts_per_page' => 9,
+                    'posts_per_page' => 6,
                     'post_type' => array('post'),
+                    'order' => 'ASC',
                 );
+                // usort($args, function ($a, $b) {
+                //     return strcmp($a->name, $b->name); // Compare term names alphabetically
+                // });
                 $search_query = new WP_Query($args);
 
                 if ($search_query->have_posts()):

@@ -1,0 +1,210 @@
+.form_second .step-progress1 {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 60px;
+    max-width: 1256px;
+    margin-inline: auto;
+    gap: 20px;
+}
+
+.form_second .step-progress1 li {
+    text-align: center;
+    position: relative;
+    width: 25%;
+}
+
+.form_second .step-progress1 li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: 65%;
+    width: 79%;
+    height: 2px;
+    background: #ccc;
+    z-index: -1;
+}
+
+.form_second .step-number {
+    display: inline-block;
+    background: #f1f1f1;
+    color: #1a3d7c;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-weight: bold;
+    width: 45px;
+    height: 45px;
+}
+
+.form_second .active .step-number { background: #1a3d7c; color: #fff; }
+.form_second .active:not(:last-child)::after { background: #1a3d7c !important; }
+
+.form_second .step-title {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #4A4A4A;
+    overflow-wrap: anywhere;
+}
+.form_second .active .step-title { color: #1B4298; font-weight: 600; }
+.form_second ul.step-progress1 li.active:not(.current) .step-title { color: #4A4A4A; font-weight: 400; }
+
+.form_second .select-wrapper { position: relative; display: inline-block; width: 100%; }
+.form_second .select-wrapper select {
+    appearance: none; -webkit-appearance: none; -moz-appearance: none;
+    width: 100%; padding-right: 30px; background-color: white;
+}
+.form_second .select-icon {
+    position: absolute; right: 15px; top: 50%; transform: translateY(-50%); pointer-events: none;
+}
+
+.form_second.individual h3 { margin-bottom: 30px; }
+
+/* Progressbar */
+.form_second #mobile-step-indicator1 { margin-bottom: 60px; }
+.form_second #progressbar {
+    margin-bottom: 60px; overflow: hidden; color: lightgrey; counter-reset: step;
+}
+.form_second #progressbar .active { color: #1B4298; font-weight: 600; }
+.form_second #progressbar li {
+    list-style-type: none; font-size: 15px; width: 25%; float: left; position: relative;
+    font-weight: 400; display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 0;
+}
+.form_second #progressbar li:before {
+    width: 50px; height: 50px; line-height: 45px; display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 10px auto; padding: 2px; content: counter(step); counter-increment: step;
+    color: var(--Blue, #1b4298); font-family: "Montserrat", sans-serif; font-size: 20px; font-weight: 600;
+    border-radius: 3px; border: 1px solid #e4e4e4; background: #fff; z-index: 1;
+}
+.form_second #progressbar li:after {
+    content: ""; width: 100%; height: 1px; background: lightgray; position: absolute; left: 0; top: 25px;
+}
+.form_second #progressbar li.active:before,
+.form_second #progressbar li.active:after {
+    transition: 0.5s ease all;
+    color: #fff; border: 1px solid #1b4298; background: var(--Blue, #1b4298);
+}
+
+/* CF7 / CF7MLS layout inside this wrapper */
+.form_second .eael-contact-form-align-default { display: block !important; }
+.form_second .wpcf7-form .fieldset-cf7mls { border: none; background: none; }
+.form_second .wpcf7 form.sent .wpcf7-response-output { display: block; }
+
+.form_second .cf7mls-btns.cf7mls-btns-last-step { display: inline; }
+.form_second .cf7mls-btns {
+    margin-top: 10px; display: flex; align-items: center; gap: 20px;
+}
+.form_second .cf7mls-btns button[name="cf7mls_next"],
+.form_second .cf7mls-btns button[name="cf7mls_back"] { transition: .3s ease-in-out; }
+.form_second .cf7mls-btns button[name="cf7mls_next"]:hover,
+.form_second .cf7mls-btns button[name="cf7mls_back"]:hover {
+    background: #FFA726; color: #fff; border-color: #FFA726;
+}
+
+.form_second .fieldset-cf7mls .wpcf7-form-control.wpcf7-cf7mls_preview_step {
+    background-color: #27ae60; border: 0; border-radius: 3px; color: #fff; cursor: pointer;
+    font-weight: bold; margin: 26px 0 32px; padding: 13px 5px; min-width: 100px; position: relative;
+}
+.form_second .cf7mls_back.action-button { float: left; }
+.form_second .cf7mls_next.action-button:hover,
+.form_second .cf7mls_back.action-button:hover,
+.form_second .fieldset-cf7mls .wpcf7-form-control.wpcf7-cf7mls_preview_step:hover { opacity: .8; }
+.form_second .fieldset-cf7mls .cf7mls_back { float: left; }
+.form_second .fieldset-cf7mls .cf7mls_next { float: right; }
+.form_second form.cf7mls input.wpcf7-form-control.wpcf7-submit { float: right; }
+
+.form_second .cf7mls_reviewing_overlay {
+    position: fixed; inset: 0; background-color: rgba(0,0,0,.8); z-index: 100; display: none;
+}
+.form_second form.wpcf7-form.cf7mls_reviewing { position: relative; z-index: 999999; background: #fff; }
+.form_second form.wpcf7-form.cf7mls_reviewing:before {
+    content: ""; position: absolute; background: rgba(0,0,0,.8); width: 100000px; height: 100000px;
+    left: -30000px; top: -30000px; z-index: 1;
+}
+.form_second form.wpcf7-form.cf7mls_reviewing > * { position: relative; z-index: 3; }
+.form_second form.wpcf7-form.cf7mls_reviewing .cf7mls_close_preview {
+    cursor: pointer; position: absolute; top: 10px; right: 0;
+}
+.form_second form.wpcf7-form.cf7mls_reviewing:after {
+    content: ""; position: absolute; top: -5px; left: -20px; right: -20px; bottom: -10px; background: #fff; z-index: 2;
+}
+
+.form_second .form_field,
+.form_second .form_wrapper {
+    display: flex; flex-wrap: wrap; gap: 20px; width: 100%;
+}
+.form_second .form_field > span.wpcf7-form-control-wrap,
+.form_second .form_field > div {
+    flex: 1 1 calc(50% - 10px); min-width: fit-content; display: block;
+}
+
+/* Fieldsets + transitions */
+.form_second .fieldset-cf7mls-wrapper { position: relative; overflow: hidden; }
+.form_second .fieldset-cf7mls-wrapper .fieldset-cf7mls {
+    width: 100%; opacity: 0; visibility: hidden; transition: .5s ease all;
+}
+.form_second .fieldset-cf7mls-wrapper fieldset.fieldset-cf7mls.cf7mls_current_fs:last-child .form_wrapper {
+    margin-bottom: 30px;
+}
+.form_second .cf7mls-no-moving-animation .fieldset-cf7mls-wrapper .fieldset-cf7mls { transition: none; }
+.form_second .fieldset-cf7mls-wrapper .cf7mls_back_fs { position: absolute; left: 0; top: 15px; transform: translate(-110%, 0); }
+.form_second .fieldset-cf7mls-wrapper .cf7mls_current_fs ~ .fieldset-cf7mls {
+    position: absolute; left: 0; top: 15px; transform: translate(110%, 0);
+}
+.form_second .wpcf7-form .cf7mls_progress_bar ~ .fieldset-cf7mls-wrapper fieldset {
+    padding-top: 0; margin-top: 0; padding-bottom: 2px; margin-bottom: 20px;
+}
+.form_second .fieldset-cf7mls-wrapper .cf7mls_current_fs { opacity: 1; visibility: visible; }
+
+.form_second .fieldset-cf7mls.cf7mls_preview_fs {
+    height: auto; overflow: visible; opacity: 1; visibility: visible; transform: translate(0,0); position: relative;
+}
+
+.form_second .fieldset-cf7mls-wrapper .wpcf7-not-valid-tip { font-size: 13px; }
+.form_second .fieldset-cf7mls-wrapper div.wpcf7-validation-errors { display: none !important; }
+.form_second .fieldset-cf7mls-wrapper div.wpcf7-validation-errors .wpcf7-icon-wraning {
+    display: block; float: left; margin-right: 8px; margin-top: 2px; fill: #f00;
+}
+.form_second .woodmart-ajax-shop-on .fieldset-cf7mls-wrapper div.wpcf7-validation-errors,
+.form_second .theme-woodmart .fieldset-cf7mls-wrapper div.wpcf7-validation-errors {
+    display: flex !important; padding-left: 65px;
+}
+.form_second .woodmart-ajax-shop-on .fieldset-cf7mls-wrapper div.wpcf7-validation-errors .wpcf7-icon-wraning,
+.form_second .theme-woodmart .fieldset-cf7mls-wrapper div.wpcf7-validation-errors .wpcf7-icon-wraning {
+    display: none !important;
+}
+.form_second .fieldset-cf7mls-wrapper .fieldset-cf7mls span.ajax-loader {
+    position: absolute; right: 39px; margin-top: 33px;
+}
+
+/* Form container inside the wrapper */
+.form_second form {
+    max-width: 1176px; margin: 0 auto; padding: 40px;
+    border-radius: 5px; border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF; box-shadow: 0px 12px 18.3px 0px rgba(0,0,0,0.05);
+}
+.form_second.individual select { color: #4A4A4A; }
+
+/* Buttons & images */
+.form_second .cf7mls_next.action-button img {
+    width: 20px; position: relative; margin-left: 5px; vertical-align: middle;
+}
+.form_second .cf7mls_next.action-button.sending img { display: inline-block !important; }
+.form_second .cf7mls_next.action-button:focus,
+.form_second .cf7mls_back.action-button:focus { outline: none; }
+
+/* Responsive */
+@media (max-width: 991px) {
+    .form_second #progressbar li.active.current { display: block; }
+    .form_second #progressbar li { display: none; }
+}
+
+@media (max-width: 767px) {
+    .form_second .fieldset-cf7mls input[type="radio"],
+    .form_second .fieldset-cf7mls input[type="checkbox"] { width: auto; }
+
+    .form_second .fieldset-cf7mls input,
+    .form_second .wpcf7-form .fieldset-cf7mls textarea { width: 100%; }
+
+    .form_second form { padding: 30px; }
+}

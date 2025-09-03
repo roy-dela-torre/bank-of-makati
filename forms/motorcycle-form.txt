@@ -1,0 +1,414 @@
+<div class="form owl-carousel owl-theme">
+
+    <div class="form_step1">
+        <h3 class="mb-30">Data Privacy Statement and Consent Form</h3>
+        <p>The Bank of Makati (A Savings Bank), Inc. (BMI) recognizes its responsibilities under Republic Act No. 10173,
+            also known as the Data Privacy Act of 2012. Personal data obtained from this digital platform is entered and
+            stored within BMI's authorized information and communications system, and will only be accessed by BMI
+            authorized personnel. BMI has instituted appropriate organizational, technical and physical security
+            measures to ensure the protection of the personal data submitted herein. All collected personal data will be
+            kept in accordance with BMI's retention policy. Users of this digital platform may exercise their privacy
+            rights such as right to be informed, right to object, right to rectification, right to erasure, right to
+            complaint, and right to damages. To know more about BMI's Data Privacy Statement, please visit our website
+            at <a href="www.bankofmakati.com.ph" target="_blank" rel="noopener noreferrer">www.bankofmakati.com.ph</a>
+        </p>
+        <p>By clicking on the "I Agree" button, I consent to the use and processing of my information for the purpose of
+            processing the release of my original ORCR. I confirm that the information provided in this form is a true,
+            correct, and complete statement of information contained herein. I understand that I may need to be
+            contacted for further information or verification should there be noted issues/discrepancy on my account.
+        </p>
+        <p>1. Data Privacy and Consent</p>
+        <div class="choice_wrapper">
+            [checkbox* checkbox-508 use_label_element "I Agree"]
+        </div>
+        <button class="orange_btn next_step">Next</button>
+    </div>
+
+    <div class="form_step2">
+        <div class="form_header">
+            <h3 class="mb-10">Loan Borrower Information</h3>
+            <p>Please indicate your loan account number that can be found in the Sales Invoice or Previous Receipt.</p>
+        </div>
+        <p>(Can be found on your Sales Invoice, Previous Receipt or Repo Sales Form [for Repo unit])</p>
+        <div class="form_wrapper">
+            [text* loan_account_number minlength:10 maxlength:10 placeholder "10 Digit Loan Account Number (Required)"]
+            [text* first_name placeholder "First Name (Required)"]
+            [text* middle_name placeholder "Middle Name (Required)"]
+            [text* surname placeholder "Surname (Required)"]
+        </div>
+        <div class="group_button">
+            <button class="transparent_btn prev_step">Back</button>
+            <button class="orange_btn next_step">Next</button>
+        </div>
+    </div>
+
+    <div class="form_step3">
+        <h3 class="mb-30">Contact Information</h3>
+        <div class="form_wrapper">
+            [tel* primary_mobile placeholder "Primary Mobile Number (Required)"]
+            [tel other_contact placeholder "Other Contact Number"]
+            [email email_address placeholder "Email Address"]
+        </div>
+        <div class="group_button">
+            <button class="transparent_btn prev_step">Back</button>
+            <button class="orange_btn next_step">Next</button>
+        </div>
+    </div>
+
+    <div class="form_step4">
+        <h3 class="mb-30">Last Payment Details</h3>
+        <div class="form_wrapper">
+            [text text-796 id:datepicker placeholder "Receipt Date (Required)"]
+            [number* receipt_number placeholder "Receipt Number"]
+            [number* amount placeholder "Amount"]
+        </div>
+        <div class="group_button">
+            <button class="transparent_btn prev_step">Back</button>
+            <button class="orange_btn next_step">Next</button>
+        </div>
+    </div>
+
+    <div class="form_step5">
+        <h3 class="mb-10">Preferred Pick-Up Location (Dealer Branch / Bank of Makati Branch)</h3>
+        <p>Please ensure correct BMI / Motortrade Branch is selected to avoid misrouting of your ORCR.</p>
+        <div class="form_wrapper">
+            [select* pickup_location "Pick up location (Required)" "Bank of Makati Branch" "Motortrade Dealer"]
+        </div>
+        [group bmi_branch]
+        <div class="bmi_branch">
+            [select* bmi_area data:bmi_area]
+            [group ncr_metro_manila]
+            [select* bmi_branches_ncr_metro_manila data:bmi_branches_ncr_metro_manila]
+            [/group]
+
+            [group luzon]
+            [select bmi_branches_luzon data:bmi_branches_luzon ]
+            [/group]
+
+            [group visayas]
+            [select bmi_branches_visayas data:bmi_branches_visayas]
+            [/group]
+
+            [group mindanao]
+            [select bmi_branches_mindanao data:bmi_branches_mindanao]
+            [/group]
+        </div>
+        [/group]
+
+        [group motorcycle_dealer]
+        <div class="motorcycle_dealer">
+            [select province "Province (Required)" "Abra" "Agusan Del Norte" "Agusan Del Sur" "Aklan" "Albay" "Antique"
+                        "Aurora" "Bataan" "Batangas" "Benguet" "Biliran" "Bohol" "Bukidnon" "Bulacan" "Cagayan" "Camarines Norte"
+                        "Camarines Sur" "Camiguin" "Capiz" "Catanduanes" "Cavite" "Cebu" "Compostela Valley" "Davao De Oro" "Davao
+                        Del Norte" "Davao Del Sur" "Davao Oriental" "Dinagat Island" "Eastern Samar" "Ilocos Norte" "Ilocos Sur"
+                        "Iloilo" "Isabela" "La Union" "Laguna" "Lanao Del Norte" "Leyte" "Marinduque" "Masbate" "Metro Manila"
+                        "Misamis Occidental" "Misamis Oriental" "Negros Occidental" "Negros Oriental" "North Cotabato" "Northern
+                        Samar" "Nueva Ecija" "Nueva Vizcaya" "Occidental Mindoro" "Oriental Mindoro" "Palawan" "Pampanga"
+                        "Pangasinan" "Quezon" "Quirino" "Rizal" "Romblon" "Samar" "Sarangani Province" "Sorsogon" "South Cotabato"
+                        "Southern Leyte" "Sultan Kudarat" "Surigao Del Norte" "Surigao Del Sur" "Tarlac" "Western Samar" "Zambales"
+                        "Zamboanga Del Norte" "Zamboanga Del Sur" "Zamboanga Sibugay"]
+
+            [group Abra]
+                [select dealers_abra data:dealers_abra]
+            [/group]
+
+            [group Agusan Del Norte]
+                [select dealers_agusan_del_norte data:dealers_agusan_del_norte]
+            [/group]
+
+            [group Agusan Del Sur]
+                [select dealers_agusan_del_sur data:dealers_agusan_del_sur]
+            [/group]
+
+            [group Aklan]
+                [select dealers_aklan data:dealers_aklan]
+            [/group]
+
+            [group Albay]
+                [select dealers_albay data:dealers_albay]
+            [/group]
+
+            [group Antique]
+                [select dealers_antique data:dealers_antique]
+            [/group]
+
+            [group Aurora]
+                [select dealers_aurora data:dealers_aurora]
+            [/group]
+
+            [group Bataan]
+                [select dealers_bataan data:dealers_bataan]
+            [/group]
+
+            [group Batangas]
+                [select dealers_batangas data:dealers_batangas]
+            [/group]
+
+            [group Benguet]
+                [select dealers_benguet data:dealers_benguet]
+            [/group]
+
+            [group Biliran]
+                [select dealers_biliran data:dealers_biliran]
+            [/group]
+
+            [group Bohol]
+                [select dealers_bohol data:dealers_bohol]
+            [/group]
+
+            [group Bukidnon]
+                [select dealers_bukidnon data:dealers_bukidnon]
+            [/group]
+
+            [group Bulacan]
+                [select dealers_bulacan data:dealers_bulacan]
+            [/group]
+
+            [group Cagayan]
+                [select dealers_cagayan data:dealers_cagayan]
+            [/group]
+
+            [group Camarines Norte]
+                [select dealers_camarines_norte data:dealers_camarines_norte]
+            [/group]
+
+            [group Camarines Sur]
+                [select dealers_camarines_sur data:dealers_camarines_sur]
+            [/group]
+
+            [group Camiguin]
+                [select dealers_camiguin data:dealers_camiguin]
+            [/group]
+
+            [group Capiz]
+                [select dealers_capiz data:dealers_capiz]
+            [/group]
+
+            [group Catanduanes]
+                [select dealers_catanduanes data:dealers_catanduanes]
+            [/group]
+
+            [group Cavite]
+                [select dealers_cavite data:dealers_cavite]
+            [/group]
+
+            [group Cebu]
+                [select dealers_cebu data:dealers_cebu]
+            [/group]
+
+            [group Compostela Valley]
+                [select dealers_compostela_valley data:dealers_compostela_valley]
+            [/group]
+
+            [group Davao De Oro]
+                [select dealers_davao_de_oro data:dealers_davao_de_oro]
+            [/group]
+
+            [group Davao Del Norte]
+                [select dealers_davao_del_norte data:dealers_davao_del_norte]
+            [/group]
+
+            [group Davao Del Sur]
+                [select dealers_davao_del_sur data:dealers_davao_del_sur]
+            [/group]
+
+            [group Davao Oriental]
+                [select dealers_davao_oriental data:dealers_davao_oriental]
+            [/group]
+
+            [group Dinagat Island]
+                [select dealers_dinagat_island data:dealers_dinagat_island]
+            [/group]
+
+            [group Eastern Samar]
+                [select dealers_eastern_samar data:dealers_eastern_samar]
+            [/group]
+
+            [group Ilocos Norte]
+                [select dealers_ilocos_norte data:dealers_ilocos_norte]
+            [/group]
+
+            [group Ilocos Sur]
+                [select dealers_ilocos_sur data:dealers_ilocos_sur]
+            [/group]
+
+            [group Iloilo]
+                [select dealers_iloilo data:dealers_iloilo]
+            [/group]
+
+            [group Isabela]
+                [select dealers_isabela data:dealers_isabela]
+            [/group]
+
+            [group La Union]
+                [select dealers_la_union data:dealers_la_union]
+            [/group]
+
+            [group Laguna]
+                [select dealers_laguna data:dealers_laguna]
+            [/group]
+
+            [group Lanao Del Norte]
+                [select dealers_lanao_del_norte data:dealers_lanao_del_norte]
+            [/group]
+
+            [group Leyte]
+                [select dealers_leyte data:dealers_leyte]
+            [/group]
+
+            [group Marinduque]
+                [select dealers_marinduque data:dealers_marinduque]
+            [/group]
+
+            [group Masbate]
+                [select dealers_masbate data:dealers_masbate]
+            [/group]
+
+            [group Metro Manila]
+                [select dealers_metro_manila data:dealers_metro_manila]
+            [/group]
+
+            [group Misamis Occidental]
+                [select dealers_misamis_occidental data:dealers_misamis_occidental]
+            [/group]
+
+            [group Misamis Oriental]
+                [select dealers_misamis_oriental data:dealers_misamis_oriental]
+            [/group]
+
+            [group Negros Occidental]
+                [select dealers_negros_occidental data:dealers_negros_occidental]
+            [/group]
+
+            [group Negros Oriental]
+                [select dealers_negros_oriental data:dealers_negros_oriental]
+            [/group]
+
+            [group North Cotabato]
+                [select dealers_north_cotabato data:dealers_north_cotabato]
+            [/group]
+
+            [group Northern Samar]
+                [select dealers_northern_samar data:dealers_northern_samar]
+            [/group]
+
+            [group Nueva Ecija]
+                [select dealers_nueva_ecija data:dealers_nueva_ecija]
+            [/group]
+
+            [group Nueva Vizcaya]
+                [select dealers_nueva_vizcaya data:dealers_nueva_vizcaya]
+            [/group]
+
+            [group Occidental Mindoro]
+                [select dealers_occidental_mindoro data:dealers_occidental_mindoro]
+            [/group]
+
+            [group Oriental Mindoro]
+                [select dealers_oriental_mindoro data:dealers_oriental_mindoro]
+            [/group]
+
+            [group Palawan]
+                [select dealers_palawan data:dealers_palawan]
+            [/group]
+
+            [group Pampanga]
+                [select dealers_pampanga data:dealers_pampanga]
+            [/group]
+
+            [group Pangasinan]
+                [select dealers_pangasinan data:dealers_pangasinan]
+            [/group]
+
+            [group Quezon]
+                [select dealers_quezon data:dealers_quezon]
+            [/group]
+
+            [group Quirino]
+                [select dealers_quirino data:dealers_quirino]
+            [/group]
+
+            [group Rizal]
+                [select dealers_rizal data:dealers_rizal]
+            [/group]
+
+            [group Romblon]
+                [select dealers_romblon data:dealers_romblon]
+            [/group]
+
+            [group Samar]
+                [select dealers_samar data:dealers_samar]
+            [/group]
+
+            [group Sarangani Province]
+                [select dealers_sarangani_province data:dealers_sarangani_province]
+            [/group]
+
+            [group Sorsogon]
+                [select dealers_sorsogon data:dealers_sorsogon]
+            [/group]
+
+            [group South Cotabato]
+                [select dealers_south_cotabato data:dealers_south_cotabato]
+            [/group]
+
+            [group Southern Leyte]
+                [select dealers_southern_leyte data:dealers_southern_leyte]
+            [/group]
+
+            [group Sultan Kudarat]
+                [select dealers_sultan_kudarat data:dealers_sultan_kudarat]
+            [/group]
+
+            [group Surigao Del Norte]
+                [select dealers_surigao_del_norte data:dealers_surigao_del_norte]
+            [/group]
+
+            [group Surigao Del Sur]
+                [select dealers_surigao_del_sur data:dealers_surigao_del_sur]
+            [/group]
+
+            [group Tarlac]
+                [select dealers_tarlac data:dealers_tarlac]
+            [/group]
+
+            [group Western Samar]
+                [select dealers_western_samar data:dealers_western_samar]
+            [/group]
+
+            [group Zambales]
+                [select dealers_zambales data:dealers_zambales]
+            [/group]
+
+            [group Zamboanga Del Norte]
+                [select dealers_zamboanga_del_norte data:dealers_zamboanga_del_norte]
+            [/group]
+
+            [group Zamboanga Del Sur]
+                [select dealers_zamboanga_del_sur data:dealers_zamboanga_del_sur]
+            [/group]
+
+            [group Zamboanga Sibugay]
+                [select dealers_zamboanga_sibugay data:dealers_zamboanga_sibugay]
+            [/group]
+        </div>
+        [/group]
+        <div class="group_button">
+            <button class="transparent_btn prev_step">Back</button>
+            <button class="orange_btn next_step">Next</button>
+        </div>
+    </div>
+
+    <div class="form_step6">
+        <h3 class="mb-30">Remarks Portion</h3>
+        <div class="form_wrapper">
+            [text* remarks placeholder "Please indicate your remarks in this portion"]
+            [select* remarks_options "Do you want a copy of Certificate of Full Payment? (Required)"
+            "True" "False"]
+        </div>
+        <div class="group_button">
+            <button class="transparent_btn prev_step">Back</button>
+            [submit class:orange_btn "Submit"]
+        </div>
+    </div>
+</div>

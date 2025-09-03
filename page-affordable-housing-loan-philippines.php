@@ -1,8 +1,8 @@
 <?php get_header();
 /*Template Name: Affordable Housing Loan Philippines*/
 $img_path = get_stylesheet_directory_uri() . '/assets/images/affordable_housing_loan/';
-get_template_part('template/banner_php'); ?>
-<section class="loan_feature">
+//get_template_part('template/banner_php'); ?>
+<!-- <section class="loan_feature">
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -45,7 +45,7 @@ get_template_part('template/banner_php'); ?>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="content box_content">
-                        <h3>Flexible Terms:</h3>
+                        <h3>Interest Rates:</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
                         <ul>
                             <li>Lorem ipsum dolor sit amet consectetur</li>
@@ -79,7 +79,7 @@ get_template_part('template/banner_php'); ?>
                             <span class="text-white">Contact Us</span>
                             <h2 class="text-white">Lorem ipsum dolor</h2>
                             <p class="text-white">Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
-                            <a href="http://" target="_blank" rel="noopener noreferrer" class="orange_btn">Contact Us Now</a>
+                            <a href="<?php echo get_home_url(); ?>/contact-us/" target="_blank" rel="noopener noreferrer" class="orange_btn">Contact Us Now</a>
                         </div>
                     </div>
                 </div>
@@ -92,25 +92,25 @@ get_template_part('template/banner_php'); ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-xl-6 d-none d-xl-block">
                     <div class="image">
                         <img src="<?php echo $img_path; ?>/Required Documents.jpg" alt="Required Documents" class="img-fluid w-100">
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <div class="content ps-xl-5">
+                <div class="col-xl-6 ps-xl-5">
+                    <div class="content ps-xxl-5">
                         <span class="orange_text">Required Documents</span>
                         <h2>Lorem ipsum dolor </h2>
-                        <img src="<?php echo $img_path; ?>/Required Documents.jpg" alt="Required Documents" class="img-fluid w-100 d-block d-lg-none mb-3">
+                        <img src="<?php echo $img_path; ?>/Required Documents.jpg" alt="Required Documents" class="img-fluid w-100 d-block d-xl-none mb-20">
                         <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
                         <ol>
-                            <li>Employed individuals</li>
+                            <li>1. Employed individuals</li>
                             <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
-                            <li>Self-employed individuals</li>
+                            <li>2. Self-employed individuals</li>
                             <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
-                            <li>Overseas Filipino Workers (OFWs)</li>
+                            <li>3. Overseas Filipino Workers (OFWs)</li>
                             <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
-                            <li>Corporations or partnerships</li>
+                            <li>4. Corporations or partnerships</li>
                             <p>Lorem ipsum dolor sit amet consectetur. Ultricies sit luctus vel neque dictumst nulla laoreet.</p>
                         </ol>
                     </div>
@@ -155,17 +155,17 @@ get_template_part('template/banner_php'); ?>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<?php echo get_template_part('template/related_post') ?>
+<?php //echo get_template_part('template/related_post') ?>
 
 <section class="affordable_housing_loan">
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-6 col-lg-7">
+                <div class="col-xl-7 col-lg-8">
                     <div class="content">
-                        <h2>Affordable Housing Loan is Your First Step to Homeownership</h2>
+                        <h1>Affordable Housing Loan is Your First Step to Homeownership</h1>
                         <p>Owning a home is a lifelong dream for many Filipinos, but achieving it can often be
                             challenging because of financial constraints. At the Bank of Makati, we believe that
                             homeownership should be accessible to everyone. We offer affordable housing loans
@@ -186,15 +186,15 @@ get_template_part('template/banner_php'); ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-xl-6 d-none d-xl-block">
                     <div class="image">
                         <img src="<?php echo $img_path; ?>/Benefits of Selecting a Trusted Institution for Housing Financing.jpg" alt="Benefits of Selecting a Trusted Institution for Housing Financing">
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <div class="content ps-xl-5">
+                <div class="col-xl-6 ps-xl-5">
+                    <div class="content ps-xxl-5">
                         <h2>Benefits of Selecting a Trusted Institution for Housing Financing</h2>
-                        <img src="<?php echo $img_path; ?>/Benefits of Selecting a Trusted Institution for Housing Financing.jpg" alt="Benefits of Selecting a Trusted Institution for Housing Financing" class="img-fluid w-100 d-block d-lg-none mb-3">
+                        <img src="<?php echo $img_path; ?>/Benefits of Selecting a Trusted Institution for Housing Financing.jpg" alt="Benefits of Selecting a Trusted Institution for Housing Financing" class="img-fluid w-100 d-block d-xl-none mb-20">
                         <p>In line with our commitment to being your Malalapitan, Maaasahang Kaibigan, we at the
                             Bank of Makati ascertain that your banking experience would be easy and convenient.
                             Our loan application process is made simpler, minimum loanable amount is ₱500,000
@@ -219,10 +219,10 @@ get_template_part('template/banner_php'); ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-lg-6 pe-lg-5">
-                    <div class="content pe-xl-5">
+                <div class="col-xl-6 pe-xl-5">
+                    <div class="content pe-xxl-5">
                         <h2>How Affordable Housing Loans Support Filipinos</h2>
-                        <img src="<?php echo $img_path; ?>/How Affordable Housing Loans Support Filipinos.jpg" alt="How Affordable Housing Loans Support Filipinos" class="img-fluid w-100 d-block d-lg-none mb-3">
+                        <img src="<?php echo $img_path; ?>/How Affordable Housing Loans Support Filipinos.jpg" alt="How Affordable Housing Loans Support Filipinos" class="img-fluid w-100 d-block d-xl-none mb-20">
                         <p>Access to affordable housing loans in the Philippines enables Filipinos from all walks of
                             life to achieve homeownership and significantly improve their living conditions.</p>
 
@@ -239,7 +239,7 @@ get_template_part('template/banner_php'); ?>
                             achieving homeownership through affordable housing loans in the Philippines.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-xl-6 d-none d-xl-block">
                     <div class="images">
                         <img src="<?php echo $img_path; ?>/How Affordable Housing Loans Support Filipinos.jpg" alt="How Affordable Housing Loans Support Filipinos">
                     </div>
@@ -255,7 +255,7 @@ get_template_part('template/banner_php'); ?>
         <div class="container-fluid">
             <div class="row">
                 <div class="co-md-12">
-                    <div class="header">
+                    <div class="header mx-auto">
                         <h2 class="text-center">Choose Bank of Makati for an Affordable Housing Loan in the Philippines</h2>
                         <p class="text-center">Finding your dream home starts with choosing a trusted bank for your loan. At BMI, we
                             make sure you get the home you’ve always wanted with our affordable housing loan
@@ -388,8 +388,10 @@ get_template_part('template/banner_php'); ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="headeer">
-                    <h2>FAQs about Our Affordable Housing Loan Service</h2>
+                <div class="col-md-12">
+                    <div class="header">
+                        <h2 class="mb-0">FAQs about Our Affordable Housing Loan Service</h2>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="accordion" id="accordion_left1">
@@ -433,11 +435,3 @@ get_template_part('template/banner_php'); ?>
 </section>
 
 <?php get_footer(); ?>
-<script>
-    $(document).ready(function() {
-        $('.accordion-button').click(function() {
-            $(this).closest('.accordion-item').toggleClass('open');
-        });
-
-    });
-</script>

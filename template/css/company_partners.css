@@ -1,0 +1,17 @@
+section.company_partner .company_partner_header {
+    margin-bottom: 60px;
+    max-width: 566px;
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+section.company_partner .partner_gallerys {
+    max-width: 1075px;
+    width: 100%;
+    margin: auto;
+}
+
+section.company_partner .company_partner_row_gap {
+    row-gap: 60px;
+}

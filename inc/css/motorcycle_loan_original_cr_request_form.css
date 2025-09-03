@@ -1,0 +1,188 @@
+section.banner .content {
+    max-width: 922px !important;
+}
+
+section.banner {
+    max-height: 500px;
+}
+
+
+section.request_of_release .header {
+    margin: 0 auto 60px auto;
+    max-width: 1010px;
+
+    @media (width < 991px) {
+        margin: 0 auto 30px auto;
+    }
+}
+
+section.request_of_release .row {
+    gap: 24px 0;
+}
+
+
+section.request_of_release .form,
+section.request_of_release .form .step-progress {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+section.request_of_release div[data-class="wpcf7cf_group"] {
+    width: 100%;
+}
+
+section.request_of_release .form .step-progress {
+    margin-bottom: 60px;
+
+    @media (max-width: 991px) {
+        margin-bottom: 30px;
+    }
+}
+
+section.request_of_release input[type="checkbox"][name="checkbox-508[]"] {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 50%;
+    border: 2px solid #C1C1C1;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+section.request_of_release input[type="checkbox"][name="checkbox-508[]"]:checked {
+    background: #007bff;
+    border-color: #007bff;
+}
+
+section.request_of_release p.font-14 {
+    font-size: 14px;
+}
+
+section.request_of_release fieldset[data-cf7mls-order="1"] p {
+    margin-bottom: 10px;
+}
+
+span.wpcf7-form-control-wrap[data-name="checkbox-508"] span.wpcf7-list-item-label {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+div#printable_data .header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+div#printable_data .content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0 12px 18.3px 0 rgba(0, 0, 0, 0.05);
+    max-height: 95%;
+    overflow: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+div#printable_data .content::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+div#printable_data .content span {
+    color: var(--Black, #4A4A4A);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+div#printable_data .main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+
+    @media(width < 991px) {
+        gap: 40px 0;
+    }
+
+    @media (width < 768px) {
+        gap: 30px 0;
+    }
+}
+
+div#printable_data .form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+div#printable_data .form_group label {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+div#printable_data .form_group input {
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 10px 15px;
+    border-radius: 1px;
+    border: 1px solid #C1C1C1;
+}
+
+div#printable_data .form_group input::placeholder {
+    color: #ADADAD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+div#printable_data .row {
+    gap: 20px 0;
+}
+
+fieldset.fieldset-cf7mls.cf7mls_current_fs[data-cf7mls-order="4"] .form_field>span.wpcf7-form-control-wrap {
+    flex: unset;
+}
+
+section.request_of_release .form_wrapper.step1 {
+    gap: 30px;
+}
+
+section.request_of_release .bmi_branch .form_field>span {
+    flex: 1 1 calc(50% - 10px) !important;
+    min-width: 300px !important;
+}
+
+
+@media (max-width: 767px) {
+    section.request_of_release .bmi_branch .form_field>span {
+        flex: 1 1 calc(50% - 10px) !important;
+        min-width: unset !important;
+    }
+}

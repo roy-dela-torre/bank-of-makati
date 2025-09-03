@@ -1,0 +1,664 @@
+.step-progress {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 60px;
+    max-width: 1256px;
+    margin-inline: auto;
+    gap: 20px;
+}
+
+.step-progress li {
+    text-align: center;
+    /* flex: 1; */
+    position: relative;
+    width: 25%;
+}
+
+.step-progress li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 23px;
+    /* right: -54%; */
+    left: 65%;
+    /* left: calc(78% - 1.3vw); */
+    width: 79%;
+    /* width: calc(65% + 0.43vw); */
+    height: 2px;
+    background: #ccc;
+    z-index: 0;
+}
+
+/* .step-progress li:not(:first-child)::before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: -50%;
+      width: 100%;
+      height: 2px;
+      background: #ccc;
+      z-index: -1;
+    } */
+
+.step-number {
+    display: inline-block;
+    background: #f1f1f1;
+    color: #1a3d7c;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-weight: bold;
+    width: 45px;
+    height: 45px;
+}
+
+.active .step-number {
+    background: #1a3d7c;
+    color: #fff;
+}
+
+.active:not(:last-child)::after {
+    background: #1a3d7c !important;
+}
+
+.step-title {
+    margin-top: 24px;
+    font-size: 16px;
+    color: #4A4A4A;
+    /* overflow-wrap: anywhere; */
+}
+
+.active .step-title {
+    color: #1B4298;
+    font-weight: 600;
+}
+
+ul.step-progress li.active:not(.current) .step-title {
+    color: #4A4A4A;
+    font-weight: 400;
+}
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-wrapper select:not(.select2) {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding-right: 30px;
+    /* leave room for icon */
+    background-color: white;
+}
+
+.select-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+section.individual h3 {
+    margin-bottom: 30px;
+}
+
+section #progressbar {
+    margin-bottom: 60px;
+    overflow: hidden;
+    color: lightgrey;
+
+
+}
+
+section div#mobile-step-indicator {
+    margin-bottom: 60px;
+}
+
+section #progressbar .active {
+    color: #1B4298;
+    font-weight: 600;
+}
+
+section #progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+section #progressbar {
+    counter-reset: step;
+}
+
+section #progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+    content: counter(step);
+    counter-increment: step;
+    color: var(--Blue, #1b4298);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    z-index: 1;
+}
+
+section #progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+
+/* section #progressbar li:first-child::after {
+    width: calc(50% - 55px);
+    right: 0;
+    left: auto;
+}
+
+section #progressbar li:last-child::after {
+    width: calc(50% - 55px);
+} */
+
+section #progressbar li.active:before,
+section #progressbar li.active:after {
+    transition: 0.5s ease all;
+    background: #673ab7;
+    color: white;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    border: 1px solid #1b4298;
+    background: var(--Blue, #1b4298);
+}
+
+
+section .eael-contact-form-align-default {
+    display: block !important;
+}
+
+section .wpcf7-form .fieldset-cf7mls {
+    border: none;
+    background: none;
+}
+
+section .wpcf7 form.sent .wpcf7-response-output {
+    display: block;
+}
+
+section .cf7mls-btns.cf7mls-btns-last-step {
+    display: inline;
+}
+
+section .cf7mls-btns {
+    margin-top: 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+}
+
+section .cf7mls-btns button[name="cf7mls_next"] {
+    transition: .3s ease-in-out;
+}
+
+section .cf7mls-btns button[name="cf7mls_back"] {
+    transition: .3s ease-in-out;
+}
+
+section .cf7mls-btns button[name="cf7mls_next"]:hover {
+    background: #FFA726;
+    transition: .3s ease-in-out;
+    color: white;
+    border-color: #FFA726;
+}
+
+section .cf7mls-btns button[name="cf7mls_back"]:hover {
+    background: #FFA726;
+    transition: .3s ease-in-out;
+    color: white;
+    border-color: #FFA726;
+}
+
+
+section .fieldset-cf7mls .wpcf7-form-control.wpcf7-cf7mls_preview_step {
+    background-color: #27ae60;
+    border: 0 none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 26px 0px 32px;
+    padding: 13px 5px;
+    min-width: 100px;
+    position: relative;
+}
+
+section .cf7mls_back.action-button {
+    float: left;
+}
+
+section .cf7mls_next.action-button:hover,
+.cf7mls_back.action-button:hover,
+.fieldset-cf7mls .wpcf7-form-control.wpcf7-cf7mls_preview_step:hover {
+    opacity: 0.8;
+}
+
+section .fieldset-cf7mls .cf7mls_back {
+    float: left;
+}
+
+section .fieldset-cf7mls .cf7mls_next {
+    float: right;
+}
+
+form.cf7mls input.wpcf7-form-control.wpcf7-submit {
+    float: right;
+}
+
+section .cf7mls_reviewing_overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+}
+
+form.wpcf7-form.cf7mls_reviewing {
+    position: relative;
+    z-index: 999999;
+    background-color: #fff;
+}
+
+form.wpcf7-form.cf7mls_reviewing:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100000px;
+    height: 100000px;
+    left: -30000px;
+    top: -30000px;
+    z-index: 1;
+}
+
+span#mobile-step-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #4A4A4A;
+
+}
+
+form.wpcf7-form.cf7mls_reviewing>* {
+    position: relative;
+    z-index: 3;
+}
+
+form.wpcf7-form.cf7mls_reviewing .cf7mls_close_preview {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+form.wpcf7-form.cf7mls_reviewing:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    right: -20px;
+    bottom: -10px;
+    background: #ffffff;
+    z-index: 2;
+}
+
+section .form_field,
+section .form_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+section .form_field>span.wpcf7-form-control-wrap,
+section .form_field>div {
+    flex: 1 1 calc(50% - 10px);
+    min-width: fit-content;
+    display: block;
+}
+
+/*
+ * Animation
+*/
+/*
+button.cf7mls_btn:not(.disabled):before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -11px;
+  width: 20px;
+  height: 20px;
+  border: 4px solid;
+  border-left-color: transparent;
+  border-radius: 50%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-name: rotate;
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+button.cf7mls_btn:not(.disabled):after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 0px;
+  -moz-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -moz-transition-duration: 0.75s;
+  -o-transition-duration: 0.75s;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  -webkit-transition-property: width;
+  transition-property: width;
+}
+button.cf7mls_btn:not(.disabled).sending {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+button.cf7mls_btn:not(.disabled).sending:not(.expand) {
+  text-align: left;
+}
+button.cf7mls_btn:not(.disabled).sending:before {
+  -moz-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+button.cf7mls_btn:not(.disabled).sending:after {
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  width: 20px;
+}
+
+@keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+*/
+
+section .cf7mls_next.action-button img {
+    width: 20px;
+    position: relative;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+section .cf7mls_next.action-button.sending img {
+    display: inline-block !important;
+}
+
+section .cf7mls_next.action-button:focus,
+.cf7mls_back.action-button:focus {
+    outline: none;
+}
+
+section .fieldset-cf7mls-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+section .fieldset-cf7mls-wrapper .fieldset-cf7mls {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease all;
+    -webkit-transition: .5s ease all;
+    -moz-transition: .5s ease all;
+    -ms-transition: .5s ease all;
+    -o-transition: .5s ease all;
+}
+
+section .fieldset-cf7mls-wrapper fieldset.fieldset-cf7mls.cf7mls_current_fs:last-child .form_wrapper {
+    margin-bottom: 30px;
+}
+
+section .cf7mls-no-moving-animation .fieldset-cf7mls-wrapper .fieldset-cf7mls {
+    transition: none;
+}
+
+section .fieldset-cf7mls-wrapper .cf7mls_back_fs {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    transform: translate(-110%, 0);
+    -webkit-transform: translate(-110%, 0);
+    -moz-transform: translate(-110%, 0);
+}
+
+section .fieldset-cf7mls-wrapper .cf7mls_current_fs~.fieldset-cf7mls {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    transform: translate(110%, 0);
+    -webkit-transform: translate(110%, 0);
+    -moz-transform: translate(110%, 0);
+}
+
+section .wpcf7-form .cf7mls_progress_bar~.fieldset-cf7mls-wrapper fieldset {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+}
+
+section .fieldset-cf7mls-wrapper .cf7mls_current_fs {
+    opacity: 1;
+    visibility: visible;
+}
+
+section .fieldset-cf7mls.cf7mls_preview_fs {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    position: relative;
+}
+
+section .fieldset-cf7mls-wrapper .wpcf7-not-valid-tip {
+    font-size: 13px;
+}
+
+section .fieldset-cf7mls-wrapper div.wpcf7-validation-errors {
+    display: none !important;
+}
+
+section .fieldset-cf7mls-wrapper div.wpcf7-validation-errors .wpcf7-icon-wraning {
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-top: 2px;
+    fill: #f00;
+}
+
+section .woodmart-ajax-shop-on .fieldset-cf7mls-wrapper div.wpcf7-validation-errors,
+.theme-woodmart .fieldset-cf7mls-wrapper div.wpcf7-validation-errors {
+    display: flex !important;
+    padding-left: 65px;
+}
+
+section .woodmart-ajax-shop-on .fieldset-cf7mls-wrapper div.wpcf7-validation-errors .wpcf7-icon-wraning,
+.theme-woodmart .fieldset-cf7mls-wrapper div.wpcf7-validation-errors .wpcf7-icon-wraning {
+    display: none !important;
+}
+
+section .fieldset-cf7mls-wrapper .fieldset-cf7mls span.ajax-loader {
+    position: absolute;
+    right: 39px;
+    margin-top: 33px;
+}
+
+section form {
+    max-width: 1176px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section form a,
+section form u {
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration-line: underline;
+}
+
+section.individual select {
+    color: #4A4A4A;
+}
+
+section.individual .fieldset-cf7mls input[type="checkbox"] {
+    margin-top: 4px;
+}
+
+section.individual .wpcf7-acceptance input[type="checkbox"] {
+    margin-top: 0;
+}
+
+section.individual .terms_conditions_deposit p {
+    font-size: 14px;
+}
+
+@media (max-width: 1199px) {
+    .step-progress {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    section #progressbar li.active.current {
+        display: block;
+    }
+
+    section #progressbar li {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    section .fieldset-cf7mls input[type="radio"],
+    section .fieldset-cf7mls input[type="checkbox"] {
+        width: auto;
+    }
+
+    
+
+    section .fieldset-cf7mls input,
+    section .wpcf7-form .fieldset-cf7mls textarea {
+        width: 100%;
+    }
+
+    section form {
+        padding: 30px;
+    }
+
+    section .cf7mls-btns {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    section .cf7mls-btns button[name="cf7mls_next"] {
+        width: 100%;
+    }
+
+    section .cf7mls-btns button[name="cf7mls_back"] {
+        width: 100%;
+    }
+
+    section .cf7mls-btns.cf7mls-btns-last-step .cf7mls_back {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

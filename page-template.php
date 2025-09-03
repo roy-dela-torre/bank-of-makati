@@ -1,5 +1,10 @@
 <?php get_header();
-/*Template Name: template*/
-?>
+/*Template Name: Template Pages*/
 
-<?php get_footer(); ?>
+$field_object = get_field_object('field_679b3ad377907');
+
+echo '<pre>';
+print_r($field_object); // Output the field object structure
+echo '</pre>';
+
+get_footer(); ?>

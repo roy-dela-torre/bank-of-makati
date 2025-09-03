@@ -1,25 +1,102 @@
 <?php get_header();
 /*Template Name: News*/
 ?>
+<meta name="robots" content="noindex, follow">
+<?php
+add_filter('wpseo_robots', function ($robots) {
+    return 'index, follow';
+});
+?>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/post_content.css">
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/news_main.css">
-<?php
-set_query_var('post_type', 'news');
-echo get_template_part('template/blogs') ?>
+
+<section class="news">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header d-flex align-items-lg-center justify-content-between">
+                    <div class="left_content">
+                        <span class="orange_text">Latest News on Bank of Makati</span>
+                        <h1>BMI Today</h1>
+                        <p>Get the latest news, announcements, and updates about our products, services, and community initiatives.</p>
+                    </div>
+                </div>
+                <div class="main_content">
+                    <?php
+                    // Query for the latest 'news' posts (limit to 4 for main content)
+                    $main_news_args = array(
+                        'post_type' => 'news',
+                        'posts_per_page' => 4, // Limit to 4 posts
+                        'post_status' => 'publish',
+                        'order' => 'ASC',
+
+                    );
+                    $main_news_query = new WP_Query($main_news_args);
+
+                    if ($main_news_query->have_posts()) {
+                        $count = 0;
+                        while ($main_news_query->have_posts()) {
+                            $main_news_query->the_post();
+                            $img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
+                            $title = get_the_title();
+                            $description = get_the_excerpt();
+                            $post_url = get_the_permalink();
+
+                            if ($count === 0) { ?>
+                                <div class="large_content" style="background: linear-gradient(0deg, rgba(43, 43, 43, 0.30) 0%, rgba(43, 43, 43, 0.30) 100%), url('<?php echo esc_url($img_url); ?>') lightgray 50% / cover no-repeat;">
+                                    <div class="content">
+                                        <span class="text-white bmi_today d-block mb-20">BMI Today</span>
+                                        <h3 class="text-white"><?php echo esc_html($title); ?></h3>
+                                        <p class="text-white"><?php echo esc_html($description); ?></p>
+                                        <a href="<?php echo esc_url($post_url); ?>" target="_blank" rel="noopener noreferrer" class="orange_btn">Read More</a>
+                                    </div>
+                                </div>
+                            <?php } else { ?>
+                                <div class="small_content d-flex">
+                                    <div class="content">
+                                        <div class="post_content">
+                                            <span class="bmi_today d-block mb-20">BMI Today</span>
+                                            <h3><?php echo esc_html($title); ?></h3>
+                                            <p><?php echo esc_html($description); ?></p>
+                                            <a href="<?php echo esc_url($post_url); ?>" target="_blank" rel="noopener noreferrer" class="orange_btn">Read More</a>
+                                        </div>
+                                        <?php if ($img_url) { ?>
+                                            <div class="image">
+                                                <img loading="lazy" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($title); ?>" class="w-100 img-fluid" decoding="async">
+                                            </div>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                    <?php }
+                            $count++;
+                        }
+                        wp_reset_postdata();
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="other_news">
     <div class="wrapper">
         <div class="contaner-fluid">
             <div class="row">
                 <div class="header">
-                    <h2>Other Blogs</h2>
+                    <h2 class="mb-0">Other News About BMI</h2>
                 </div>
                 <?php
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                 $args = array(
                     'paged' => $paged,
-                    'posts_per_page' => 9,
+                    'posts_per_page' => 6,
                     'post_type' => array('news'),
+                    'order' => 'ASC',
                 );
+                // usort($args, function ($a, $b) {
+                //     return strcmp($a->name, $b->name); // Compare term names alphabetically
+                // });
                 $search_query = new WP_Query($args);
 
                 if ($search_query->have_posts()):

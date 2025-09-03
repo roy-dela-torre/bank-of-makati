@@ -1,8 +1,4 @@
-section.news {
-    background-color: #F2F2F2;
-}
-
-section.news .left_content{
+section.news .left_content {
     max-width: 650px;
 }
 
@@ -21,6 +17,7 @@ section.news .main_content .large_content {
     padding: 30px;
     display: flex;
     align-items: end;
+    min-height: 810px;
 }
 
 section.news .small_content {
@@ -36,7 +33,8 @@ section.news .large_content {
 section.news .main_content .content {
     width: 100%;
 }
-section.news .main_content .content a{
+
+section.news .main_content .content a {
     margin-top: 30px;
 }
 
@@ -51,7 +49,7 @@ section.news .small_content .content {
     gap: 0 30px;
 }
 
-section.news .small_content:not(:last-child):after{
+section.news .small_content:not(:last-child):after {
     content: '';
     position: absolute;
     width: 100%;
@@ -64,6 +62,14 @@ section.news .small_content .post_content {
     width: calc(64% - 15px);
 }
 
+section.news .small_content .post_content h3{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 section.news .small_content .image {
     width: calc(36% - 15px);
 }
@@ -71,41 +77,41 @@ section.news .small_content .image {
 section.news .small_content .image img {
     width: 100%;
     border-radius: 8px;
-}
-
-section.news .main_content img {
     max-width: 296px;
-    max-height: 230px;
+    height: 230px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
 @media (max-width: 1200px) {
     section.news .main_content {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 60px 0;
     }
 
-    section.news .main_content img{
+    section.news .main_content img {
         max-width: 100%;
     }
 
     section.news .main_content>div {
         width: 100%;
     }
+
+    section.news .main_content .large_content {
+        min-height: 600px;
+    }
 }
 
 @media (max-width: 991px) {
-    section.news .header{
-        flex-direction:  column;
+    section.news .header {
+        flex-direction: column;
     }
 
-    section.news .header{
+    section.news .header {
         margin-bottom: 50px;
     }
 
-    section.news .left_content{
+    section.news .left_content {
         max-width: 100%;
         width: 100%;
     }
@@ -123,12 +129,16 @@ section.news .main_content img {
         max-width: 100%;
     }
 
-    section.news .header{
+    section.news .header {
         margin-bottom: 40px;
     }
 
-    section.news .small_content .image img{
+    section.news .small_content .image img {
         height: 100%;
         max-height: 300px;
+    }
+
+    section.news .main_content .large_content {
+        min-height: 500px;
     }
 }

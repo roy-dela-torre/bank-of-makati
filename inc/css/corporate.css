@@ -1,0 +1,96 @@
+section.banner {
+    height: 100%;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    background: url('../../assets/images/myextras/corporate/Deposit Rates And Maintaining Requirements (Corporate) Banner.jpg')no-repeat center center/cover;
+
+    @media(width < 767px) {
+        height: fit-content;
+    }
+}
+
+section.banner .content {
+    max-width: 100% !important;
+}
+
+
+section.account th {
+    padding: 15px;
+    border: 1px solid white;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    background-color: #1B4298;
+    width: calc(100% / 6);
+    align-content: center;
+    text-align: center;
+    min-width: 200px;
+}
+
+section.account th span {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.account table {
+    overflow-x: scroll;
+    margin-bottom: 0;
+}
+
+section.account td {
+    padding: 20px 15px;
+    width: calc(100% / 6);
+    min-width: 200px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background-color: white;
+    align-content: center;
+    text-align: center;
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.account td:first-child {
+    background-color: #F26531;
+    align-content: center;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+section.account .overflow-x-scroll::-webkit-scrollbar {
+    @media (width > 1200px) {
+        display: none;
+    }
+}
+
+section.account p>span {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+section.account .overflow-x-scroll {
+    border-radius: 2px;
+    background: #FFF;
+    box-shadow: 0 12px 18.3px 0 rgba(0, 0, 0, 0.05);
+}
+
+section.account p:has(> span.orange_text) {
+    margin-bottom: 0;
+    /* removes bottom margin */
+}

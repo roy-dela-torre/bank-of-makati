@@ -1,0 +1,110 @@
+section.banner .content {
+    max-width: 866px !important;
+}
+
+section.image_content .content {
+    max-width: 650px;
+    margin: 0 0 0 auto;
+}
+
+section.online_motorcycle_request_form {
+    background-color: #F2F2F2;
+}
+
+section.online_motorcycle_request_form .content {
+    padding: 30px 30px 74px 30px;
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+section.online_motorcycle_request_form .content a.orange_btn {
+    position: absolute;
+    bottom: 30px;
+}
+
+section.online_motorcycle_request_form .main_content {
+    padding: 15px 15px 74px 15px;
+    height: 100%;
+    position: relative;
+}
+
+section.online_motorcycle_request_form .icons {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    margin-bottom: 20px;
+}
+
+section.online_motorcycle_request_form img:not(.icons) {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+section.online_motorcycle_request_form .image {
+    position: relative;
+}
+
+section.online_motorcycle_request_form .row {
+    gap: 24px 0;
+}
+
+section.online_motorcycle_request_form .group_button button:disabled svg path {
+    fill: #4A4A4A;
+}
+
+section.online_motorcycle_request_form .group_button button:disabled {
+    background-color: white;
+}
+
+section.online_motorcycle_request_form .group_button button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B4298;
+}
+
+section.online_motorcycle_request_form .header {
+    max-width: 650px;
+}
+
+section.online_motorcycle_request_form .left_content {
+    max-width: 824px;
+}
+
+section.online_motorcycle_request_form h2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    section.image_content .content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    section.online_motorcycle_request_form .main_content h3 {
+        height: auto !important;
+    }
+
+    section.online_motorcycle_request_form .content {
+        padding: 30px;
+    }
+
+    section.online_motorcycle_request_form .content a.orange_btn {
+        position: relative;
+        inset: 0
+    }
+}

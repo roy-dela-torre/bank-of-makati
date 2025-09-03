@@ -1,0 +1,48 @@
+section.banner .content {
+    max-width: 922px !important;
+    max-height: 500px;
+}
+
+section.banner {
+    max-height: 500px;
+}
+
+section.faqs_about_out_savings .accordion-item {
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.faqs_about_out_savings .row {
+    gap: 24px 0;
+}
+
+section.faqs_about_out_savings .accordion-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 30px;
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 152.174%;
+}
+
+section.faqs_about_out_savings .accordion-item {
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.faqs_about_out_savings .accordion-body {
+    padding: 0 30px 30px 30px;
+}
+
+section.faqs_about_out_savings .accordion-item:not(.open) {
+    height: auto;
+}

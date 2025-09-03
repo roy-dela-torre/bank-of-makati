@@ -1,0 +1,634 @@
+section.banner {
+    height: 700px;
+    display: flex;
+    align-items: center;
+
+    @media(width < 767px) {
+        height: fit-content;
+    }
+}
+
+section.banner .content {
+    max-width: 466px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.banner .cta_buttons {
+    margin-top: 20px;
+}
+
+section.banner p {
+    color: white;
+    text-align: center;
+}
+
+section.banner .content p:last-of-type {
+    margin-bottom: 0;
+}
+
+section.banner.banner-caf {
+    height: 500px;
+}
+
+section.header_with_card_no_image .header {
+    max-width: 650px;
+}
+
+section.header_with_card_no_image.deposit_rates p:has(a.orange_btn) {
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+section.header_with_card_no_image .row {
+    gap: 24px 0;
+}
+
+section.header_with_card_no_image .content {
+    height: 100%;
+    padding: 30px;
+    border-radius: 4px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+section.header_with_card_no_image .content p{
+    margin-bottom: 20px;
+}
+
+section.header_with_card_no_image .content a {
+    margin-top: auto;
+}
+
+/* section.header_with_card_no_image .content p:last-of-type{
+    margin: auto 0 0 0;
+} */
+
+section.header_with_card_no_image {
+    background-color: #F2F2F2;
+}
+
+section.header_with_card_no_image .content_bg {
+    background: url('../../assets/images/savings_account_for_studens/Contact\ Us.jpg')no-repeat center center/cover;
+    margin-top: 100px;
+    padding: calc(150px - 24px) 100px;
+    border-radius: 8px;
+}
+
+section.header_with_card_no_image .content_bg .main_content {
+    max-width: 650px;
+}
+
+section.header_with_card_no_image .content_bg p {
+    margin-bottom: 30px;
+}
+
+section.header_with_card_no_image .content_numbers {
+    border-radius: 3px;
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section.header_with_card_no_image .content_numbers span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #1B4298;
+    display: block;
+    text-align: center;
+}
+
+section.eligibility .content ol {
+    margin-top: 60px;
+    padding-left: 1.5rem;
+}
+
+section.eligibility .content ol li::marker {
+    color: #4A4A4A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+    margin-block-end: 20px;
+}
+
+section.eligibility .content ol li {
+    margin-bottom: 30px;
+}
+
+section.eligibility .eligibility_img .image {
+    height: 100%;
+}
+
+section.eligibility .eligibility_img .image img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+section.eligibility ol li p {
+    position: relative;
+    left: -25px;
+}
+
+section.product_and_services .content {
+    padding: 5px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.product_and_services .content a.orange_btn {
+    position: absolute;
+    bottom: 15px;
+}
+
+section.product_and_services .main_content {
+    padding: 15px 15px 74px 15px;
+    height: 100%;
+    position: relative;
+}
+
+section.product_and_services img.icons {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+section.product_and_services img:not(.icons) {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    object-position: top;
+}
+
+section.product_and_services .image {
+    position: relative;
+}
+
+section.product_and_services .row {
+    gap: 24px 0;
+}
+
+section.product_and_services .group_button button:disabled svg path {
+    fill: #4A4A4A;
+}
+
+section.product_and_services .group_button button:disabled {
+    background-color: white;
+}
+
+section.product_and_services .group_button button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B4298;
+}
+
+section.product_and_services .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 50px;
+}
+
+section.product_and_services .left_content {
+    max-width: 824px;
+}
+
+section.product_and_services h2 {
+    margin-bottom: 20px;
+}
+
+section.content_with_bg .background_image {
+    min-height: 534px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0 100px;
+}
+
+section.content_with_bg p {
+    color: white;
+}
+
+section.content_with_bg a {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background: #F26531;
+    color: white;
+    max-width: 180px;
+    font-weight: 500;
+}
+
+section.content_with_bg a:hover {
+    background: #FFA726;
+}
+
+section.content_with_bg .content_with_bg_text {
+    margin-bottom: 30px;
+}
+
+section.content_with_bg .contents {
+    max-width: 850px;
+    width: 100%;
+}
+
+section.loan_calculator h3 {
+    color: white;
+    margin-bottom: 0;
+}
+
+section.loan_calculator div.hr {
+    height: 1px;
+    background: #C1C1C1;
+    width: 100%;
+}
+
+section.loan_calculator .calculator {
+    position: sticky;
+    top: 13%;
+}
+
+section.loan_calculator .calculator .calculator_heading {
+    padding: 15px;
+    background-color: #1B4298;
+    text-align: center;
+}
+
+section.loan_calculator .calculator .calculator_body form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+section.loan_calculator .calculator .calculator_body form label {
+    color: #4A4A4A;
+    font-family: 'Montserrat', sans-serif;
+    ;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 156.25% */
+}
+
+section.loan_calculator .table_info .table_head {
+    text-align: center;
+    background-color: #1B4298;
+    padding: 15px;
+}
+
+section.loan_calculator .table_info .table_body {
+    padding: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+section.loan_calculator .calculator_buttons {
+    gap: 20px;
+}
+
+section.loan_calculator .calculator_buttons button {
+    width: 100%;
+    padding: 12px 24px;
+    transition: .3s ease-in-out;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    border: 1px solid #F26531;
+}
+
+section.loan_calculator .calculator_buttons #btnCompute {
+    background: #F26531;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+section.loan_calculator .calculator_buttons #btnCompute:hover {
+    background: #FFA726;
+    border: 1px solid #FFA726;
+}
+
+section.loan_calculator .calculator_buttons #btnReset {
+    background: #FFF;
+    color: #F26531;
+    font-family: 'Montserrat', sans-serif;
+    ;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+section.loan_calculator .calculator_buttons #btnReset:hover {
+    background: #FFA726;
+    color: white;
+    border: 1px solid #FFA726;
+}
+
+section.loan_calculator #loan_amount::-webkit-outer-spin-button,
+section.loan_calculator #loan_amount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section.loan_calculator .calculator_gap {
+    row-gap: 30px;
+}
+
+section.loan_calculator table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 12px 18.3px 0 rgba(0, 0, 0, 0.05);
+}
+
+section.loan_calculator th {
+    border: 1px solid #FFF;
+    background-color: #1B4298;
+    color: white;
+    padding: 15px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 156.25% */
+}
+
+section.loan_calculator td {
+    border: 1px solid #F2F2F2;
+    color: #4A4A4A;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 156.25% */
+    padding: 20px 15px;
+}
+
+section.loan_calculator select#loan_type,
+section.loan_calculator select#months_to_pay {
+    color: #4A4A4A;
+}
+
+section.loan_calculator .form-input-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+section.loan_calculator .select-loan,
+section.loan_calculator .select-months {
+    appearance: none;
+}
+
+section.loan_calculator .form-input-select svg {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+section.accordion_cards .accordion-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+section.accordion_cards .accordion-item {
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.accordion_cards .row {
+    gap: 24px 0;
+}
+
+section.accordion_cards .accordion-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 30px;
+}
+
+section.accordion_cards .accordion-item {
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.accordion_cards .accordion-body {
+    padding: 0 30px 30px 30px;
+}
+
+section.accordion_cards h2 {
+    max-width: 889px;
+    margin-bottom: calc(60px - 24px);
+}
+
+section.accordion_cards .accordion-item:not(.open) {
+    height: auto;
+}
+
+section.company_partner .company_partner_header {
+    margin-bottom: 60px;
+    max-width: 566px;
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+section.company_partner .partner_gallerys {
+    max-width: 1075px;
+    width: 100%;
+    margin: auto;
+}
+
+section.company_partner .company_partner_row_gap {
+    row-gap: 60px;
+}
+
+#testimonials_carousel .owl-stage-outer {
+    overflow: hidden;
+}
+
+#testimonials_carousel .owl-stage {
+    display: flex;
+}
+
+.owl-nav.disabled {
+    display: none;
+}
+
+section.testimonials .testimonials_group_button .disabled {
+    border-radius: 3px;
+    border: 1px solid #E3E3E3;
+    background: #FFF;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+}
+
+section.testimonials .testimonials_group_button .enabled {
+    border-radius: 3px;
+    border: 1px solid #2B61D9;
+    background: #1B4298;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+}
+
+section.testimonials .testimonials_group_button .disabled svg path {
+    fill: #4A4A4A;
+}
+
+section.testimonials .testimonials_group_button .enabled svg path {
+    fill: #FFF;
+}
+
+section.testimonials .quotation {
+    margin-bottom: 30px;
+}
+
+section.testimonials .company_logo {
+    margin-bottom: 20px;
+}
+
+section.testimonials .testimonials_item {
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+section.testimonials .testimonials_item img {
+    height: 50px;
+    object-fit: contain;
+    object-position: left;
+}
+
+section.testimonials .header {
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+section.testimonials .testimonials_group_button {
+    gap: 0 15px;
+    align-items: center;
+    display: flex;
+}
+
+section.testimonials .left_content {
+    max-width: 650px;
+}
+
+section.faqs_about_out_savings .accordion-button {
+    padding: 30px;
+}
+
+section.faqs_about_out_savings .accordion-body {
+    padding: 0 30px 30px 30px;
+}
+
+@media (max-width: 1199px) {
+    section.content_with_bg .background_image {
+        padding: 0 70px;
+    }
+
+    section.content_with_bg .background_image {
+        min-height: 434px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    section.header_with_card_no_image .content_bg {
+        padding: 70px 50px;
+    }
+}
+
+@media (max-width: 767px) {
+   
+
+    section.product_and_services .main_content h3 {
+        height: auto !important;
+    }
+
+    section.content_with_bg .background_image {
+        padding: 0 50px;
+    }
+
+    section.loan_calculator .table_body {
+        overflow-y: auto;
+    }
+
+    section.loan_calculator .table {
+        width: 986px;
+    }
+}
+
+@media (max-width: 575px) {
+    section.banner a {
+        width: 100%;
+        text-align: center;
+        max-width: 255px;
+        margin-inline: auto;
+    }
+
+    /* section.banner a:last-of-type {
+        margin-top: 0;
+    } */
+
+    section.content_with_bg .background_image {
+        min-height: auto;
+    }
+
+    section.content_with_bg .background_image {
+        padding: 30px;
+    }
+}

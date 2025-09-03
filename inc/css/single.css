@@ -1,15 +1,33 @@
-section.single_post .main_content img {
+section.single_post h1 {
+    color: #4A4A4A;
+}
+
+section.single_post span.date {
+    display: block;
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.single_post .main_content p:has(> img) {
     margin: 30px 0;
-    border-radius: 8px;
-    object-fit: cover;
     max-height: 600px;
+}
+
+section.single_post .main_content p:has(> img) img {
+    border-radius: 8px;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: top;
 }
 
 section.single_post .main_content blockquote {
     border-left: 5px solid #F26531;
     background: #FFF;
     padding: 30px;
-    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 12px 18.3px 0 rgba(0, 0, 0, 0.05);
     margin-bottom: 30px;
 }
 
@@ -19,19 +37,40 @@ section.single_post .main_content blockquote h2 {
 }
 
 section.single_post .main_content h2 {
-    margin: 60px 0 20px 0;
+    margin: 60px 0 20px;
 }
 
 section.single_post .main_content h3 {
-    margin: 30px 0 20px 0;
+    margin: 30px 0 20px;
 }
 
 section.single_post .main_content .featured_image img {
     width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+section.single_post .main_content .featured_image+p:has(> img) {
+    margin-top: 0;
 }
 
 section.single_post .related_blogs {
-    margin-top: 30px;
+    top: 200px;
+    z-index: 1;
+
+    @media(width < 991px) {
+        margin-top: 70px;
+    }
+
+    @media(width < 767px) {
+        margin-top: 50px;
+    }
 }
 
 section.single_post .related_blogs h2 {
@@ -40,7 +79,6 @@ section.single_post .related_blogs h2 {
 }
 
 section.single_post .related_blogs .related_blog:not(:last-child) {
-    margin-bottom: 30px;
     border-bottom: 1px solid #F2F2F2;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -51,26 +89,32 @@ section.single_post .related_blogs h3 {
     color: var(--Black, #4A4A4A);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 25px;
-    /* 156.25% */
 }
 
 section.single_post .share {
     gap: 0 15px;
     margin-top: 60px;
+
+    @media(width < 991px) {
+        margin-top: 50px;
+    }
+
+    @media(width < 767px) {
+        margin-top: 40px;
+    }
 }
 
 section.single_post .share span {
     color: var(--Orange, #F26531);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 25px;
 }
-section.single_post .share .icons{
+
+section.single_post .share .icons {
     display: flex;
     align-items: center;
     gap: 0 10px;

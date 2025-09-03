@@ -1,0 +1,44 @@
+section.accordion_cards .accordion-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+section.accordion_cards .accordion-item {
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.accordion_cards .row {
+    gap: 24px 0;
+}
+
+section.accordion_cards .accordion-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 30px;
+}
+
+section.accordion_cards .accordion-item {
+    border-radius: 4px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.accordion_cards .accordion-body {
+    padding: 0 30px 30px 30px;
+}
+
+section.accordion_cards h2 {
+    max-width: 889px;
+    margin-bottom: calc(60px - 24px);
+}
+
+section.accordion_cards .accordion-item:not(.open) {
+    height: auto;
+}

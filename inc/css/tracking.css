@@ -1,0 +1,248 @@
+section.banner {
+    height: 500px !important;
+
+    @media(width < 767px) {
+        height: fit-content;
+    }
+}
+
+section.track_your_account form#tracking_form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    max-width: 859px;
+    margin: 0 auto 50px auto;
+
+
+    @media(width < 991px) {
+        padding: 40px 30px;
+        margin: 0 auto 50px auto;
+    }
+
+    @media(width < 767px) {
+        padding: 30px 20px;
+    }
+}
+
+section.track_your_account .header {
+    margin-bottom: 60px;
+    max-width: 700px;
+
+    @media(width < 991px) {
+        margin-bottom: 50px;
+    }
+
+    @media (width < 767px) {
+        margin-bottom: 40px;
+
+    }
+}
+
+section.banner div .content {
+    max-width: 922px;
+}
+
+section.track_your_account .user_data {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    max-width: 450px;
+    margin: 100px auto 60px auto;
+    width: 100%;
+
+    @media (width < 991px) {
+        margin: 70px auto 40px auto;
+    }
+
+    @media (width < 767px) {
+        margin: 50px auto 30px auto;
+        order: 3;
+    }
+}
+
+section.track_your_account th {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+section.track_your_account td {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.track_your_account * {
+    border: none;
+}
+
+section.track_your_account .status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px 0;
+
+    @media(width < 991px) {
+        gap: 40px 0;
+    }
+
+    @media(width < 767px) {
+        gap: 30px 0;
+        order: 2;
+    }
+}
+
+
+section.track_your_account table tr {
+    @media(width < 575px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+section.track_your_account #button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background-color: #eee;
+    border: solid #ccc 1px;
+    cursor: pointer;
+}
+
+section.track_your_account input#submit_tracking {
+    margin-top: 10px;
+}
+
+section.track_your_account input:not([type="submit"])::placeholder {
+    color: #ADADAD;
+}
+
+section.track_your_account .alert.alert-danger {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+section.track_your_account .status ul li::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M1.6 16.5L0 14.9L6.4 8.5L0 2.1L1.6 0.5L8 6.9L14.4 0.5L16 2.1L9.6 8.5L16 14.9L14.4 16.5L8 10.1L1.6 16.5Z' fill='%23F2F2F2'/%3E%3C/svg%3E");
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+section.track_your_account .status ul li.active::after {
+    display: none;
+}
+
+section.track_your_account .status ul li.active::before,
+section.track_your_account .status ul li.completed::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none"><path d="M7.69325 16.5L0 8.9158L1.92331 7.01975L7.69325 12.7079L20.0767 0.5L22 2.39605L7.69325 16.5Z" fill="white"/></svg>');
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #456BBE;
+    background: var(--Blue, #1B4298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+section.track_your_account .status ul li.completed::after {
+    display: none;
+}
+
+section.track_your_account .status ul li.completed {
+    flex-direction: column;
+}
+
+section.track_your_account .status ul {
+    display: flex;
+    align-items: start;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    max-width: 1005px;
+    padding: 0;
+}
+
+section.track_your_account .status ul>li.active {
+    color: var(--Blue, #1B4298);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    flex-direction: column;
+}
+
+section.track_your_account .status ul>li {
+    color: var(--Black, #4A4A4A);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px 0;
+    list-style: none;
+    flex-direction: column-reverse;
+}
+
+section.track_your_account .status ul::before {
+    content: '';
+    border-top: 1px solid var(--Blue);
+    height: 1px;
+    width: 80%;
+    left: 10%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 0;
+    top: calc(45px / 2);
+}
+
+section.track_your_account div#mobile-step-indicator {
+    margin-top: 60px;
+
+    @media (width < 991px) {
+        margin: 0 auto 40px auto;
+    }
+
+    @media(width < 767px) {
+        order: 1;
+    }
+
+    @media (max-width: 575px) {
+        margin: 0 auto 30px auto;
+    }
+}
+
+section.track_your_account span#mobile-step-text {
+    color: var(--Black, #4A4A4A);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}

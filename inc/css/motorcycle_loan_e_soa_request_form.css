@@ -1,0 +1,95 @@
+section.banner .content {
+    max-width: 922px !important;
+}
+
+section.banner {
+    max-height: 500px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+section.motorcycle_loan_e_soa_request_form .header p {
+    max-width: 932px;
+    margin: 0 auto;
+}
+
+section.motorcycle_loan_e_soa_request_form .row {
+    gap: 20px 0; 
+}
+
+section.motorcycle_loan_e_soa_request_form form {
+    max-width: 1176px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 12px 18.3px 0px rgba(0, 0, 0, 0.05);
+}
+
+section.motorcycle_loan_e_soa_request_form form a {
+    color: var(--Orange, #F26531);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration: underline;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_wrapper.step1 {
+    gap: 30px;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_wrapper.step1 h4 {
+    font-weight: 600;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_wrapper.step1 input[type="checkbox"]:checked {
+    background: #007bff;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_wrapper.step1 input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 50%;
+    border: 2px solid #C1C1C1;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_wrapper.step1 .wpcf7-list-item-label {
+    color: #4A4A4A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.motorcycle_loan_e_soa_request_form .no-after::after {
+    content: none !important;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_wrapper label {
+    color: #4A4A4A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+section.motorcycle_loan_e_soa_request_form .form_wrapper.step2 {
+    gap: 30px;
+} 
+
+section.motorcycle_loan_e_soa_request_form select {
+    color: #4A4A4A;
+}
